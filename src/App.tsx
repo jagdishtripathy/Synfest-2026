@@ -32,7 +32,8 @@ function App() {
     <VideoProvider>
       <Router>
         <SmoothScroll>
-          <div className="min-h-screen bg-[#0a0a0a] text-white">
+          <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-primary selection:text-white">
+            <Cursor />
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />

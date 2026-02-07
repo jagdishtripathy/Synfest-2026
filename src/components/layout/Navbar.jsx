@@ -6,29 +6,51 @@ import { gsap } from 'gsap';
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef(null);
+    const backdropRef = useRef(null);
     const linksRef = useRef([]);
     const location = useLocation();
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     useEffect(() => {
-        if (isOpen) {
-            gsap.to(menuRef.current, {
-                x: '0%',
-                duration: 0.5,
-                ease: 'power3.out',
-            });
-            gsap.fromTo(linksRef.current,
-                { x: 50, opacity: 0 },
-                { x: 0, opacity: 1, duration: 0.4, stagger: 0.1, delay: 0.2 }
-            );
-        } else {
-            gsap.to(menuRef.current, {
-                x: '100%',
-                duration: 0.5,
-                ease: 'power3.in',
-            });
-        }
+        const ctx = gsap.context(() => {
+            if (isOpen) {
+                // Show Backdrop
+                gsap.to(backdropRef.current, {
+                    display: 'block',
+                    opacity: 1,
+                    duration: 0.3
+                });
+
+                // Slide Menu Down
+                gsap.to(menuRef.current, {
+                    y: '0%',
+                    duration: 0.5,
+                    ease: 'power3.out',
+                });
+
+                // Animate Links
+                gsap.fromTo(linksRef.current,
+                    { y: -20, opacity: 0 },
+                    { y: 0, opacity: 1, duration: 0.3, stagger: 0.1, delay: 0.2 }
+                );
+            } else {
+                // Slide Menu Up
+                gsap.to(menuRef.current, {
+                    y: '-100%',
+                    duration: 0.5,
+                    ease: 'power3.in',
+                });
+
+                // Hide Backdrop
+                gsap.to(backdropRef.current, {
+                    opacity: 0,
+                    duration: 0.3,
+                    onComplete: () => gsap.set(backdropRef.current, { display: 'none' })
+                });
+            }
+        });
+        return () => ctx.revert();
     }, [isOpen]);
 
     // Close menu on route change
@@ -38,7 +60,7 @@ export default function Navbar() {
 
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'About', path: '/#about' }, // Handle hash scroll manually if needed
+        { name: 'About', path: '/#about' },
         { name: 'Highlights', path: '/#highlights' },
         { name: 'Sponsors', path: '/#sponsors' },
         { name: 'Contact', path: '/contact' },
@@ -52,17 +74,15 @@ export default function Navbar() {
                 e.preventDefault();
                 element.scrollIntoView({ behavior: 'smooth' });
                 setIsOpen(false);
-            } else if (location.pathname !== '/') {
-                // Allow default navigation to Home, then scroll (handled by useEffect in Home usually)
             }
         }
     };
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference text-white">
+            <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm md:backdrop-blur-none text-white">
                 {/* Logo */}
-                <Link to="/" className="text-2xl font-black tracking-tighter uppercase z-50 relative">
+                <Link to="/" className="text-2xl font-black tracking-tighter uppercase z-50 relative drop-shadow-md">
                     Synfest<span className="text-primary">.</span>
                 </Link>
 
@@ -73,7 +93,7 @@ export default function Navbar() {
                             key={link.name}
                             href={link.path}
                             onClick={(e) => scrollToSection(e, link.path)}
-                            className="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            className="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors cursor-pointer"
                         >
                             {link.name}
                         </a>
@@ -89,24 +109,31 @@ export default function Navbar() {
                 </Link>
 
                 {/* Mobile Menu Toggle */}
-                <button onClick={toggleMenu} className="md:hidden z-50 relative">
-                    {isOpen ? <X size={32} /> : <Menu size={32} />}
+                <button onClick={toggleMenu} className="md:hidden z-50 relative w-8 h-8 flex items-center justify-center">
+                    {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </nav>
 
-            {/* Mobile Fullscreen Menu */}
+            {/* Backdrop for Outside Click */}
+            <div
+                ref={backdropRef}
+                onClick={() => setIsOpen(false)}
+                className="fixed inset-0 bg-black/50 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity"
+            ></div>
+
+            {/* Mobile Menu Panel (Slides from Top) */}
             <div
                 ref={menuRef}
-                className="fixed inset-0 bg-black z-40 flex flex-col justify-center items-center translate-x-full md:hidden"
+                className="fixed top-0 left-0 w-full bg-black/95 border-b border-white/10 z-40 flex flex-col items-center pt-24 pb-12 -translate-y-full md:hidden shadow-2xl"
             >
-                <div className="flex flex-col gap-8 text-center">
+                <div className="flex flex-col gap-8 text-center w-full">
                     {navLinks.map((link, index) => (
                         <a
                             key={link.name}
                             href={link.path}
                             onClick={(e) => scrollToSection(e, link.path)}
                             ref={el => linksRef.current[index] = el}
-                            className="text-4xl font-black uppercase tracking-tighter hover:text-primary transition-colors text-white"
+                            className="text-3xl font-black uppercase tracking-tighter hover:text-primary transition-colors text-white block w-full py-2"
                         >
                             {link.name}
                         </a>
