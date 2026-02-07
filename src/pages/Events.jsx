@@ -85,24 +85,42 @@ export default function Events() {
                         <div
                             key={event.id}
                             onClick={() => setSelectedEvent(event)}
-                            className="group relative p-8 border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden"
+                            className="group relative h-64 border border-white/10 rounded-xl bg-[#0a0a0a] overflow-hidden cursor-pointer transition-transform duration-300 hover:-translate-y-1"
                         >
-                            {/* Decorative ID */}
-                            <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 text-8xl font-black transition-opacity pointer-events-none">
-                                {event.id.replace(/\D/g, '')}
+                            {/* Background Image */}
+                            <div className="absolute inset-0">
+                                <img
+                                    src={event.image || '/logo.png'}
+                                    alt={event.title}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100"
+                                />
                             </div>
 
-                            <div className="relative z-10">
-                                <h3 className="text-2xl font-bold mb-3 group-hover:text-red-400 transition-colors uppercase tracking-tight">
-                                    {event.title}
-                                </h3>
-                                <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
-                                    {event.description}
-                                </p>
+                            {/* Slash Fade Overlay */}
+                            <div
+                                className="absolute inset-0 z-10"
+                                style={{ background: 'linear-gradient(115deg, #0a0a0a 40%, rgba(10,10,10,0.9) 60%, rgba(10,10,10,0.4) 100%)' }}
+                            ></div>
 
-                                <div className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-primary group-hover:text-white transition-colors">
-                                    <span>View Details</span>
-                                    <div className="h-px flex-grow bg-primary/30 group-hover:bg-white/30 transition-colors"></div>
+                            {/* Content */}
+                            <div className="absolute inset-0 z-20 p-8 flex flex-col justify-center">
+                                {/* Decorative ID - Moved to Left & Increased Visibility */}
+                                <div className="absolute top-4 left-4 text-7xl font-black text-white/10 pointer-events-none select-none">
+                                    {event.id.replace(/\D/g, '')}
+                                </div>
+
+                                <div className="relative z-10 pl-4 md:pl-8">
+                                    <h3 className="text-3xl font-black mb-2 uppercase italic tracking-tighter text-white group-hover:text-primary transition-colors drop-shadow-lg">
+                                        {event.title}
+                                    </h3>
+                                    <p className="text-gray-300 text-sm leading-relaxed mb-6 line-clamp-2 max-w-[80%] drop-shadow-md font-medium">
+                                        {event.description}
+                                    </p>
+
+                                    <div className="flex items-center gap-3 text-xs font-bold tracking-widest uppercase text-primary group-hover:text-white transition-colors mt-auto">
+                                        <span>Explore</span>
+                                        <div className="h-0.5 w-12 bg-primary group-hover:bg-white transition-all"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
