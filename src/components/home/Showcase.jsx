@@ -45,18 +45,18 @@ export default function Showcase() {
 
     const showcaseItems = [
         {
-            title: 'Smooth Scrolling',
-            description: 'Powered by Lenis for buttery-smooth scroll experiences',
-            gradient: 'from-primary to-pink-500',
+            title: 'Pro Shows',
+            description: 'Experience electrifying performances by India\'s top artists and DJs.',
+            gradient: 'from-primary to-orange-600',
         },
         {
-            title: 'GSAP Animations',
-            description: 'Professional-grade animations with ScrollTrigger',
-            gradient: 'from-blue-500 to-cyan-500',
+            title: 'Bot Wars',
+            description: 'High-octane robotic combat where steel meets steel in the battle arena.',
+            gradient: 'from-blue-600 to-cyan-500',
         },
         {
-            title: 'Tailwind v4',
-            description: 'Next-generation utility-first CSS framework',
+            title: 'Hackathon',
+            description: '24-hour coding marathon to solve real-world problems and win big.',
             gradient: 'from-green-500 to-emerald-500',
         },
     ];
@@ -65,7 +65,7 @@ export default function Showcase() {
         <section ref={sectionRef} className="min-h-screen py-24 px-6 md:px-12 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
             <div className="container mx-auto">
                 <h2 className="text-5xl md:text-7xl font-bold mb-16 text-center bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
-                    Features
+                    Fest Highlights
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

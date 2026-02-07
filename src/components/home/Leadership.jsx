@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 const dignitaries = [
     {
         id: 1,
-        name: "Dr. A.K. Sahoo",
-        title: "Chairman",
+        name: "Mr. Binod Dash",
+        title: "Hon. Chairman",
         quote: "Innovation is the heartbeat of progress. Synfest is where we restart that heart every year.",
         image: "/person1.png"
     },

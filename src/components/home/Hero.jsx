@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Volume2, VolumeX } from 'lucide-react';
 import { useVideoContext } from '../../context/VideoContext';
 import MuteToggle from '../ui/MuteToggle';
+import Countdown from './Countdown';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -81,17 +82,25 @@ export default function HomeHero() {
             </div>
 
             <div className="z-20 text-center px-4">
-                <h2 className="text-sm md:text-lg font-bold tracking-[0.5em] mb-4 text-primary uppercase">
+                {/* <h2 className="text-sm md:text-lg font-bold tracking-[0.5em] mb-4 text-primary uppercase">
                     Synergy Institute Presents
-                </h2>
+                </h2> */}
                 <h1
                     ref={textRef}
-                    className="leading-[0.85] font-frakturi uppercase tracking-tighter mix-blend-difference"
-                    style={{ fontSize: 'clamp(8rem, 15vw, 12rem)' }}
+                    className="leading-[0.85] font-frakturi uppercase tracking-tighter"
+                    style={{ fontSize: 'clamp(8rem, 15vw, 12rem)' }} // Keep size
                 >
-                    SYNFEST<br />
-                    <span className="text-stroke stroke-white stroke-2">2K26</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500">
+                        SYNFEST
+                    </span>
+                    <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-500 to-orange-500 block mt-2 md:mt-4 filter drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                        2K26
+                    </span>
                 </h1>
+
+                {/* Countdown */}
+                <Countdown />
             </div>
 
             {/* Mute Button - Bottom Right */}

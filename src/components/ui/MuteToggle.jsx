@@ -1,5 +1,5 @@
 import { Volume2, VolumeX } from 'lucide-react';
-import { useVideoContext } from '../context/VideoContext';
+import { useVideoContext } from '../../context/VideoContext';
 
 export default function MuteToggle({ className = "" }) {
     const { isMuted, toggleMute } = useVideoContext();
