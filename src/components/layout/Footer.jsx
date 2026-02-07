@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Linkedin, Twitter, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Youtube, Mail, MapPin, Phone, Facebook } from 'lucide-react';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-4 text-gray-400">
                                 <Mail size={20} className="shrink-0" />
-                                <a href="mailto:info@synfest.com" className="hover:text-white">info@synfest.com</a>
+                                <a href="mailto:hodcse@synergyinstitute.net" className="hover:text-white">hodcse@synergyinstitute.net</a>
                             </li>
                             <li className="flex items-center gap-4 text-gray-400">
                                 <Phone size={20} className="shrink-0" />
@@ -68,10 +68,9 @@ export default function Footer() {
                     </div>
 
                     <div className="flex gap-6">
-                        <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Instagram size={24} /></a>
-                        <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Linkedin size={24} /></a>
-                        <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Twitter size={24} /></a>
-                        <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Youtube size={24} /></a>
+                        <a href="https://www.instagram.com/synergygroupofinstitutions/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Instagram size={24} /></a>
+                        <a href="https://www.linkedin.com/school/synergy-institute-of-engineering-and-technology-siet-dhenkanal/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Linkedin size={24} /></a>
+                        <a href="https://www.facebook.com/synergygroupofinstitutions" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Facebook size={24} /></a>
                     </div>
                 </div>
             </div>
