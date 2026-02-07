@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Phone } from 'lucide-react';
 import { formalEvents, informalEvents, games } from '../data/events';
 import EventModal from '../components/events/EventModal';
 
@@ -58,7 +58,14 @@ export default function Events() {
                 <span className="uppercase text-xs font-bold tracking-widest">Back to Home</span>
             </Link> */}
 
-            <div className="container mx-auto">
+            <div className="container mx-auto relative">
+                <div className="absolute top-0 right-0 mt-10 md:mt-12 hidden md:block">
+                    <Link to="/contact" className="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-colors group">
+                        <Phone size={18} className="text-primary group-hover:scale-110 transition-transform" />
+                        <span className="text-sm font-bold uppercase tracking-wider">Need Help?</span>
+                    </Link>
+                </div>
+
                 <h1 ref={titleRef} className="text-6xl md:text-8xl font-black mb-12 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-10">
                     The Events
                 </h1>
