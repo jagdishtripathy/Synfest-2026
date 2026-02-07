@@ -43,7 +43,7 @@ export default function About() {
     }, []);
 
     return (
-        <section ref={containerRef} className="py-24 px-6 md:px-12 bg-[#0a0a0a] text-white flex flex-col md:flex-row items-center gap-16 overflow-hidden">
+        <section id="about" ref={containerRef} className="py-24 px-6 md:px-12 bg-[#0a0a0a] text-white flex flex-col md:flex-row items-center gap-16 overflow-hidden">
 
             {/* Text Content */}
             <div ref={textRef} className="flex-1 z-10">

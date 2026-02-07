@@ -62,7 +62,7 @@ export default function Showcase() {
     ];
 
     return (
-        <section ref={sectionRef} className="min-h-screen py-24 px-6 md:px-12 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+        <section id="highlights" ref={sectionRef} className="min-h-screen py-24 px-6 md:px-12 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
             <div className="container mx-auto">
                 <h2 className="text-5xl md:text-7xl font-bold mb-16 text-center bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
                     Fest Highlights

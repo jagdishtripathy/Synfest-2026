@@ -28,7 +28,7 @@ export default function Sponsors() {
     ];
 
     return (
-        <section className="py-20 bg-black overflow-hidden border-t border-white/5">
+        <section id="sponsors" className="py-20 bg-black overflow-hidden border-t border-white/5">
             <div className="container mx-auto px-6 mb-12 text-center">
                 <p className="text-sm font-bold tracking-[0.3em] uppercase text-gray-500 mb-2">Supported By</p>
                 <h2 className="text-3xl font-black uppercase text-white">Our Partners</h2>

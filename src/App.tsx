@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SmoothScroll from './components/layout/SmoothScroll';
+import Cursor from './components/ui/Cursor';
+import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import HomeHero from './components/home/Hero';
 import About from './components/home/About';
@@ -31,6 +33,7 @@ function App() {
       <Router>
         <SmoothScroll>
           <div className="min-h-screen bg-[#0a0a0a] text-white">
+            <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/events" element={<Events />} />

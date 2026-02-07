@@ -1,20 +1,66 @@
+import { Link } from 'react-router-dom';
+import { Instagram, Linkedin, Twitter, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+
 export default function Footer() {
+    const currentYear = new Date().getFullYear();
+
     return (
-        <footer className="py-12 border-t border-white/10 bg-[#050505] text-white">
-            <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
-                <div className="text-center md:text-left">
-                    <h2 className="text-2xl font-bold uppercase tracking-wider mb-2">Synfest 2026</h2>
-                    <p className="text-gray-500 text-sm">Synergy Institute of Engineering & Technology</p>
+        <footer className="bg-black text-white pt-20 pb-10 border-t border-white/10">
+            <div className="container mx-auto px-6 md:px-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    {/* Brand Column */}
+                    <div className="lg:col-span-2">
+                        <h2 className="text-[15vw] md:text-8xl font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800 mb-6 font-frakturi">
+                            SYNFEST
+                        </h2>
+                        <p className="text-gray-400 max-w-md text-lg leading-relaxed">
+                            The annual techno-cultural fest of Synergy Institute of Engineering & Technology. Where innovation meets tradition.
+                        </p>
+                    </div>
+
+                    {/* Quick Links */}
+                    <div>
+                        <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-6">Explore</h3>
+                        <ul className="space-y-4">
+                            <li><Link to="/events" className="text-gray-400 hover:text-white transition-colors">All Events</Link></li>
+                            <li><a href="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="/#sponsors" className="text-gray-400 hover:text-white transition-colors">Sponsors</a></li>
+                            <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Team</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Contact */}
+                    <div>
+                        <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-6">Contact</h3>
+                        <ul className="space-y-4">
+                            <li className="flex items-start gap-4 text-gray-400">
+                                <MapPin size={20} className="shrink-0 mt-1" />
+                                <span>Synergy Institute,<br />Dhenkanal, Odisha 759001</span>
+                            </li>
+                            <li className="flex items-center gap-4 text-gray-400">
+                                <Mail size={20} className="shrink-0" />
+                                <a href="mailto:info@synfest.com" className="hover:text-white">info@synfest.com</a>
+                            </li>
+                            <li className="flex items-center gap-4 text-gray-400">
+                                <Phone size={20} className="shrink-0" />
+                                <span>+91 98765 43210</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div className="flex gap-6 text-sm text-gray-400">
-                    <a href="#" className="hover:text-white transition-colors">Instagram</a>
-                    <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-                    <a href="#" className="hover:text-white transition-colors">Website</a>
-                </div>
+                {/* Bottom Bar */}
+                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p className="text-gray-500 text-sm">
+                        &copy; {currentYear} Synfest. All rights reserved.
+                    </p>
 
-                <div className="text-xs text-gray-600 uppercase tracking-widest">
-                    © 2026 SIET Dhenkanal
+                    <div className="flex gap-6">
+                        <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Instagram size={24} /></a>
+                        <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Linkedin size={24} /></a>
+                        <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Twitter size={24} /></a>
+                        <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Youtube size={24} /></a>
+                    </div>
                 </div>
             </div>
         </footer>
