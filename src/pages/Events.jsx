@@ -70,8 +70,8 @@ export default function Events() {
                             key={cat.id}
                             onClick={() => setActiveTab(cat.id)}
                             className={`px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 border ${activeTab === cat.id
-                                    ? 'bg-white text-black border-white'
-                                    : 'bg-transparent text-gray-400 border-white/10 hover:border-white/30 hover:text-white'
+                                ? 'bg-white text-black border-white'
+                                : 'bg-transparent text-gray-400 border-white/10 hover:border-white/30 hover:text-white'
                                 }`}
                         >
                             {cat.label}
@@ -93,16 +93,16 @@ export default function Events() {
                             </div>
 
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-bold mb-3 group-hover:text-purple-400 transition-colors uppercase tracking-tight">
+                                <h3 className="text-2xl font-bold mb-3 group-hover:text-red-400 transition-colors uppercase tracking-tight">
                                     {event.title}
                                 </h3>
                                 <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
                                     {event.description}
                                 </p>
 
-                                <div className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-purple-500 group-hover:text-white transition-colors">
+                                <div className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-primary group-hover:text-white transition-colors">
                                     <span>View Details</span>
-                                    <div className="h-px flex-grow bg-purple-500/30 group-hover:bg-white/30 transition-colors"></div>
+                                    <div className="h-px flex-grow bg-primary/30 group-hover:bg-white/30 transition-colors"></div>
                                 </div>
                             </div>
                         </div>

@@ -9,7 +9,7 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                     <div className="p-6 bg-white/5 rounded-xl border border-white/10">
-                        <h3 className="text-purple-400 font-bold uppercase mb-2">General Queries</h3>
+                        <h3 className="text-red-400 font-bold uppercase mb-2">General Queries</h3>
                         <p className="text-white">info@synfest.com</p>
                         <p className="text-white">+91 98765 43210</p>
                     </div>

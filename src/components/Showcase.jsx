@@ -47,7 +47,7 @@ export default function Showcase() {
         {
             title: 'Smooth Scrolling',
             description: 'Powered by Lenis for buttery-smooth scroll experiences',
-            gradient: 'from-purple-500 to-pink-500',
+            gradient: 'from-primary to-pink-500',
         },
         {
             title: 'GSAP Animations',

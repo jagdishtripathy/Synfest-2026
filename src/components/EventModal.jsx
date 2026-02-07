@@ -47,7 +47,7 @@ export default function EventModal({ event, onClose }) {
 
                 {/* Header */}
                 <div className="p-8 pb-0">
-                    <span className="text-purple-500 font-bold tracking-widest uppercase text-sm">Event Details</span>
+                    <span className="text-primary font-bold tracking-widest uppercase text-sm">Event Details</span>
                     <h2 className="text-4xl md:text-5xl font-black uppercase text-white mt-2 mb-4">{event.title}</h2>
                     <p className="text-gray-400 text-lg">{event.description}</p>
                 </div>
@@ -56,7 +56,7 @@ export default function EventModal({ event, onClose }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
                     <div className="space-y-4">
                         <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/5">
-                            <Users className="text-purple-400 mt-1" />
+                            <Users className="text-red-400 mt-1" />
                             <div>
                                 <h4 className="text-white font-bold uppercase text-sm">Team Size</h4>
                                 <p className="text-gray-400">{event.teamSize}</p>
@@ -91,7 +91,7 @@ export default function EventModal({ event, onClose }) {
                         href={event.regLink}
                         target="_blank"
                         rel="noreferrer"
-                        className="w-full md:w-auto px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-purple-500 hover:text-white transition-colors duration-300 text-center rounded-lg"
+                        className="w-full md:w-auto px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-colors duration-300 text-center rounded-lg"
                     >
                         Register Now
                     </a>

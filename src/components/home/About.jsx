@@ -47,7 +47,7 @@ export default function About() {
 
             {/* Text Content */}
             <div ref={textRef} className="flex-1 z-10">
-                <h2 className="text-4xl md:text-6xl font-black uppercase mb-8 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-white">
+                <h2 className="text-4xl md:text-6xl font-black uppercase mb-8 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-white">
                     Where Innovation Meets Tradition
                 </h2>
                 <p className="text-lg text-gray-400 mb-6 leading-relaxed">
@@ -58,7 +58,7 @@ export default function About() {
                     From coding marathons to electrifying dance battles, from robotics to ramp walks — we have it all. Join us for 3 days of non-stop energy.
                 </p>
 
-                <div className="flex gap-8 text-sm font-bold uppercase tracking-widest text-purple-500">
+                <div className="flex gap-8 text-sm font-bold uppercase tracking-widest text-primary">
                     <span>3 Days</span>
                     <span>50+ Events</span>
                     <span>1000+ Participants</span>
@@ -66,19 +66,13 @@ export default function About() {
             </div>
 
             {/* Visual / Image Placeholder */}
-            <div className="flex-1 relative aspect-square md:aspect-video w-full">
-                <div ref={imageRef} className="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-blue-900/40 rounded-2xl border border-white/10 backdrop-blur-sm overflow-hidden flex items-center justify-center group">
-                    {/* Placeholder for actual college image */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-110 transition-transform duration-1000 cursor-pointer">
-                        <img
-                            src="/image.png"
-                            alt="Synergy Institute Logo"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-                    <div className="relative z-10 text-center">
-                        <span className="text-6xl font-black opacity-20 group-hover:opacity-100 transition-opacity duration-500">SIET</span>
-                    </div>
+            <div className="flex-1 flex justify-center items-center">
+                <div ref={imageRef} className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] relative hover:scale-105 transition-transform duration-500">
+                    <img
+                        src="/logo.png"
+                        alt="Synergy Institute Logo"
+                        className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(220,38,38,0.4)]"
+                    />
                 </div>
             </div>
         </section>

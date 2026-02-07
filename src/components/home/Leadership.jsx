@@ -76,7 +76,7 @@ export default function Leadership() {
                 <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white mb-2">
                     Visionaries
                 </h2>
-                <div className="h-1 w-20 bg-purple-600 mb-6"></div>
+                <div className="h-1 w-20 bg-red-700 mb-6"></div>
                 <p className="text-zinc-400 max-w-xl text-lg">
                     The leadership guiding Synfest 2026 into the future.
                 </p>
@@ -92,11 +92,11 @@ export default function Leadership() {
                             className="group relative w-[1000px] h-[500px] flex bg-zinc-900 border border-zinc-800 shrink-0 overflow-hidden"
                         >
                             {/* Accent Line */}
-                            <div className="absolute top-0 left-0 w-1 h-full bg-purple-600 z-20 group-hover:w-2 transition-all duration-300"></div>
+                            <div className="absolute top-0 left-0 w-1 h-full bg-red-700 z-20 group-hover:w-2 transition-all duration-300"></div>
 
                             {/* Image Section (40%) */}
                             <div className="w-[40%] h-full relative overflow-hidden">
-                                <div className="absolute inset-0 bg-purple-900/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="absolute inset-0 bg-red-900/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 <img
                                     src={person.image}
                                     alt={person.name}
@@ -107,7 +107,7 @@ export default function Leadership() {
                             {/* Content Section (60%) */}
                             <div className="w-[60%] p-12 flex flex-col justify-between relative bg-gradient-to-br from-zinc-900 to-zinc-950">
                                 {/* Quote Icon */}
-                                <div className="text-8xl text-purple-900/20 font-serif absolute top-6 right-8 select-none">"</div>
+                                <div className="text-8xl text-red-900/20 font-serif absolute top-6 right-8 select-none">"</div>
 
                                 <div className="relative z-10 mt-4">
                                     <blockquote className="text-2xl md:text-3xl font-light text-zinc-300 leading-relaxed">
@@ -116,7 +116,7 @@ export default function Leadership() {
                                 </div>
 
                                 <div className="relative z-10 border-t border-zinc-800 pt-8 mt-auto">
-                                    <h3 className="text-4xl font-black uppercase tracking-tighter text-white group-hover:text-purple-400 transition-colors">
+                                    <h3 className="text-4xl font-black uppercase tracking-tighter text-white group-hover:text-red-400 transition-colors">
                                         {person.name}
                                     </h3>
                                     <p className="text-zinc-500 font-mono text-sm tracking-[0.2em] uppercase mt-2">
@@ -135,7 +135,7 @@ export default function Leadership() {
                 {dignitaries.map((person, index) => (
                     <div key={person.id} className="relative">
                         {/* Mobile Design: Magazine Style */}
-                        <div className="aspect-[4/5] w-full overflow-hidden mb-6 border-l-4 border-purple-600">
+                        <div className="aspect-[4/5] w-full overflow-hidden mb-6 border-l-4 border-red-700">
                             <img
                                 src={person.image}
                                 alt={person.name}
@@ -145,7 +145,7 @@ export default function Leadership() {
 
                         <div className="pl-4">
                             <h3 className="text-3xl font-black uppercase tracking-tighter text-white leading-none mb-1">{person.name}</h3>
-                            <p className="text-purple-500 font-mono text-xs tracking-widest uppercase mb-6">{person.title}</p>
+                            <p className="text-primary font-mono text-xs tracking-widest uppercase mb-6">{person.title}</p>
 
                             <blockquote className="text-zinc-400 text-lg leading-relaxed border-l border-zinc-800 pl-4 py-2">
                                 "{person.quote}"

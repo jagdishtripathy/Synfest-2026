@@ -81,12 +81,13 @@ export default function HomeHero() {
             </div>
 
             <div className="z-20 text-center px-4">
-                <h2 className="text-sm md:text-lg font-bold tracking-[0.5em] mb-4 text-purple-500 uppercase">
+                <h2 className="text-sm md:text-lg font-bold tracking-[0.5em] mb-4 text-primary uppercase">
                     Synergy Institute Presents
                 </h2>
                 <h1
                     ref={textRef}
-                    className="text-[12vw] leading-[0.85] font-frakturi uppercase tracking-tighter mix-blend-difference"
+                    className="leading-[0.85] font-frakturi uppercase tracking-tighter mix-blend-difference"
+                    style={{ fontSize: 'clamp(8rem, 15vw, 12rem)' }}
                 >
                     SYNFEST<br />
                     <span className="text-stroke stroke-white stroke-2">2K26</span>
