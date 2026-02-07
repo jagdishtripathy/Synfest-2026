@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { formalEvents, informalEvents, games } from '../data/events';
-import EventModal from '../components/EventModal';
+import EventModal from '../components/events/EventModal';
 
 export default function Events() {
     const [activeTab, setActiveTab] = useState('formal');

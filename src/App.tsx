@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SmoothScroll from './components/SmoothScroll';
-import Footer from './components/Footer';
+import SmoothScroll from './components/layout/SmoothScroll';
+import Cursor from './components/ui/Cursor';
+import Footer from './components/layout/Footer';
 import HomeHero from './components/home/Hero';
 import About from './components/home/About';
 import Leadership from './components/home/Leadership';
-import Showcase from './components/Showcase';
+import Showcase from './components/home/Showcase';
 import EventsLink from './components/home/EventsLink';
 import Events from './pages/Events';
 import Contact from './pages/Contact';

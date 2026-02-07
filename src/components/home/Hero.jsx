@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Volume2, VolumeX } from 'lucide-react';
 import { useVideoContext } from '../../context/VideoContext';
-import MuteToggle from '../MuteToggle';
+import MuteToggle from '../ui/MuteToggle';
 
 gsap.registerPlugin(ScrollTrigger);
 
