@@ -1,96 +1,180 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect, useRef, useState } from 'react';
 
-gsap.registerPlugin(ScrollTrigger);
+const images = [
+    '1.jpg',
+    '2.jpg',
+    '3.jpg',
+    '4.jpg',
+    '5.jpg',
+    '6.jpg',
+    '7.jpg',
+    '8.jpg',
+    '9.jpg',
+    '10.jpg',
+    '11.jpg',
+    '12.jpg',
+    '13.jpg',
+    '14.jpg',
+    // '15.jpg',
+    // '16.jpg',
+    // '17.jpg',
+    // '18.jpg',
+    // '19.jpg',
+    // '20.jpg',
+    // '21.jpg',
+    // '22.jpg',
+    // '23.jpg',
+    // '24.jpg',
+    // '25.jpg',
+    // '26.jpg',
+    // '27.jpg',
+    // '28.jpg',
+    // '29.jpg',
+    // '30.jpg',
+    // '31.jpg',
+    // '32.jpg',
+    // '33.jpg',
+    // '34.jpg',
+    // '35.jpg',
+    // '36.jpg',
+    // '37.jpg',
+    // '38.jpg',
+    // '39.jpg',
+    // '40.jpg',
+    // '41.jpg',
+    // '42.jpg',
+    // '43.jpg',
+    // '44.jpg',
+    // '45.jpg',
+    // '46.jpg',
+    // '47.jpg',
+    // '48.jpg',
+    // '49.jpg',
+    // '50.jpg',
+    // '51.jpg',
+    // '52.jpg',
+    // '53.jpg',
+    // '54.jpg',
+    // '55.jpg',
+    // '56.jpg',
+    // '57.jpg',
+    // '58.jpg',
+    // '59.jpg',
+    // '60.jpg',
+    // '61.jpg',
+    // '62.jpg',
+    // '63.jpg',
+    // '64.jpg',
+    // '65.jpg',
+    // '66.jpg',
+    // '67.jpg',
+    // '68.jpg',
+    // '69.jpg',
+    // '70.jpg',
+    // '71.jpg',
+    // '72.jpg',
+    // '73.jpg',
+    // '74.jpg',
+    // '75.jpg',
+    // '76.jpg',
+    // '77.jpg',
+    // '78.jpg',
+    // '79.jpg',
+    // '80.jpg',
+    // '81.jpg',
+    // '82.jpg',
+    // '83.jpg',
+    // '84.jpg',
+    // '85.jpg',
+    // '86.jpg',
+    // '87.jpg',
+    // '88.jpg',
+    // '89.jpg',
+    // '90.jpg',
+    // '91.jpg',
+    // '92.jpg',
+    // '93.jpg',
+    // '94.jpg',
+    // '95.jpg',
+    // '96.jpg',
+    // '97.jpg',
+    // '98.jpg',
+    // '99.jpg',
+    // '100.jpg'
+];
+
+// Helper to shuffle array
+const shuffle = (array) => {
+    return [...array].sort(() => Math.random() - 0.5);
+};
 
 export default function Showcase() {
-    const sectionRef = useRef(null);
-    const cardsRef = useRef([]);
+    // Generate random sets for each row
+    const [row1, setRow1] = useState([]);
+    const [row2, setRow2] = useState([]);
+    const [row3, setRow3] = useState([]);
 
     useEffect(() => {
-        const ctx = gsap.context(() => {
-            // Animate each card on scroll
-            cardsRef.current.forEach((card, index) => {
-                gsap.from(card, {
-                    scrollTrigger: {
-                        trigger: card,
-                        start: 'top 80%',
-                        end: 'top 20%',
-                        toggleActions: 'play none none reverse',
-                    },
-                    y: 100,
-                    opacity: 0,
-                    duration: 1,
-                    ease: 'power3.out',
-                    delay: index * 0.1,
-                });
-
-                // Parallax effect on scroll
-                gsap.to(card, {
-                    scrollTrigger: {
-                        trigger: card,
-                        start: 'top bottom',
-                        end: 'bottom top',
-                        scrub: true,
-                    },
-                    y: -50,
-                    ease: 'none',
-                });
-            });
-        }, sectionRef);
-
-        return () => ctx.revert();
+        setRow1([...shuffle(images), ...shuffle(images)]);
+        setRow2([...shuffle(images), ...shuffle(images)]);
+        setRow3([...shuffle(images), ...shuffle(images)]);
     }, []);
 
-    const showcaseItems = [
-        {
-            title: 'Pro Shows',
-            description: 'Experience electrifying performances by India\'s top artists and DJs.',
-            gradient: 'from-primary to-orange-600',
-        },
-        {
-            title: 'Bot Wars',
-            description: 'High-octane robotic combat where steel meets steel in the battle arena.',
-            gradient: 'from-blue-600 to-cyan-500',
-        },
-        {
-            title: 'Hackathon',
-            description: '24-hour coding marathon to solve real-world problems and win big.',
-            gradient: 'from-green-500 to-emerald-500',
-        },
-    ];
-
     return (
-        <section id="highlights" ref={sectionRef} className="min-h-screen py-24 px-6 md:px-12 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
-            <div className="container mx-auto">
-                <h2 className="text-5xl md:text-7xl font-bold mb-16 text-center bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
-                    Fest Highlights
+        <section id="highlights" className="min-h-screen py-24 bg-[#0a0a0a] overflow-hidden flex flex-col justify-center relative">
+            <div className="container mx-auto px-6 mb-12 text-center relative z-10">
+                <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800">
+                    Highlights
                 </h2>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {showcaseItems.map((item, index) => (
-                        <div
-                            key={index}
-                            ref={(el) => (cardsRef.current[index] = el)}
-                            className="group relative p-8 rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-500 overflow-hidden"
-                        >
-                            {/* Gradient overlay on hover */}
-                            <div
-                                className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
-                            ></div>
-
-                            <div className="relative z-10">
-                                <h3 className="text-3xl font-bold mb-4 text-white">{item.title}</h3>
-                                <p className="text-gray-400 text-lg leading-relaxed">{item.description}</p>
-                            </div>
-
-                            {/* Decorative corner */}
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-white/5 to-transparent rounded-bl-full"></div>
-                        </div>
-                    ))}
-                </div>
+                <p className="text-gray-400 mt-4 max-w-lg mx-auto">
+                    Glimpses of the energy, the layout, and the chaos.
+                </p>
             </div>
+
+            {/* Marquee Container */}
+            <div className="flex flex-col gap-6 rotate-[-2deg] scale-110">
+                {/* Row 1 - Fast Left */}
+                <MarqueeRow images={row1} speed="40s" />
+
+                {/* Row 2 - Slow Right */}
+                <MarqueeRow images={row2} speed="50s" reverse />
+
+                {/* Row 3 - Medium Left */}
+                <MarqueeRow images={row3} speed="45s" />
+            </div>
+
+            {/* Gradient Overlay for Fade Effect */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a] pointer-events-none z-10"></div>
+            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent pointer-events-none z-10"></div>
+            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent pointer-events-none z-10"></div>
+            
+            <style jsx>{`
+                @keyframes scroll {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
+                }
+                .animate-scroll {
+                    animation: scroll linear infinite;
+                }
+                .reverse {
+                    animation-direction: reverse;
+                }
+            `}</style>
         </section>
+    );
+}
+
+function MarqueeRow({ images, speed, reverse }) {
+    return (
+        <div className="flex gap-6 w-[200%] animate-scroll" style={{ animationDuration: speed, animationDirection: reverse ? 'reverse' : 'normal' }}>
+            {images.map((src, i) => (
+                <div key={i} className={`relative flex-shrink-0 rounded-2xl overflow-hidden border border-white/10 hover:border-primary/50 transition-colors duration-500
+                    ${i % 2 === 0 ? 'w-64 h-48' : 'w-80 h-48'} 
+                    ${i % 3 === 0 ? 'w-56 h-48' : ''}
+                `}>
+                    <img src={src} alt="Gallery" className="w-full h-full object-cover" />
+                </div>
+            ))}
+        </div>
     );
 }
