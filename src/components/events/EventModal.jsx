@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import { X, Users, Wallet, ScrollText } from 'lucide-react'; // Ensure lucide-react is installed, if not, I'll recommend installing it or use text.
+import { X, MessageCircle, ExternalLink } from 'lucide-react';
 
 export default function EventModal({ event, onClose }) {
     const modalRef = useRef(null);
@@ -48,36 +48,39 @@ export default function EventModal({ event, onClose }) {
                 {/* Header */}
                 <div className="p-8 pb-0">
                     <span className="text-primary font-bold tracking-widest uppercase text-sm">Event Details</span>
-                    <h2 className="text-4xl md:text-5xl font-black uppercase text-white mt-2 mb-4">{event.title}</h2>
+                    <h2 className="text-4xl md:text-5xl font-black uppercase text-white mt-2 mb-4">
+                        <span className="mr-3">{event.emoji}</span>
+                        {event.title}
+                    </h2>
                     <p className="text-gray-400 text-lg">{event.description}</p>
                 </div>
 
                 {/* Details Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
-                    <div className="space-y-4">
-                        <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/5">
-                            <Users className="text-red-400 mt-1" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 pb-2">
+                    <div className="space-y-3">
+                        <div className="flex items-start gap-3 p-3 bg-white/5 rounded-xl border border-white/5 mb-2">
+                            <span className="text-xl mt-0.5">👥</span>
                             <div>
-                                <h4 className="text-white font-bold uppercase text-sm">Team Size</h4>
-                                <p className="text-gray-400">{event.teamSize}</p>
+                                <h4 className="text-white font-bold uppercase text-xs">Team Size</h4>
+                                <p className="text-gray-400 text-sm">{event.teamSize}</p>
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/5">
-                            <Wallet className="text-green-400 mt-1" />
+                        <div className="flex items-start gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
+                            <span className="text-xl mt-0.5">💰</span>
                             <div>
-                                <h4 className="text-white font-bold uppercase text-sm">Registration Fee</h4>
-                                <p className="text-gray-400">{event.fee}</p>
+                                <h4 className="text-white font-bold uppercase text-xs">Registration Fee</h4>
+                                <p className="text-gray-400 text-sm">{event.fee || "Free"}</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="p-4 bg-white/5 rounded-xl border border-white/5">
-                        <div className="flex items-center gap-2 mb-3">
-                            <ScrollText className="text-blue-400" />
-                            <h4 className="text-white font-bold uppercase text-sm">Rules & Regulations</h4>
+                    <div className="p-3 bg-white/5 rounded-xl border border-white/5">
+                        <div className="flex items-center gap-2 mb-2">
+                            <span className="text-xl">📜</span>
+                            <h4 className="text-white font-bold uppercase text-xs">Rules & Regulations</h4>
                         </div>
-                        <ul className="text-sm text-gray-400 space-y-2 list-disc list-inside">
+                        <ul className="text-xs text-gray-400 space-y-1.5 list-disc list-inside">
                             {event.rules?.map((rule, i) => (
                                 <li key={i}>{rule}</li>
                             ))}
@@ -85,15 +88,54 @@ export default function EventModal({ event, onClose }) {
                     </div>
                 </div>
 
+                {/* Logistics Section - Simple Icons & Text Below */}
+                <div className="px-6 pb-6">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-3 border-t border-white/10">
+                        {/* Venue */}
+                        <div className="flex items-center gap-2">
+                            <span className="text-xl">📍</span>
+                            <div>
+                                <h4 className="text-gray-500 font-bold uppercase text-[10px] tracking-wider">Venue</h4>
+                                <p className="text-white font-medium text-sm">{event.venue || "TBA"}</p>
+                            </div>
+                        </div>
+
+                        {/* Date */}
+                        <div className="flex items-center gap-2">
+                            <span className="text-xl">📅</span>
+                            <div>
+                                <h4 className="text-gray-500 font-bold uppercase text-[10px] tracking-wider">Date</h4>
+                                <p className="text-white font-medium text-sm">{event.date || "TBA"}</p>
+                            </div>
+                        </div>
+
+                        {/* Time */}
+                        <div className="flex items-center gap-2">
+                            <span className="text-xl">⏰</span>
+                            <div>
+                                <h4 className="text-gray-500 font-bold uppercase text-[10px] tracking-wider">Time</h4>
+                                <p className="text-white font-medium text-sm">{event.time || "TBA"}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {/* Footer / CTA */}
-                <div className="p-8 pt-0 flex justify-end">
+                {/* Whatsapp Link button */}
+                <div className="p-8 pt-0 flex justify-between gap-4">
+                    <a
+                        href={event.whatsappLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex-1 md:flex-none flex items-center justify-center px-6 py-4 bg-green-500 text-black font-bold uppercase tracking-widest hover:bg-green-400 transition-colors duration-300 text-center rounded-lg">
+                        <MessageCircle className="mr-2" size={20} />Whatsapp Group
+                    </a>
                     <a
                         href={event.regLink}
                         target="_blank"
                         rel="noreferrer"
-                        className="w-full md:w-auto px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-colors duration-300 text-center rounded-lg"
-                    >
-                        Register Now
+                        className="flex-1 md:flex-none flex items-center justify-center px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors duration-300 text-center rounded-lg">
+                        <ExternalLink className="mr-2" size={20} />Register Now
                     </a>
                 </div>
             </div>

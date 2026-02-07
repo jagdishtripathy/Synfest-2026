@@ -10,9 +10,11 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Column */}
                     <div className="lg:col-span-2">
-                        <h2 className="text-[15vw] md:text-8xl font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800 mb-6 font-frakturi">
-                            SYNFEST
-                        </h2>
+                        <Link to="/" className="inline-block group">
+                            <h2 className="text-[15vw] md:text-8xl font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800 mb-6 font-frakturi transition-all duration-500 group-hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.6)] group-hover:to-white">
+                                SYNFEST
+                            </h2>
+                        </Link>
                         <p className="text-gray-400 max-w-md text-lg leading-relaxed">
                             The annual techno-cultural fest of Synergy Institute of Engineering & Technology. Where innovation meets tradition.
                         </p>
@@ -51,9 +53,19 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p className="text-gray-500 text-sm">
-                        &copy; {currentYear} Synfest. All rights reserved.
-                    </p>
+                    <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+                        <p className="text-gray-500 text-sm">
+                            &copy; {currentYear} Synfest. All rights reserved.
+                        </p>
+                        <a 
+                            href="https://www.linkedin.com/in/srsoumyax11" 
+                            target="_blank" 
+                            rel="noreferrer"
+                            className="text-sm font-medium text-gray-400 hover:text-white transition-colors flex items-center gap-1.5"
+                        >
+                            Made with <span className="text-red-500 animate-pulse">❤️</span> by Soham
+                        </a>
+                    </div>
 
                     <div className="flex gap-6">
                         <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Instagram size={24} /></a>

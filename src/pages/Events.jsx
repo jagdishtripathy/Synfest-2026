@@ -50,16 +50,16 @@ export default function Events() {
         <div ref={containerRef} className="min-h-screen pt-10 pb-20 px-6 md:px-12 bg-[#0a0a0a] text-white relative">
 
             {/* Back to Home Button */}
-            <Link
+            {/* <Link
                 to="/"
                 className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8 md:mb-12 group"
             >
                 <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
                 <span className="uppercase text-xs font-bold tracking-widest">Back to Home</span>
-            </Link>
+            </Link> */}
 
             <div className="container mx-auto">
-                <h1 ref={titleRef} className="text-6xl md:text-8xl font-black mb-12 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
+                <h1 ref={titleRef} className="text-6xl md:text-8xl font-black mb-12 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-10">
                     The Events
                 </h1>
 
