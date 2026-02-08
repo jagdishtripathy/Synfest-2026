@@ -55,7 +55,7 @@ export default function Leadership() {
                         pin: true,
                         scrub: 1,
                         start: 'top top',
-                        end: () => `+=${scrollWidth + window.innerHeight}`,
+                        end: () => `+=${scrollWidth}`,
                     }
                 });
             });
@@ -65,7 +65,7 @@ export default function Leadership() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="bg-black text-white relative overflow-hidden min-h-screen">
+        <section ref={sectionRef} className="bg-black text-white relative overflow-hidden">
             <div className="container mx-auto px-6 relative">
                 {/* Sticky Title */}
                 <div className="sticky top-16 h-screen flex flex-col justify-start z-0 pointer-events-none">

@@ -121,7 +121,7 @@ export default function Showcase() {
     }, []);
 
     return (
-        <section id="highlights" className="min-h-screen bg-[#0a0a0a] overflow-hidden flex flex-col justify-center relative">
+        <section id="highlights" className="min-h-screen pb-20 overflow-hidden flex flex-col justify-center relative">
             <div className="container mx-auto px-6 mb-12 text-center relative z-10">
                 <h2 className="text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-b from-white to-yellow-500 font-frakturi">
                     Highlights
@@ -144,9 +144,9 @@ export default function Showcase() {
             </div>
 
             {/* Gradient Overlay for Fade Effect */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a] pointer-events-none z-10"></div>
-            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent pointer-events-none z-10"></div>
-            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent pointer-events-none z-10"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a] pointer-events-none z-10"></div> */}
+            {/* <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent pointer-events-none z-10"></div> */}
+            {/* <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent pointer-events-none z-10"></div> */}
             
             <style jsx>{`
                 @keyframes scroll {
