@@ -36,6 +36,7 @@ const dignitaries = [
 ];
 
 export default function Leadership() {
+    const wrapperRef = useRef(null); // Wrapper for GSAP pin spacer
     const sectionRef = useRef(null);
     const cardsContainerRef = useRef(null);
 
@@ -45,6 +46,7 @@ export default function Leadership() {
 
             mm.add("(min-width: 768px)", () => {
                 const cards = cardsContainerRef.current;
+                if (!cards) return;
                 const scrollWidth = cards.scrollWidth - window.innerWidth;
 
                 gsap.to(cards, {
@@ -59,47 +61,89 @@ export default function Leadership() {
                     }
                 });
             });
-        }, sectionRef);
+        }, wrapperRef); // Context scoped to wrapper
 
-        return () => ctx.revert();
+        return () => {
+            // Kill all ScrollTriggers in this context
+            ScrollTrigger.getAll().forEach(t => t.kill());
+            ctx.revert();
+        };
     }, []);
 
     return (
-        <section ref={sectionRef} className="bg-black text-white relative overflow-hidden">
-            <div className="container mx-auto px-6 relative">
-                {/* Sticky Title */}
-                <div className="sticky top-16 h-screen flex flex-col justify-start z-0 pointer-events-none">
-                    <p className="text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm md:text-base pl-2">Guiding Lights</p>
-                    <h2 className="text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white leading-[0.8] opacity-90 font-frakturi max-w-[100%]">
-                        Visionaries
-                    </h2>
-                </div>
+        // WRAPPER DIV - Critical for React + GSAP pin compatibility
+        <div ref={wrapperRef}>
+            <section ref={sectionRef} className="bg-black text-white relative overflow-hidden">
+                <div className="container mx-auto px-6 relative">
+                    {/* Sticky Title */}
+                    <div className="sticky top-16 h-screen flex flex-col justify-start z-0 pointer-events-none">
+                        <p className="text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm md:text-base pl-2">Guiding Lights</p>
+                        <h2 className="text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white leading-[0.8] opacity-90 font-frakturi max-w-[100%]">
+                            Visionaries
+                        </h2>
+                    </div>
 
-                {/* Horizontal Cards Container - Desktop Only */}
-                <div className="hidden md:block h-screen relative z-20 -mt-[70vh]">
-                    <div 
-                        ref={cardsContainerRef}
-                        className="flex flex-row gap-4 items-center pl-[50vw]"
-                        style={{ width: 'max-content' }}
-                    >
+                    {/* Horizontal Cards Container - Desktop Only */}
+                    <div className="hidden md:block h-screen relative z-20 -mt-[70vh]">
+                        <div
+                            ref={cardsContainerRef}
+                            className="flex flex-row gap-4 items-center pl-[50vw]"
+                            style={{ width: 'max-content' }}
+                        >
+                            {dignitaries.map((person) => (
+                                <div
+                                    key={person.id}
+                                    className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] w-[700px] h-[380px] shrink-0"
+                                >
+                                    {/* Image Section */}
+                                    <div className="w-2/5 h-full relative shrink-0">
+                                        <img
+                                            src={person.image}
+                                            alt={person.name}
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
+                                    </div>
+
+                                    {/* Content Section */}
+                                    <div className="w-3/5 p-8 flex flex-col justify-center relative">
+                                        <div className="mb-4">
+                                            <h3 className="text-3xl font-bold text-white mb-2">
+                                                {person.name}
+                                            </h3>
+                                            <p className="text-primary font-bold tracking-widest uppercase text-xs">
+                                                {person.title}
+                                            </p>
+                                        </div>
+
+                                        <blockquote className="text-base font-serif italic text-gray-300 leading-relaxed border-l-4 border-primary pl-4 py-2">
+                                            "{person.quote}"
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            ))}
+                            <div className="w-[10vw] shrink-0"></div> {/* Spacer */}
+                        </div>
+                    </div>
+
+                    {/* Mobile Vertical Layout */}
+                    <div className="md:hidden flex flex-col gap-16 pb-20 -mt-[80vh] relative z-20">
                         {dignitaries.map((person) => (
                             <div
                                 key={person.id}
-                                className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] w-[700px] h-[380px] shrink-0"
+                                className="flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] max-w-full mx-auto"
                             >
-                                {/* Image Section */}
-                                <div className="w-2/5 h-full relative shrink-0">
+                                <div className="w-full h-[300px] relative">
                                     <img
                                         src={person.image}
                                         alt={person.name}
                                         className="w-full h-full object-cover"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
                                 </div>
 
-                                {/* Content Section */}
-                                <div className="w-3/5 p-8 flex flex-col justify-center relative">
-                                    <div className="mb-4">
+                                <div className="p-6 flex flex-col justify-center relative">
+                                    <div className="mb-6">
                                         <h3 className="text-3xl font-bold text-white mb-2">
                                             {person.name}
                                         </h3>
@@ -108,50 +152,15 @@ export default function Leadership() {
                                         </p>
                                     </div>
 
-                                    <blockquote className="text-base font-serif italic text-gray-300 leading-relaxed border-l-4 border-primary pl-4 py-2">
+                                    <blockquote className="text-lg font-serif italic text-gray-300 leading-relaxed border-l-4 border-primary pl-4 py-2">
                                         "{person.quote}"
                                     </blockquote>
                                 </div>
                             </div>
                         ))}
-                        <div className="w-[10vw] shrink-0"></div> {/* Spacer */}
                     </div>
                 </div>
-
-                {/* Mobile Vertical Layout */}
-                <div className="md:hidden flex flex-col gap-16 pb-20 -mt-[80vh] relative z-20">
-                    {dignitaries.map((person) => (
-                        <div
-                            key={person.id}
-                            className="flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] max-w-full mx-auto"
-                        >
-                            <div className="w-full h-[300px] relative">
-                                <img
-                                    src={person.image}
-                                    alt={person.name}
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
-                            </div>
-
-                            <div className="p-6 flex flex-col justify-center relative">
-                                <div className="mb-6">
-                                    <h3 className="text-3xl font-bold text-white mb-2">
-                                        {person.name}
-                                    </h3>
-                                    <p className="text-primary font-bold tracking-widest uppercase text-xs">
-                                        {person.title}
-                                    </p>
-                                </div>
-
-                                <blockquote className="text-lg font-serif italic text-gray-300 leading-relaxed border-l-4 border-primary pl-4 py-2">
-                                    "{person.quote}"
-                                </blockquote>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     );
 }
