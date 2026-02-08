@@ -56,9 +56,9 @@ export default function EventModal({ event, onClose }) {
                 </div>
 
                 {/* Details Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 pb-2">
-                    <div className="space-y-3">
-                        <div className="flex items-start gap-3 p-3 bg-white/5 rounded-xl border border-white/5 mb-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+                    <div className="grid grid-cols-2 md:grid-cols-1 gap-2">
+                        <div className="flex items-start gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
                             <span className="text-xl mt-0.5">👥</span>
                             <div>
                                 <h4 className="text-white font-bold uppercase text-xs">Team Size</h4>
@@ -78,7 +78,7 @@ export default function EventModal({ event, onClose }) {
                     <div className="p-3 bg-white/5 rounded-xl border border-white/5">
                         <div className="flex items-center gap-2 mb-2">
                             <span className="text-xl">📜</span>
-                            <h4 className="text-white font-bold uppercase text-xs">Rules & Regulations</h4>
+                            <h4 className="text-white font-bold uppercase text-sm">Rules & Regulations</h4>
                         </div>
                         <ul className="text-xs text-gray-400 space-y-1.5 list-disc list-inside">
                             {event.rules?.map((rule, i) => (
@@ -122,7 +122,7 @@ export default function EventModal({ event, onClose }) {
 
                 {/* Footer / CTA */}
                 {/* Whatsapp Link button */}
-                <div className="p-8 pt-0 flex justify-between gap-4">
+                <div className="p-2 pt-0 flex justify-between gap-2">
                     <a
                         href={event.whatsappLink}
                         target="_blank"
