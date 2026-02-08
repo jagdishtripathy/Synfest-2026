@@ -121,9 +121,9 @@ export default function Showcase() {
     }, []);
 
     return (
-        <section id="highlights" className="min-h-screen py-24 bg-[#0a0a0a] overflow-hidden flex flex-col justify-center relative">
+        <section id="highlights" className="min-h-screen bg-[#0a0a0a] overflow-hidden flex flex-col justify-center relative">
             <div className="container mx-auto px-6 mb-12 text-center relative z-10">
-                <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800">
+                <h2 className="text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-b from-white to-yellow-500 font-frakturi">
                     Highlights
                 </h2>
                 <p className="text-gray-400 mt-4 max-w-lg mx-auto">

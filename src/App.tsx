@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SmoothScroll from './components/layout/SmoothScroll';
-import Cursor from './components/ui/Cursor';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import HomeHero from './components/home/Hero';
 import About from './components/home/About';
 import Leadership from './components/home/Leadership';
 import Showcase from './components/home/Showcase';
-import Sponsors from './components/home/Sponsors';
+// import Sponsors from './components/home/Sponsors';
 import EventsLink from './components/home/EventsLink';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
@@ -19,7 +18,7 @@ function Home() {
       <About />
       <Leadership />
       <Showcase />
-      <Sponsors />
+      {/* <Sponsors /> */}
       <EventsLink />
     </>
   );
@@ -33,7 +32,6 @@ function App() {
       <Router>
         <SmoothScroll>
           <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-primary selection:text-white">
-            <Cursor />
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Phone } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { formalEvents, informalEvents, games } from '../data/events';
 import EventModal from '../components/events/EventModal';
 
@@ -9,8 +9,6 @@ export default function Events() {
     const [activeTab, setActiveTab] = useState('formal');
     const [selectedEvent, setSelectedEvent] = useState(null);
     const containerRef = useRef(null);
-    const titleRef = useRef(null);
-    const listRef = useRef(null);
 
     const categories = [
         { id: 'formal', label: 'Formal Events', data: formalEvents },
@@ -20,43 +18,9 @@ export default function Events() {
 
     const currentEvents = categories.find(c => c.id === activeTab)?.data || [];
 
-    useEffect(() => {
-        // Animate title on mount
-        gsap.from(titleRef.current, {
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: 'power3.out',
-        });
-    }, []);
-
-    useEffect(() => {
-        // Animate list items when tab changes
-        if (listRef.current) {
-            gsap.fromTo(listRef.current.children,
-                { y: 20, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.5,
-                    stagger: 0.05,
-                    ease: 'power2.out'
-                }
-            );
-        }
-    }, [activeTab]);
-
     return (
         <div ref={containerRef} className="min-h-screen pt-10 pb-20 px-6 md:px-12 bg-[#0a0a0a] text-white relative">
 
-            {/* Back to Home Button */}
-            {/* <Link
-                to="/"
-                className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8 md:mb-12 group"
-            >
-                <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-                <span className="uppercase text-xs font-bold tracking-widest">Back to Home</span>
-            </Link> */}
 
             <div className="container mx-auto relative">
                 <div className="absolute top-0 right-0 mt-10 md:mt-12 hidden md:block">
@@ -66,7 +30,7 @@ export default function Events() {
                     </Link>
                 </div>
 
-                <h1 ref={titleRef} className="text-6xl md:text-8xl font-black mb-12 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-10">
+                <h1 className="text-6xl md:text-8xl font-black mb-12 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-10">
                     The Events
                 </h1>
 
@@ -87,7 +51,7 @@ export default function Events() {
                 </div>
 
                 {/* Event List */}
-                <div ref={listRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {currentEvents.map((event) => (
                         <div
                             key={event.id}
