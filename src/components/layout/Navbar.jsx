@@ -62,21 +62,21 @@ export default function Navbar() {
         { name: 'Home', path: '/' },
         { name: 'About', path: '/#about' },
         { name: 'Highlights', path: '/#highlights' },
-        { name: 'Sponsors', path: '/#sponsors' },
+        // { name: 'Sponsors', path: '/#sponsors' },
         { name: 'Contact', path: '/contact' },
     ];
 
-    const scrollToSection = (e, path) => {
-        if (path.startsWith('/#')) {
-            const id = path.split('#')[1];
-            const element = document.getElementById(id);
-            if (element) {
-                e.preventDefault();
-                element.scrollIntoView({ behavior: 'smooth' });
-                setIsOpen(false);
-            }
-        }
-    };
+    // const scrollToSection = (e, path) => {
+    //     if (path.startsWith('/#')) {
+    //         const id = path.split('#')[1];
+    //         const element = document.getElementById(id);
+    //         if (element) {
+    //             e.preventDefault();
+    //             element.scrollIntoView({ behavior: 'smooth' });
+    //             setIsOpen(false);
+    //         }
+    //     }
+    // };
 
     return (
         <>
