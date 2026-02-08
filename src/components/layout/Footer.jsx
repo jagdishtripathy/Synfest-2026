@@ -11,8 +11,8 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="lg:col-span-2">
                         <Link to="/" className="inline-block group">
-                            <h2 className="text-[15vw] md:text-8xl font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800 mb-6 font-frakturi transition-all duration-500 group-hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.6)] group-hover:to-white">
-                                SYNFEST
+                            <h2 className="text-[15vw] md:text-8xl font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800 mb-6 font-frakturi transition-all duration-500 group-hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.6)] group-hover:to-red">
+                                SYNFEST.
                             </h2>
                         </Link>
                         <p className="text-gray-400 max-w-md text-lg leading-relaxed">
