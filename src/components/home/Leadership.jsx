@@ -232,76 +232,26 @@ export default function Leadership() {
                                 </div>
                             ))}
 
-                            {/* Wing Divider - Diploma */}
-                            <div className="w-px h-64 bg-gradient-to-b from-transparent via-white/30 to-transparent mx-8"></div>
-
-                            {/* Diploma Wing */}
-                            {leadershipData.diploma.map((person) => (
-                                <div key={person.id} className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[700px] h-[380px] shrink-0">
-                                    <div className="w-2/5 h-full relative shrink-0">
-                                        <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
-                                        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
+                            {/* Standard Wings Loop */}
+                            {[
+                                { key: "diploma", color: "text-orange-400", border: "border-orange-500" },
+                                { key: "bsc", color: "text-green-400", border: "border-green-500" },
+                                { key: "btech", color: "text-blue-400", border: "border-blue-500" },
+                                { key: "nursing", color: "text-pink-400", border: "border-pink-500" }
+                            ].map((wing) => (
+                                leadershipData[wing.key].map((person) => (
+                                    <div key={person.id} className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[700px] h-[380px] shrink-0">
+                                        <div className="w-2/5 h-full relative shrink-0">
+                                            <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
+                                            <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
+                                        </div>
+                                        <div className="w-3/5 p-8 flex flex-col justify-center relative">
+                                            <h3 className="text-3xl font-bold text-white mb-2">{person.name}</h3>
+                                            <p className={`${wing.color} font-bold tracking-widest uppercase text-xs mb-4`}>{person.title}</p>
+                                            <blockquote className={`text-base font-serif italic text-gray-300 border-l-4 ${wing.border} pl-4 py-2`}>"{person.quote}"</blockquote>
+                                        </div>
                                     </div>
-                                    <div className="w-3/5 p-8 flex flex-col justify-center relative">
-                                        <h3 className="text-3xl font-bold text-white mb-2">{person.name}</h3>
-                                        <p className="text-orange-400 font-bold tracking-widest uppercase text-xs mb-4">{person.title}</p>
-                                        <blockquote className="text-base font-serif italic text-gray-300 border-l-4 border-orange-500 pl-4 py-2">"{person.quote}"</blockquote>
-                                    </div>
-                                </div>
-                            ))}
-
-                            {/* Wing Divider - B.Sc */}
-                            <div className="w-px h-64 bg-gradient-to-b from-transparent via-white/30 to-transparent mx-8"></div>
-
-                            {/* B.Sc Wing */}
-                            {leadershipData.bsc.map((person) => (
-                                <div key={person.id} className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[700px] h-[380px] shrink-0">
-                                    <div className="w-2/5 h-full relative shrink-0">
-                                        <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
-                                        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
-                                    </div>
-                                    <div className="w-3/5 p-8 flex flex-col justify-center relative">
-                                        <h3 className="text-3xl font-bold text-white mb-2">{person.name}</h3>
-                                        <p className="text-green-400 font-bold tracking-widest uppercase text-xs mb-4">{person.title}</p>
-                                        <blockquote className="text-base font-serif italic text-gray-300 border-l-4 border-green-500 pl-4 py-2">"{person.quote}"</blockquote>
-                                    </div>
-                                </div>
-                            ))}
-
-                            {/* Wing Divider - B.Tech */}
-                            <div className="w-px h-64 bg-gradient-to-b from-transparent via-white/30 to-transparent mx-8"></div>
-
-                            {/* B.Tech Wing */}
-                            {leadershipData.btech.map((person) => (
-                                <div key={person.id} className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[700px] h-[380px] shrink-0">
-                                    <div className="w-2/5 h-full relative shrink-0">
-                                        <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
-                                        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
-                                    </div>
-                                    <div className="w-3/5 p-8 flex flex-col justify-center relative">
-                                        <h3 className="text-3xl font-bold text-white mb-2">{person.name}</h3>
-                                        <p className="text-blue-400 font-bold tracking-widest uppercase text-xs mb-4">{person.title}</p>
-                                        <blockquote className="text-base font-serif italic text-gray-300 border-l-4 border-blue-500 pl-4 py-2">"{person.quote}"</blockquote>
-                                    </div>
-                                </div>
-                            ))}
-
-                            {/* Wing Divider - Nursing */}
-                            <div className="w-px h-64 bg-gradient-to-b from-transparent via-white/30 to-transparent mx-8"></div>
-
-                            {/* Nursing Wing */}
-                            {leadershipData.nursing.map((person) => (
-                                <div key={person.id} className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[700px] h-[380px] shrink-0">
-                                    <div className="w-2/5 h-full relative shrink-0">
-                                        <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
-                                        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
-                                    </div>
-                                    <div className="w-3/5 p-8 flex flex-col justify-center relative">
-                                        <h3 className="text-3xl font-bold text-white mb-2">{person.name}</h3>
-                                        <p className="text-pink-400 font-bold tracking-widest uppercase text-xs mb-4">{person.title}</p>
-                                        <blockquote className="text-base font-serif italic text-gray-300 border-l-4 border-pink-500 pl-4 py-2">"{person.quote}"</blockquote>
-                                    </div>
-                                </div>
+                                ))
                             ))}
 
                             <div className="w-[10vw] shrink-0"></div> {/* Spacer */}
