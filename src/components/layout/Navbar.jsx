@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { gsap } from 'gsap';
+import MuteToggle from '../ui/MuteToggle';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -100,18 +101,24 @@ export default function Navbar() {
                     ))}
                 </div>
 
-                {/* Desktop CTA */}
-                <Link
-                    to="/events"
-                    className="hidden md:block px-6 py-3 bg-primary text-white font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-300 transform hover:-translate-y-1"
-                >
-                    Events
-                </Link>
+                {/* Right side controls - flex container */}
+                <div className="flex items-center gap-4">
+                    {/* Mute Toggle - always visible */}
+                    <MuteToggle />
 
-                {/* Mobile Menu Toggle */}
-                <button onClick={toggleMenu} className="md:hidden z-50 relative w-8 h-8 flex items-center justify-center">
-                    {isOpen ? <X size={28} /> : <Menu size={28} />}
-                </button>
+                    {/* Desktop CTA */}
+                    <Link
+                        to="/events"
+                        className="hidden md:block px-6 py-3 bg-primary text-white font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-300 transform hover:-translate-y-1"
+                    >
+                        Events
+                    </Link>
+
+                    {/* Mobile Menu Toggle */}
+                    <button onClick={toggleMenu} className="md:hidden z-50 relative w-8 h-8 flex items-center justify-center">
+                        {isOpen ? <X size={28} /> : <Menu size={28} />}
+                    </button>
+                </div>
             </nav>
 
             {/* Backdrop for Outside Click */}

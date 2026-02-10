@@ -401,7 +401,7 @@ export const informalEvents = [
   },
   {
     id: "i12",
-    title: "Extempore",
+    title: "Pick & Speak (Extempore Speech)",
     description: "Impromptu speaking challenge.",
     rules: ["Preparation time: 2 mins.", "Speaking time: 2 mins."],
     teamSize: "1",
@@ -414,7 +414,7 @@ export const informalEvents = [
   },
   {
     id: "i13",
-    title: "Documentary",
+    title: "Documentary Movie",
     description: "Short film making contest.",
     rules: ["Max duration: 10 mins.", "Submit via drive link."],
     teamSize: "1-4",
@@ -613,7 +613,7 @@ export const games = [
   {
     id: "g8",
     title: "Yoga",
-    description: "Demonstrate at least 10 movements.",
+    description: "Demonstrate at least 10 movements in 3 min.",
     rules: ["Surya Namaskar mandatory.", "Judgment on flexibility."],
     teamSize: "1",
     venue: "Yoga Hall",

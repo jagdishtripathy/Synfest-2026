@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Volume2, VolumeX } from 'lucide-react';
 import { useVideoContext } from '../../context/VideoContext';
-import MuteToggle from '../ui/MuteToggle';
+// import MuteToggle from '../ui/MuteToggle';
 import Countdown from './Countdown';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -104,7 +104,7 @@ export default function HomeHero() {
             </div>
 
             {/* Mute Button - Bottom Right */}
-            <MuteToggle className="absolute bottom-10 right-10 z-30" />
+            {/* <MuteToggle className="absolute bottom-10 right-10 z-30" /> */}
 
             <div className="absolute bottom-10 left-0 w-full flex justify-between px-10 text-xs font-bold tracking-widest opacity-50 uppercase z-20 pointer-events-none">
                 <span>Dhenkanal, OD</span>
