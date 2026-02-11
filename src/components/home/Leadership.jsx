@@ -325,7 +325,7 @@ export default function Leadership() {
                                 <div key={i} className="flex flex-col gap-2 mb-2">
 
                                     {/* Horizontal Scroll Strip (Netflix Style) */}
-                                    <div className="flex overflow-x-auto gap-4 px-6 pr-0 snap-x snap-mandatory scrollbar-hide relative items-stretch">
+                                    <div className="flex overflow-x-auto gap-2 px-6 pr-0 snap-x snap-mandatory scrollbar-hide relative ">
 
                                         {/* STICKY WING TITLE CARD */}
                                         <div className={`sticky left-0 shrink-0 w-[100vw] rounded-2xl overflow-hidden border border-white/5 ${wing.bg} backdrop-blur-sm flex flex-col justify-center  z-0`}>
@@ -336,22 +336,25 @@ export default function Leadership() {
                                         </div>
 
                                         {/* MEMBER CARDS (Scroll Over) */}
-                                        {members.map((person) => (
-                                            <div
-                                                key={person.id}
-                                                className="snap-center ml-4 mr-4 mt-2 mb-2 shrink-0 w-[30vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md z-10 ml-[-20px] first:ml-0" >
-                                                <img
-                                                    src={person.image}
-                                                    alt={person.name}
-                                                    className="absolute inset-0 w-full h-full object-cover"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
-                                                <div className="absolute bottom-0 left-0 w-full p-3">
-                                                    <h4 className="text-sm font-bold text-white leading-tight mb-1">{person.name}</h4>
-                                                    <p className={`${wing.color} text-xs font-bold tracking-wider`}>{person.title}</p>
+                                        {members.map((person, index) => {
+                                            return (
+                                                <div
+                                                    key={person.id}
+                                                    className={`snap-center shrink-0 w-[40vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md z-10 first:ml-0`}
+                                                >
+                                                    <img
+                                                        src={person.image}
+                                                        alt={person.name}
+                                                        className="absolute inset-0 w-full h-full object-cover"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+                                                    <div className="absolute bottom-0 left-0 w-full p-3">
+                                                        <h4 className="text-lg font-bold text-white leading-tight mb-1">{person.name}</h4>
+                                                        <p className={`${wing.color} font-bold uppercase tracking-wider text-[10px]`}>{person.title}</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        ))}
+                                            );
+                                        })}
                                         {/* Spacer for right padding */}
                                         <div className="w-2 shrink-0"></div>
                                     </div>
