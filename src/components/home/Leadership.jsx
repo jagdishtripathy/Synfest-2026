@@ -1,13 +1,43 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// Ok go 
-// I have added some new photo {"file":{"numFiles":1,"absoluteUri":"file:///d%3A/Web_Development/Synfest%202026/public/Mr-Biswajit-Mishra-coordinator-diploma.jpeg","workspaceUrisToRelativePaths":{"file:///d%3A/Web_Development/Synfest%202026":"public/Mr-Biswajit-Mishra-coordinator-diploma.jpeg"}}} {"file":{"numFiles":1,"absoluteUri":"file:///d%3A/Web_Development/Synfest%202026/public/Mrs-Helen-Behera-coordinator-nursing.jpeg","workspaceUrisToRelativePaths":{"file:///d%3A/Web_Development/Synfest%202026":"public/Mrs-Helen-Behera-coordinator-nursing.jpeg"}}} {"file":{"numFiles":1,"absoluteUri":"file:///d%3A/Web_Development/Synfest%202026/public/Ms-Suchismita-Pattanaik-co-coordinator-nursing.jpeg","workspaceUrisToRelativePaths":{"file:///d%3A/Web_Development/Synfest%202026":"public/Ms-Suchismita-Pattanaik-co-coordinator-nursing.jpeg"}}} 
-
-// Import themand also do you r tsk proposed properly 
-
 
 gsap.registerPlugin(ScrollTrigger);
+
+// Helper to calculate grid configuration based on member count
+const getGridConfig = (count) => {
+    // Dimensions
+    const LARGE_WIDTH = "364px";
+    const SMALL_WIDTH = "174px";
+
+    // Config object
+    let config = {
+        template: "",
+        largeIndices: [] // Indices of items that should be Large (Span 2 Rows)
+    };
+
+    if (count === 1) {
+        config.template = `${LARGE_WIDTH}`;
+        config.largeIndices = [0];
+    } else if (count === 2) {
+        config.template = `${LARGE_WIDTH} ${LARGE_WIDTH}`;
+        config.largeIndices = [0, 1];
+    } else if (count % 2 !== 0) {
+        // Odd numbers (3, 5, 7, etc.) -> 1 Large + (n-1) Small stacked
+        // 1 Large col + (n-1)/2 Small cols
+        const smallCols = (count - 1) / 2;
+        config.template = `${LARGE_WIDTH} repeat(${smallCols}, ${SMALL_WIDTH})`;
+        config.largeIndices = [0]; // First one is large
+    } else {
+        // Even numbers >= 4 (4, 6, 8...) -> All Small
+        // n/2 Small cols
+        const cols = count / 2;
+        config.template = `repeat(${cols}, ${SMALL_WIDTH})`;
+        config.largeIndices = []; // None are large
+    }
+
+    return config;
+};
 
 const leadershipData = {
     admin: [
@@ -83,28 +113,7 @@ const leadershipData = {
             name: "Ms. Rutuparna Sahoo",
             title: "Cultural Co-ordinator (B.Sc)",
             quote: "Science and art are two sides of the same coin.",
-            image: "/Ms-Rutuparna-Sahoo-BSC-cultural-co-ordinator.jpeg" // Fixed extension
-        },
-        {
-            id: "b2",
-            name: "Faculty Member",
-            title: "Member (B.Sc)",
-            quote: "Exploring the unknown boundaries of science.",
-            image: "/Spiderman.png"
-        },
-        {
-            id: "b3",
-            name: "Faculty Member",
-            title: "Member (B.Sc)",
-            quote: "Knowledge is the path to greatness.",
-            image: "/Spiderwoman.png"
-        },
-        {
-            id: "b4",
-            name: "Faculty Member",
-            title: "Member (B.Sc)",
-            quote: "Inspiring the next generation.",
-            image: "/Spiderman.png"
+            image: "/Ms-Rutuparna-Sahoo-BSC-cultural-co-ordinator.jpeg"
         }
     ],
     btech: [
@@ -113,28 +122,7 @@ const leadershipData = {
             name: "Prof. S. Das",
             title: "Principal (B.Tech)",
             quote: "Building character through challenges.",
-            image: "/Spiderman.png" // Using person2 as Principal placeholders
-        },
-        {
-            id: "bt2",
-            name: "Faculty Member",
-            title: "Co-ordinator (B.Tech)",
-            quote: "Engineering the future, today.",
-            image: "/Spiderman.png"
-        },
-        {
-            id: "bt3",
-            name: "Faculty Member",
-            title: "Member (B.Tech)",
-            quote: "Innovation starts with a single idea.",
-            image: "/Spiderwoman.png"
-        },
-        {
-            id: "bt4",
-            name: "Faculty Member",
-            title: "Member (B.Tech)",
-            quote: "Technology for a better world.",
-            image: "/Spiderman.png"
+            image: "/Mr-Pratyusabhanu-Khuntia-Asst-Professor-CSE-Cultural-member.jpeg"
         }
     ],
     nursing: [
@@ -207,12 +195,11 @@ export default function Leadership() {
     return (
         // WRAPPER DIV - Critical for React + GSAP pin compatibility
         <div ref={wrapperRef}>
-            <section ref={sectionRef} className="bg-black text-white relative overflow-hidden">
-                <div className="container mx-auto px-6 relative">
+            <section ref={sectionRef} className="bg-black text-white relative overflow-hidden pt-15">
+                <div className="">
                     {/* Sticky Title */}
-                    <div className="sticky top-16 h-screen flex flex-col justify-start z-0 pointer-events-none">
-                        <p className="text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm md:text-base pl-2">Guiding Lights</p>
-                        <h2 className="text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white leading-[0.8] opacity-90 font-frakturi max-w-[100%]">
+                    <div className="h-screen flex flex-col justify-start z-0 pointer-events-none">
+                        <h2 className="text-center text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white leading-[0.8] opacity-90 font-frakturi max-w-[100%]">
                             Visionaries
                         </h2>
                     </div>
@@ -226,7 +213,7 @@ export default function Leadership() {
                         >
                             {/* Admin/Chairman Section (Special Styling) */}
                             {leadershipData.admin.map((person) => (
-                                <div key={person.id} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-xl shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[700px] h-[380px] shrink-0 mr-12 relative">
+                                <div key={person.id} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-sm shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[700px] h-[380px] shrink-0 mr-12 relative">
                                     {/* Glowing Effect */}
                                     <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/20 rounded-full blur-[80px] pointer-events-none"></div>
 
@@ -244,38 +231,35 @@ export default function Leadership() {
                                 </div>
                             ))}
 
-                            {/* Standard Wings Loop with Adaptive Grid */}
+                            {/* Standard Wings Loop with Dynamic Grid */}
                             {[
-                                { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
-                                { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
                                 { key: "btech", color: "text-blue-400", border: "border-blue-500", bg: "bg-blue-500/10" },
-                                { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" }
+                                { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
+                                { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" },
+                                { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
                             ].map((wing) => {
                                 const members = leadershipData[wing.key];
-                                const count = members.length;
-
-                                // Determine Grid Layout based on member count
-                                let gridClass = "grid-cols-2 grid-rows-2"; // Default 4 members
-                                if (count === 1) gridClass = "grid-cols-1";
-                                if (count === 8) gridClass = "grid-cols-4 grid-rows-2";
-                                if (count === 7) gridClass = "grid-cols-4 grid-rows-3"; // Special Bento Layout
+                                const { template, largeIndices } = getGridConfig(members.length);
 
                                 return (
                                     <div
                                         key={wing.key}
-                                        className={`grid ${gridClass} gap-4 bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[900px] h-[480px] shrink-0 p-4 mr-8`}
+                                        className="grid gap-4 bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg h-[480px] shrink-0 p-4 mr-8"
+                                        style={{
+                                            gridTemplateColumns: template,
+                                            gridTemplateRows: "repeat(2, 1fr)",
+                                            gridAutoFlow: "column dense",
+                                            width: "max-content"
+                                        }}
                                     >
                                         {members.map((person, index) => {
-                                            // Determine Card Spanning for Bento Layout (7 members)
-                                            // Index 0 (Leader) takes Left Half (2 cols, 3 rows)
-                                            const isBentoLeader = count === 7 && index === 0;
-                                            const spanClass = isBentoLeader ? "col-span-2 row-span-3" : "col-span-1 row-span-1";
+                                            const isLarge = largeIndices.includes(index);
 
-                                            // Special styling for Grid Cards
+                                            // Special styling for Large Cards
                                             return (
                                                 <div
                                                     key={person.id}
-                                                    className={`relative group overflow-hidden rounded-xl border border-white/5 bg-white/5 ${spanClass} ${isBentoLeader ? wing.bg : ''}`}
+                                                    className={`relative group overflow-hidden rounded-xl border border-white/5 bg-white/5 ${isLarge ? 'row-span-2' : 'row-span-1'} ${isLarge ? wing.bg : ''}`}
                                                 >
                                                     {/* Image */}
                                                     <img
@@ -285,14 +269,14 @@ export default function Leadership() {
                                                     />
 
                                                     {/* Gradient Overlay */}
-                                                    <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent ${isBentoLeader ? 'opacity-60' : 'opacity-80'}`}></div>
+                                                    <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent ${isLarge ? 'opacity-60' : 'opacity-80'}`}></div>
 
                                                     {/* Content Overlay */}
-                                                    <div className="absolute bottom-0 left-0 w-full p-4 flex flex-col justify-end">
-                                                        <h3 className={`${isBentoLeader ? 'text-3xl' : 'text-sm'} font-bold text-white leading-tight mb-1`}>
+                                                    <div className={`absolute bottom-0 left-0 w-full flex flex-col justify-end ${isLarge ? 'p-6' : 'p-3'}`}>
+                                                        <h3 className={`${isLarge ? 'text-3xl' : 'text-lg'} font-bold text-white leading-tight mb-1`}>
                                                             {person.name}
                                                         </h3>
-                                                        <p className={`${wing.color} font-bold uppercase tracking-wider ${isBentoLeader ? 'text-sm' : 'text-[10px]'}`}>
+                                                        <p className={`${wing.color} font-bold uppercase tracking-wider ${isLarge ? 'text-sm' : 'text-[10px]'}`}>
                                                             {person.title}
                                                         </p>
                                                     </div>
@@ -308,46 +292,50 @@ export default function Leadership() {
                     </div>
 
                     {/* Mobile Vertical Layout */}
-                    <div className="md:hidden flex flex-col gap-16 pb-20 -mt-[80vh] relative z-20">
+                    <div className="md:hidden flex flex-col gap-8 pb-20 -mt-[90vh] relative z-20">
                         {/* Admin/Chairman Section */}
                         {leadershipData.admin.map((person) => (
-                            <div key={person.id} className="flex flex-col bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg max-w-full mx-auto">
-                                <div className="w-full h-[400px] relative">
-                                    <img src={person.image} alt={person.name} className="w-full h-full object-cover object-top" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
-                                </div>
-                                <div className="p-6 flex flex-col justify-center relative">
-                                    <h3 className="text-3xl font-bold text-white mb-2">{person.name}</h3>
-                                    <p className="text-amber-400 font-bold tracking-widest uppercase text-xs mb-4">{person.title}</p>
-                                    <blockquote className="text-lg font-serif italic text-gray-300 border-l-4 border-amber-500 pl-4 py-2">
-                                        "{person.quote}"
-                                    </blockquote>
+                            <div key={person.id} className="relative w-[70vw] aspect-[3/4] rounded-2xl overflow-hidden border border-amber-500/30 shadow-[0_0_40px_rgba(245,158,11,0.2)] mx-auto">
+                                <img
+                                    src={person.image}
+                                    alt={person.name}
+                                    className="absolute inset-0 w-full h-full object-cover object-top"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90"></div>
+
+                                <div className="absolute bottom-0 left-0 w-full p-4 flex flex-col">
+                                    <h3 className="text-2xl font-black text-white mb-2 leading-tight drop-shadow-lg">{person.name}</h3>
+                                    <p className="text-amber-400 font-bold uppercase text-xs mb-4 drop-shadow-md">{person.title}</p>
+                                    {/* <blockquote className="text-xs font-serif italic text-gray-200 border-l-4 border-amber-500 pl-4 py-1 leading-relaxed drop-shadow-sm"> */}
+                                    {/* "{person.quote}" */}
+                                    {/* </blockquote> */}
                                 </div>
                             </div>
                         ))}
 
                         {/* Mobile Wings Loop - Netflix Style */}
                         {[
-                            { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
-                            { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
                             { key: "btech", color: "text-blue-400", border: "border-blue-500", bg: "bg-blue-500/10" },
-                            { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" }
+                            { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
+                            { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" },
+                            { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
                         ].map((wing, i) => {
                             const members = leadershipData[wing.key];
                             return (
-                                <div key={i} className="flex flex-col gap-6 mb-8">
+                                // One div that will hold the Wings name in font 
+                                <div key={i} className="flex flex-col gap-2 mb-8">
                                     {/* Section Header */}
-                                    <div className="flex items-center gap-4 pl-6">
+                                    {/* <div className="flex items-center gap-4 pl-6">
                                         <div className={`h-8 w-1 ${wing.bg.replace('/10', '')} rounded-full`}></div>
                                         <h3 className={`text-2xl font-bold uppercase tracking-widest ${wing.color}`}>{wing.key} Wing</h3>
-                                    </div>
+                                    </div> */}
 
                                     {/* Horizontal Scroll Strip (Netflix Style) */}
-                                    <div className="flex overflow-x-auto gap-4 pb-4 px-6 snap-x snap-mandatory scrollbar-hide">
+                                    <div className="flex overflow-x-auto gap-4 px-6 snap-x snap-mandatory scrollbar-hide">
                                         {members.map((person) => (
                                             <div
                                                 key={person.id}
-                                                className="snap-center shrink-0 w-[220px] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md"
+                                                className="snap-center shrink-0 w-[50vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md"
                                             >
                                                 <img
                                                     src={person.image}
