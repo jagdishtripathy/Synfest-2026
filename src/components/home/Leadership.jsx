@@ -1,6 +1,11 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// Ok go 
+// I have added some new photo {"file":{"numFiles":1,"absoluteUri":"file:///d%3A/Web_Development/Synfest%202026/public/Mr-Biswajit-Mishra-coordinator-diploma.jpeg","workspaceUrisToRelativePaths":{"file:///d%3A/Web_Development/Synfest%202026":"public/Mr-Biswajit-Mishra-coordinator-diploma.jpeg"}}} {"file":{"numFiles":1,"absoluteUri":"file:///d%3A/Web_Development/Synfest%202026/public/Mrs-Helen-Behera-coordinator-nursing.jpeg","workspaceUrisToRelativePaths":{"file:///d%3A/Web_Development/Synfest%202026":"public/Mrs-Helen-Behera-coordinator-nursing.jpeg"}}} {"file":{"numFiles":1,"absoluteUri":"file:///d%3A/Web_Development/Synfest%202026/public/Ms-Suchismita-Pattanaik-co-coordinator-nursing.jpeg","workspaceUrisToRelativePaths":{"file:///d%3A/Web_Development/Synfest%202026":"public/Ms-Suchismita-Pattanaik-co-coordinator-nursing.jpeg"}}} 
+
+// Import themand also do you r tsk proposed properly 
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +20,13 @@ const leadershipData = {
         }
     ],
     diploma: [
+        {
+            id: "d0",
+            name: "Mr. Biswajit Mishra",
+            title: "Coordinator (Diploma)",
+            quote: "Leading with vision, inspiring with action.",
+            image: "/Mr-Biswajit-Mishra-coordinator-diploma.jpeg"
+        },
         {
             id: "d1",
             name: "Mr. Krushna Chandra Rout",
@@ -78,21 +90,21 @@ const leadershipData = {
             name: "Faculty Member",
             title: "Member (B.Sc)",
             quote: "Exploring the unknown boundaries of science.",
-            image: "https://avatar.iran.liara.run/public/job/teacher/male"
+            image: "/Spiderman.png"
         },
         {
             id: "b3",
             name: "Faculty Member",
             title: "Member (B.Sc)",
             quote: "Knowledge is the path to greatness.",
-            image: "https://avatar.iran.liara.run/public/job/teacher/female"
+            image: "/Spiderwoman.png"
         },
         {
             id: "b4",
             name: "Faculty Member",
             title: "Member (B.Sc)",
             quote: "Inspiring the next generation.",
-            image: "https://avatar.iran.liara.run/public/job/teacher/male"
+            image: "/Spiderman.png"
         }
     ],
     btech: [
@@ -101,58 +113,58 @@ const leadershipData = {
             name: "Prof. S. Das",
             title: "Principal (B.Tech)",
             quote: "Building character through challenges.",
-            image: "/person2.png" // Using person2 as Principal placeholders
+            image: "/Spiderman.png" // Using person2 as Principal placeholders
         },
         {
             id: "bt2",
             name: "Faculty Member",
             title: "Co-ordinator (B.Tech)",
             quote: "Engineering the future, today.",
-            image: "https://avatar.iran.liara.run/public/job/engineer/male"
+            image: "/Spiderman.png"
         },
         {
             id: "bt3",
             name: "Faculty Member",
             title: "Member (B.Tech)",
             quote: "Innovation starts with a single idea.",
-            image: "https://avatar.iran.liara.run/public/job/engineer/female"
+            image: "/Spiderwoman.png"
         },
         {
             id: "bt4",
             name: "Faculty Member",
             title: "Member (B.Tech)",
             quote: "Technology for a better world.",
-            image: "https://avatar.iran.liara.run/public/job/engineer/male"
+            image: "/Spiderman.png"
         }
     ],
     nursing: [
         {
             id: "n1",
-            name: "Faculty Member",
-            title: "Principal (Nursing)",
+            name: "Mrs. Helen Behera",
+            title: "Coordinator (Nursing)",
             quote: "Care, compassion, and commitment.",
-            image: "https://avatar.iran.liara.run/public/job/doctor/female"
+            image: "/Mrs-Helen-Behera-coordinator-nursing.jpeg"
         },
         {
             id: "n2",
-            name: "Faculty Member",
-            title: "Co-ordinator (Nursing)",
+            name: "Ms. Suchismita Pattanaik",
+            title: "Co-coordinator (Nursing)",
             quote: "Healing hands, caring hearts.",
-            image: "https://avatar.iran.liara.run/public/job/doctor/female"
+            image: "/Ms-Suchismita-Pattanaik-co-coordinator-nursing.jpeg"
         },
         {
             id: "n3",
             name: "Faculty Member",
             title: "Member (Nursing)",
             quote: "Service to humanity is service to God.",
-            image: "https://avatar.iran.liara.run/public/job/doctor/male"
+            image: "/Spiderwoman.png"
         },
         {
             id: "n4",
             name: "Faculty Member",
             title: "Member (Nursing)",
             quote: "Excellence in healthcare education.",
-            image: "https://avatar.iran.liara.run/public/job/doctor/female"
+            image: "/Spiderwoman.png"
         }
     ]
 };
@@ -232,27 +244,64 @@ export default function Leadership() {
                                 </div>
                             ))}
 
-                            {/* Standard Wings Loop */}
+                            {/* Standard Wings Loop with Adaptive Grid */}
                             {[
-                                { key: "diploma", color: "text-orange-400", border: "border-orange-500" },
-                                { key: "bsc", color: "text-green-400", border: "border-green-500" },
-                                { key: "btech", color: "text-blue-400", border: "border-blue-500" },
-                                { key: "nursing", color: "text-pink-400", border: "border-pink-500" }
-                            ].map((wing) => (
-                                leadershipData[wing.key].map((person) => (
-                                    <div key={person.id} className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[900px] h-[480px] shrink-0">
-                                        <div className="w-2/5 h-full relative shrink-0">
-                                            <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
-                                            <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
-                                        </div>
-                                        <div className="w-3/5 p-8 flex flex-col justify-center relative">
-                                            <h3 className="text-3xl font-bold text-white mb-2">{person.name}</h3>
-                                            <p className={`${wing.color} font-bold tracking-widest uppercase text-xs mb-4`}>{person.title}</p>
-                                            <blockquote className={`text-base font-serif italic text-gray-300 border-l-4 ${wing.border} pl-4 py-2`}>"{person.quote}"</blockquote>
-                                        </div>
+                                { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
+                                { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
+                                { key: "btech", color: "text-blue-400", border: "border-blue-500", bg: "bg-blue-500/10" },
+                                { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" }
+                            ].map((wing) => {
+                                const members = leadershipData[wing.key];
+                                const count = members.length;
+
+                                // Determine Grid Layout based on member count
+                                let gridClass = "grid-cols-2 grid-rows-2"; // Default 4 members
+                                if (count === 1) gridClass = "grid-cols-1";
+                                if (count === 8) gridClass = "grid-cols-4 grid-rows-2";
+                                if (count === 7) gridClass = "grid-cols-4 grid-rows-3"; // Special Bento Layout
+
+                                return (
+                                    <div
+                                        key={wing.key}
+                                        className={`grid ${gridClass} gap-4 bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[900px] h-[480px] shrink-0 p-4 mr-8`}
+                                    >
+                                        {members.map((person, index) => {
+                                            // Determine Card Spanning for Bento Layout (7 members)
+                                            // Index 0 (Leader) takes Left Half (2 cols, 3 rows)
+                                            const isBentoLeader = count === 7 && index === 0;
+                                            const spanClass = isBentoLeader ? "col-span-2 row-span-3" : "col-span-1 row-span-1";
+
+                                            // Special styling for Grid Cards
+                                            return (
+                                                <div
+                                                    key={person.id}
+                                                    className={`relative group overflow-hidden rounded-xl border border-white/5 bg-white/5 ${spanClass} ${isBentoLeader ? wing.bg : ''}`}
+                                                >
+                                                    {/* Image */}
+                                                    <img
+                                                        src={person.image}
+                                                        alt={person.name}
+                                                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                                    />
+
+                                                    {/* Gradient Overlay */}
+                                                    <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent ${isBentoLeader ? 'opacity-60' : 'opacity-80'}`}></div>
+
+                                                    {/* Content Overlay */}
+                                                    <div className="absolute bottom-0 left-0 w-full p-4 flex flex-col justify-end">
+                                                        <h3 className={`${isBentoLeader ? 'text-3xl' : 'text-sm'} font-bold text-white leading-tight mb-1`}>
+                                                            {person.name}
+                                                        </h3>
+                                                        <p className={`${wing.color} font-bold uppercase tracking-wider ${isBentoLeader ? 'text-sm' : 'text-[10px]'}`}>
+                                                            {person.title}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
                                     </div>
-                                ))
-                            ))}
+                                );
+                            })}
 
                             <div className="w-[10vw] shrink-0"></div> {/* Spacer */}
                         </div>
@@ -277,32 +326,47 @@ export default function Leadership() {
                             </div>
                         ))}
 
-                        {/* Wings Loop */}
+                        {/* Mobile Wings Loop - Netflix Style */}
                         {[
-                            { name: "Diploma Wing", data: leadershipData.diploma, color: "text-orange-400", border: "border-orange-500" },
-                            { name: "B.Sc Wing", data: leadershipData.bsc, color: "text-green-400", border: "border-green-500" },
-                            { name: "B.Tech Wing", data: leadershipData.btech, color: "text-blue-400", border: "border-blue-500" },
-                            { name: "Nursing Wing", data: leadershipData.nursing, color: "text-pink-400", border: "border-pink-500" }
-                        ].map((wing, i) => (
-                            <div key={i} className="flex flex-col gap-6">
-                                <h3 className={`text-2xl font-bold uppercase tracking-widest pl-4 border-l-4 ${wing.border} ${wing.color}`}>{wing.name}</h3>
-                                {wing.data.map((person) => (
-                                    <div key={person.id} className="flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg max-w-full mx-auto">
-                                        <div className="w-full h-[300px] relative">
-                                            <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
-                                        </div>
-                                        <div className="p-6 flex flex-col justify-center relative">
-                                            <h3 className="text-2xl font-bold text-white mb-2">{person.name}</h3>
-                                            <p className={`${wing.color} font-bold tracking-widest uppercase text-xs mb-4`}>{person.title}</p>
-                                            <blockquote className={`text-base font-serif italic text-gray-300 border-l-4 ${wing.border} pl-4 py-2`}>
-                                                "{person.quote}"
-                                            </blockquote>
-                                        </div>
+                            { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
+                            { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
+                            { key: "btech", color: "text-blue-400", border: "border-blue-500", bg: "bg-blue-500/10" },
+                            { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" }
+                        ].map((wing, i) => {
+                            const members = leadershipData[wing.key];
+                            return (
+                                <div key={i} className="flex flex-col gap-6 mb-8">
+                                    {/* Section Header */}
+                                    <div className="flex items-center gap-4 pl-6">
+                                        <div className={`h-8 w-1 ${wing.bg.replace('/10', '')} rounded-full`}></div>
+                                        <h3 className={`text-2xl font-bold uppercase tracking-widest ${wing.color}`}>{wing.key} Wing</h3>
                                     </div>
-                                ))}
-                            </div>
-                        ))}
+
+                                    {/* Horizontal Scroll Strip (Netflix Style) */}
+                                    <div className="flex overflow-x-auto gap-4 pb-4 px-6 snap-x snap-mandatory scrollbar-hide">
+                                        {members.map((person) => (
+                                            <div
+                                                key={person.id}
+                                                className="snap-center shrink-0 w-[220px] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md"
+                                            >
+                                                <img
+                                                    src={person.image}
+                                                    alt={person.name}
+                                                    className="absolute inset-0 w-full h-full object-cover"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+                                                <div className="absolute bottom-0 left-0 w-full p-3">
+                                                    <h4 className="text-lg font-bold text-white leading-tight mb-1">{person.name}</h4>
+                                                    <p className={`${wing.color} font-bold uppercase tracking-wider text-[10px]`}>{person.title}</p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                        {/* Spacer for right padding */}
+                                        <div className="w-2 shrink-0"></div>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
