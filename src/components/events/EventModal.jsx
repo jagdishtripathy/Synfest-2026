@@ -60,12 +60,12 @@ export default function EventModal({ event, onClose }) {
 
                     {/* Header */}
                     <div className="p-6 pb-0 md:p-8 md:pb-0">
-                        <span className="text-primary font-bold tracking-widest uppercase text-[10px] md:text-sm">Event Details</span>
-                        <h2 className="text-2xl md:text-5xl font-black uppercase text-white mt-2 mb-2 md:mb-4 leading-none">
+                        <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm">Event Details</span>
+                        <h2 className="text-3xl md:text-5xl font-black uppercase text-white mt-2 mb-2 md:mb-4 leading-none">
                             <span className="mr-2 md:mr-3">{event.emoji}</span>
                             {event.title}
                         </h2>
-                        <p className="text-gray-400 text-xs md:text-lg leading-relaxed">{event.description}</p>
+                        <p className="text-gray-400 text-sm md:text-lg leading-relaxed">{event.description}</p>
                     </div>
 
                     {/* Details Grid */}
@@ -74,16 +74,16 @@ export default function EventModal({ event, onClose }) {
                             <div className="flex items-start gap-2 md:gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
                                 <span className="text-lg md:text-xl mt-0.5">👥</span>
                                 <div>
-                                    <h4 className="text-white font-bold uppercase text-[10px] md:text-xs">Team Size</h4>
-                                    <p className="text-gray-400 text-xs md:text-sm">{event.teamSize}</p>
+                                    <h4 className="text-white font-bold uppercase text-xs md:text-xs">Team Size</h4>
+                                    <p className="text-gray-400 text-sm md:text-sm">{event.teamSize}</p>
                                 </div>
                             </div>
 
                             <div className="flex items-start gap-2 md:gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
                                 <span className="text-lg md:text-xl mt-0.5">💰</span>
                                 <div>
-                                    <h4 className="text-white font-bold uppercase text-[10px] md:text-xs">Entry Fee</h4>
-                                    <p className="text-gray-400 text-xs md:text-sm">{event.fee || "Free"}</p>
+                                    <h4 className="text-white font-bold uppercase text-xs md:text-xs">Entry Fee</h4>
+                                    <p className="text-gray-400 text-sm md:text-sm">{event.fee || "Free"}</p>
                                 </div>
                             </div>
                         </div>
@@ -91,9 +91,9 @@ export default function EventModal({ event, onClose }) {
                         <div className="p-3 bg-white/5 rounded-xl border border-white/5">
                             <div className="flex items-center gap-2 mb-2">
                                 <span className="text-lg md:text-xl">📜</span>
-                                <h4 className="text-white font-bold uppercase text-[10px] md:text-sm">Rules & Regulations</h4>
+                                <h4 className="text-white font-bold uppercase text-xs md:text-sm">Rules & Regulations</h4>
                             </div>
-                            <ul className="text-[10px] md:text-xs text-gray-400 space-y-1 md:space-y-1.5 list-disc list-inside">
+                            <ul className="text-xs md:text-xs text-gray-400 space-y-1 md:space-y-1.5 list-disc list-inside">
                                 {event.rules?.map((rule, i) => (
                                     <li key={i}>{rule}</li>
                                 ))}
@@ -108,8 +108,8 @@ export default function EventModal({ event, onClose }) {
                             <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-1 md:gap-2 flex-1">
                                 <span className="text-sm md:text-xl">📍</span>
                                 <div>
-                                    <h4 className="text-gray-500 font-bold uppercase text-[8px] md:text-[10px] tracking-wider">Venue</h4>
-                                    <p className="text-white font-medium text-[10px] md:text-sm leading-tight">{event.venue || "TBA"}</p>
+                                    <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Venue</h4>
+                                    <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.venue || "TBA"}</p>
                                 </div>
                             </div>
 
@@ -117,8 +117,8 @@ export default function EventModal({ event, onClose }) {
                             <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-1 md:gap-2 flex-1 border-white/10 md:border-none pl-2 md:pl-0">
                                 <span className="text-sm md:text-xl">📅</span>
                                 <div>
-                                    <h4 className="text-gray-500 font-bold uppercase text-[8px] md:text-[10px] tracking-wider">Date</h4>
-                                    <p className="text-white font-medium text-[10px] md:text-sm leading-tight">{event.date || "TBA"}</p>
+                                    <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Date</h4>
+                                    <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.date || "TBA"}</p>
                                 </div>
                             </div>
 
@@ -126,8 +126,8 @@ export default function EventModal({ event, onClose }) {
                             <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-1 md:gap-2 flex-1  border-white/10 md:border-none pl-2 md:pl-0">
                                 <span className="text-sm md:text-xl">⏰</span>
                                 <div>
-                                    <h4 className="text-gray-500 font-bold uppercase text-[8px] md:text-[10px] tracking-wider">Time</h4>
-                                    <p className="text-white font-medium text-[10px] md:text-sm leading-tight">{event.time || "TBA"}</p>
+                                    <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Time</h4>
+                                    <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.time || "TBA"}</p>
                                 </div>
                             </div>
                         </div>
