@@ -340,7 +340,7 @@ export default function Leadership() {
                                             return (
                                                 <div
                                                     key={person.id}
-                                                    className={`snap-center shrink-0 w-[40vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md z-10 first:ml-0`}
+                                                    className={`snap-center shrink-0 w-[35vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md z-10 first:ml-0`}
                                                 >
                                                     <img
                                                         src={person.image}
@@ -349,8 +349,8 @@ export default function Leadership() {
                                                     />
                                                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
                                                     <div className="absolute bottom-0 left-0 w-full p-3">
-                                                        <h4 className="text-lg font-bold text-white leading-tight mb-1">{person.name}</h4>
-                                                        <p className={`${wing.color} font-bold uppercase tracking-wider text-[10px]`}>{person.title}</p>
+                                                        <h4 className="text-xs font-bold text-white leading-tight mb-1">{person.name}</h4>
+                                                        <p className={`${wing.color} font-bold uppercase tracking-wider text-[8px]`}>{person.title}</p>
                                                     </div>
                                                 </div>
                                             );
