@@ -60,24 +60,27 @@ export default function Navbar() {
     }, [location]);
 
     const navLinks = [
-        { name: 'Home', path: '/' },
+        { name: 'Home', path: '/#home' },
         { name: 'About', path: '/#about' },
         { name: 'Highlights', path: '/#highlights' },
         // { name: 'Sponsors', path: '/#sponsors' },
         { name: 'Contact', path: '/contact' },
     ];
 
-    // const scrollToSection = (e, path) => {
-    //     if (path.startsWith('/#')) {
-    //         const id = path.split('#')[1];
-    //         const element = document.getElementById(id);
-    //         if (element) {
-    //             e.preventDefault();
-    //             element.scrollIntoView({ behavior: 'smooth' });
-    //             setIsOpen(false);
-    //         }
-    //     }
-    // };
+    const scrollToSection = (e, path) => {
+        if (path.startsWith('/#')) {
+            const id = path.split('#')[1];
+            const element = document.getElementById(id);
+            if (element) {
+                e.preventDefault();
+                element.scrollIntoView({ behavior: 'smooth' });
+                setIsOpen(false);
+
+                // Optional: Update URL without jump if needed, but smooth scroll is priority.
+                window.history.pushState(null, '', path);
+            }
+        }
+    };
 
     return (
         <>
@@ -90,14 +93,18 @@ export default function Navbar() {
                 {/* Desktop Links */}
                 <div className="hidden md:flex gap-8 items-center bg-white/5 backdrop-blur-md px-8 py-3 rounded-full border border-white/10">
                     {navLinks.map((link) => (
-                        <a
+                        <Link
                             key={link.name}
-                            href={link.path}
-                            onClick={(e) => scrollToSection(e, link.path)}
+                            to={link.path}
+                            onClick={(e) => {
+                                if (link.path.startsWith('/#')) {
+                                    scrollToSection(e, link.path);
+                                }
+                            }}
                             className="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors cursor-pointer"
                         >
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 

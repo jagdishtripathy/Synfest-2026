@@ -56,5 +56,6 @@
     -moz-osx-font-smoothing: grayscale;
     background-color: #0a0a0a;
     color: #ffffff;
+    overflow-x: hidden;
   }
 }

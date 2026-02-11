@@ -62,6 +62,7 @@ export default function HomeHero() {
 
     return (
         <section
+            id="home"
             ref={containerRef}
             className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-black text-white"
         >

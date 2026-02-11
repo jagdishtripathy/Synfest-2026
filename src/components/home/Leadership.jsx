@@ -328,7 +328,7 @@ export default function Leadership() {
                                     <div className="flex overflow-x-auto gap-2 px-6 pr-0 snap-x snap-mandatory scrollbar-hide relative ">
 
                                         {/* STICKY WING TITLE CARD */}
-                                        <div className={`sticky left-0 shrink-0 w-[100vw] rounded-2xl overflow-hidden border border-white/5 ${wing.bg} backdrop-blur-sm flex flex-col justify-center  z-0`}>
+                                        <div className={`sticky left-0 shrink-0 w-screen rounded-2xl overflow-hidden border border-white/5 ${wing.bg} backdrop-blur-sm flex flex-col justify-center  z-0`}>
                                             <h3 className={`text-4xl pl-9 font-black uppercase tracking-wider ${wing.color} drop-shadow-lg px-4 font-frakturi`}>
                                                 {wing.key} <br /> <span className="text-white text-2xl">WING</span>
                                             </h3>
@@ -339,7 +339,7 @@ export default function Leadership() {
                                         {members.map((person, index) => {
                                             return (
                                                 <div
-                                                    key={person.id}
+                                                    key={person.id} 
                                                     className={`snap-center shrink-0 w-[35vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md z-10 first:ml-0`}
                                                 >
                                                     <img
