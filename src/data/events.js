@@ -8,6 +8,7 @@ export const formalEvents = [
       "Individual participation.",
       "Languages: C++, Java, Python.",
       "No internet access allowed.",
+      "Time limit: 3 hours."
     ],
     teamSize: "1",
     venue: "Computer Lab 1",
