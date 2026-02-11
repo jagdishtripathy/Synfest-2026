@@ -206,10 +206,10 @@ export default function Leadership() {
                     </div>
 
                     {/* Horizontal Cards Container - Desktop Only */}
-                    <div className="hidden md:block h-screen relative z-20 -mt-[70vh]">
+                    <div className="hidden md:flex absolute inset-0 z-20 items-center overflow-hidden pointer-events-none">
                         <div
                             ref={cardsContainerRef}
-                            className="flex flex-row gap-4 items-center pl-[50vw]"
+                            className="flex flex-row gap-8 items-center pl-[50vw] pointer-events-auto"
                             style={{ width: 'max-content' }}
                         >
                             {/* Admin/Chairman Section (Special Styling) */}
@@ -240,7 +240,7 @@ export default function Leadership() {
                                 { key: "nursing", color: "text-pink-400", border: "border-pink-500" }
                             ].map((wing) => (
                                 leadershipData[wing.key].map((person) => (
-                                    <div key={person.id} className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[700px] h-[380px] shrink-0">
+                                    <div key={person.id} className="flex flex-row bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg w-[900px] h-[480px] shrink-0">
                                         <div className="w-2/5 h-full relative shrink-0">
                                             <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
                                             <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80"></div>
