@@ -119,8 +119,8 @@ const leadershipData = {
     btech: [
         {
             id: "bt1",
-            name: "Prof. S. Das",
-            title: "Principal (B.Tech)",
+            name: "Mr. Pratyusabhanu Khuntia",
+            title: "Cultural Coordinator",
             quote: "Building character through challenges.",
             image: "/Mr-Pratyusabhanu-Khuntia-Asst-Professor-CSE-Cultural-member.jpeg"
         }
@@ -294,24 +294,28 @@ export default function Leadership() {
                     {/* Mobile Vertical Layout */}
                     <div className="md:hidden flex flex-col gap-2 pb-20 -mt-[90vh] relative z-20">
                         {/* Admin/Chairman Section */}
+                        {/* Admin/Chairman Section */}
                         {leadershipData.admin.map((person) => (
-                            <div key={person.id} className="relative w-[70vw] aspect-[3/4] rounded-2xl overflow-hidden border border-amber-500/30 shadow-[0_0_40px_rgba(245,158,11,0.2)] mx-auto">
-                                <img
-                                    src={person.image}
-                                    alt={person.name}
-                                    className="absolute inset-0 w-full h-full object-cover object-top"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90"></div>
+                            <div key={person.id} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-sm shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[90vw] h-48 shrink-0 relative mx-auto">
+                                {/* Glowing Effect */}
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/20 rounded-full blur-[40px] pointer-events-none"></div>
 
-                                <div className="absolute bottom-0 left-0 w-full p-4 flex flex-col">
-                                    <h3 className="text-2xl font-black text-white mb-2 leading-tight drop-shadow-lg">{person.name}</h3>
-                                    <p className="text-amber-400 font-bold uppercase text-xs mb-4 drop-shadow-md">{person.title}</p>
-                                    {/* <blockquote className="text-xs font-serif italic text-gray-200 border-l-4 border-amber-500 pl-4 py-1 leading-relaxed drop-shadow-sm"> */}
-                                    {/* "{person.quote}" */}
-                                    {/* </blockquote> */}
+                                <div className="w-2/5 h-full relative shrink-0">
+                                    <img src={person.image} alt={person.name} className="w-full h-full object-cover object-top" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-60"></div>
+                                </div>
+                                <div className="w-3/5 p-4 flex flex-col justify-center relative">
+                                    <h3 className="text-xl font-black text-white mb-1 leading-tight">
+                                        {person.name}
+                                    </h3>
+                                    <p className="text-amber-400 font-bold tracking-[0.2em] uppercase text-[10px] mb-2">{person.title}</p>
+                                    <blockquote className="text-[10px] font-serif italic text-gray-300 leading-relaxed border-l-2 border-amber-500 pl-3 py-1 opacity-90 line-clamp-3">
+                                        "{person.quote}"
+                                    </blockquote>
                                 </div>
                             </div>
                         ))}
+
 
                         {/* Mobile Wings Loop - Netflix Style */}
                         {[
@@ -339,7 +343,7 @@ export default function Leadership() {
                                         {members.map((person, index) => {
                                             return (
                                                 <div
-                                                    key={person.id} 
+                                                    key={person.id}
                                                     className={`snap-center shrink-0 w-[35vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md z-10 first:ml-0`}
                                                 >
                                                     <img
@@ -350,7 +354,7 @@ export default function Leadership() {
                                                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
                                                     <div className="absolute bottom-0 left-0 w-full p-3">
                                                         <h4 className="text-xs font-bold text-white leading-tight mb-1">{person.name}</h4>
-                                                        <p className={`${wing.color} font-bold uppercase tracking-wider text-[8px]`}>{person.title}</p>
+                                                        <p className={`${wing.color} font-bold uppercase tracking-wider text-[6px]`}>{person.title}</p>
                                                     </div>
                                                 </div>
                                             );
@@ -362,8 +366,8 @@ export default function Leadership() {
                             );
                         })}
                     </div>
-                </div>
-            </section>
-        </div>
+                </div >
+            </section >
+        </div >
     );
 }
