@@ -292,7 +292,7 @@ export default function Leadership() {
                     </div>
 
                     {/* Mobile Vertical Layout */}
-                    <div className="md:hidden flex flex-col gap-8 pb-20 -mt-[90vh] relative z-20">
+                    <div className="md:hidden flex flex-col gap-2 pb-20 -mt-[90vh] relative z-20">
                         {/* Admin/Chairman Section */}
                         {leadershipData.admin.map((person) => (
                             <div key={person.id} className="relative w-[70vw] aspect-[3/4] rounded-2xl overflow-hidden border border-amber-500/30 shadow-[0_0_40px_rgba(245,158,11,0.2)] mx-auto">
@@ -322,21 +322,24 @@ export default function Leadership() {
                         ].map((wing, i) => {
                             const members = leadershipData[wing.key];
                             return (
-                                // One div that will hold the Wings name in font 
-                                <div key={i} className="flex flex-col gap-2 mb-8">
-                                    {/* Section Header */}
-                                    {/* <div className="flex items-center gap-4 pl-6">
-                                        <div className={`h-8 w-1 ${wing.bg.replace('/10', '')} rounded-full`}></div>
-                                        <h3 className={`text-2xl font-bold uppercase tracking-widest ${wing.color}`}>{wing.key} Wing</h3>
-                                    </div> */}
+                                <div key={i} className="flex flex-col gap-2 mb-2">
 
                                     {/* Horizontal Scroll Strip (Netflix Style) */}
-                                    <div className="flex overflow-x-auto gap-4 px-6 snap-x snap-mandatory scrollbar-hide">
+                                    <div className="flex overflow-x-auto gap-4 px-6 pr-0 snap-x snap-mandatory scrollbar-hide relative items-stretch">
+
+                                        {/* STICKY WING TITLE CARD */}
+                                        <div className={`sticky left-0 shrink-0 w-[100vw] rounded-2xl overflow-hidden border border-white/5 ${wing.bg} backdrop-blur-sm flex flex-col justify-center  z-0`}>
+                                            <h3 className={`text-4xl pl-9 font-black uppercase tracking-wider ${wing.color} drop-shadow-lg px-4 font-frakturi`}>
+                                                {wing.key} <br /> <span className="text-white text-2xl">WING</span>
+                                            </h3>
+                                            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
+                                        </div>
+
+                                        {/* MEMBER CARDS (Scroll Over) */}
                                         {members.map((person) => (
                                             <div
                                                 key={person.id}
-                                                className="snap-center shrink-0 w-[50vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md"
-                                            >
+                                                className="snap-center ml-4 mr-4 mt-2 mb-2 shrink-0 w-[30vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md z-10 ml-[-20px] first:ml-0" >
                                                 <img
                                                     src={person.image}
                                                     alt={person.name}
@@ -344,8 +347,8 @@ export default function Leadership() {
                                                 />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
                                                 <div className="absolute bottom-0 left-0 w-full p-3">
-                                                    <h4 className="text-lg font-bold text-white leading-tight mb-1">{person.name}</h4>
-                                                    <p className={`${wing.color} font-bold uppercase tracking-wider text-[10px]`}>{person.title}</p>
+                                                    <h4 className="text-sm font-bold text-white leading-tight mb-1">{person.name}</h4>
+                                                    <p className={`${wing.color} text-xs font-bold tracking-wider`}>{person.title}</p>
                                                 </div>
                                             </div>
                                         ))}
