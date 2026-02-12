@@ -1,0 +1,147 @@
+export const leadershipData = {
+  admin: [
+    {
+      id: 1,
+      name: "Mr. Binod Dash",
+      title: "Hon. Chairman",
+      quote:
+        "Innovation is the heartbeat of progress. Synfest is where we restart that heart every year.",
+      image: "/Mr-Binod-Das.png",
+    },
+  ],
+  diploma: [
+    {
+      id: "d0",
+      name: "Mr. Biswajit Mishra",
+      title: "Coordinator",
+      quote: "Leading with vision, inspiring with action.",
+      image: "/Mr-Biswajit-Mishra-coordinator-diploma.jpeg",
+    },
+    {
+      id: "d1",
+      name: "Mr. Krushna Chandra Rout",
+      title: "Co-coordinator",
+      quote: "Technical excellence meets creative spirit.",
+      image: "/Mr-Krushna-Chandra-Rout-Diploma-co-coordinator.jpeg",
+    },
+    {
+      id: "d2",
+      name: "Mr. Tapas Samal",
+      title: "Member",
+      quote: "Building foundations for future technology.",
+      image: "/Mr-Tapas-Samal-member-diploma.jpeg",
+    },
+    {
+      id: "d3",
+      name: "Mrs. Prajna Paramita Kabi",
+      title: "Member",
+      quote: "Empowering students to achieve their potential.",
+      image: "/Mrs-Prajna-paramita-Kabi-member-diploma.jpeg",
+    },
+    {
+      id: "d4",
+      name: "Ms. Amrita Aiswarya Nanda",
+      title: "Member",
+      quote: "Creativity is intelligence having fun.",
+      image: "/Ms-Amrita-Aiswarya-Nanda-member-diploma.jpeg",
+    },
+    {
+      id: "d5",
+      name: "Ms. Asmita Pranayini",
+      title: "Member",
+      quote: "Dedication invites excellence.",
+      image: "/Ms-Asmita-Pranayini-member-diploma.jpeg",
+    },
+    {
+      id: "d6",
+      name: "Ms. Supriya Singh",
+      title: "Member",
+      quote: "Striving for a brighter tomorrow.",
+      image: "/Ms-Supriya-Singh-member-diploma.jpeg",
+    },
+    {
+      id: "d7",
+      name: "Ms. Sushree Sangita Satpathy",
+      title: "Member",
+      quote: "Unity in diversity.",
+      image: "/Ms-Sushree-sangita-Satpathy-diploma-member.jpeg",
+    },
+  ],
+  bsc: [
+    {
+      id: "b1",
+      name: "Ms. Rutuparna Sahoo",
+      title: "Cultural Co-ordinator",
+      quote: "Science and art are two sides of the same coin.",
+      image: "/Ms-Rutuparna-Sahoo-BSC-cultural-co-ordinator.jpeg",
+    },
+  ],
+  btech: [
+    {
+      id: "bt5",
+      name: "Mr. Smruti Ranjan Dash",
+      title: "Coordinator",
+      quote: "Leadership is the capacity to translate vision into reality.",
+      image: "/Mr-Smruti-Ranjan-Dash-Btech-HOD.jpeg",
+    },
+    {
+      id: "bt4",
+      name: "Mrs. Jeniffer Momin",
+      title: "Co-coordinator",
+      quote: "Excellence is not a skill, it is an attitude.",
+      image: "/Mrs-Jeniffer-Momin-co-coordinator-betch.jpeg",
+    },
+    {
+      id: "bt1",
+      name: "Mr. Pratyusabhanu Khuntia",
+      title: "Member",
+      quote: "Building character through challenges.",
+      image:
+        "/Mr-Pratyusabhanu-Khuntia-Asst-Professor-CSE-Cultural-member.jpeg",
+    },
+    {
+      id: "bt2",
+      name: "Mr. Debashis Rout",
+      title: "Member",
+      quote: "Engineering is the art of organizing forces of change.",
+      image: "/Mr-debashis-Rout-Btech-member.jpeg",
+    },
+    {
+      id: "bt3",
+      name: "Mr. Malaya Kumar Debta",
+      title: "Member",
+      quote: "Technology is best when it brings people together.",
+      image: "/Mr-Malaya-Kumar-Debta-member-btech.jpeg",
+    },
+  ],
+  nursing: [
+    {
+      id: "n1",
+      name: "Mrs. Helen Behera",
+      title: "Coordinator",
+      quote: "Care, compassion, and commitment.",
+      image: "/Mrs-Helen-Behera-coordinator-nursing.jpeg",
+    },
+    {
+      id: "n2",
+      name: "Ms. Suchismita Pattanaik",
+      title: "Co-coordinator",
+      quote: "Healing hands, caring hearts.",
+      image: "/Ms-Suchismita-Pattanaik-co-coordinator-nursing.jpeg",
+    },
+    {
+      id: "n3",
+      name: "Faculty Member",
+      title: "Member",
+      quote: "Service to humanity is service to God.",
+      image: "/Spiderwoman.png",
+    },
+    {
+      id: "n4",
+      name: "Faculty Member",
+      title: "Member",
+      quote: "Excellence in healthcare education.",
+      image: "/Spiderwoman.png",
+    },
+  ],
+};

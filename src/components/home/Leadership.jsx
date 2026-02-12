@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { leadershipData } from '../../data/leaderships';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,124 +38,6 @@ const getGridConfig = (count) => {
     }
 
     return config;
-};
-
-const leadershipData = {
-    admin: [
-        {
-            id: 1,
-            name: "Mr. Binod Dash",
-            title: "Hon. Chairman",
-            quote: "Innovation is the heartbeat of progress. Synfest is where we restart that heart every year.",
-            image: "/Mr-Binod-Das.png"
-        }
-    ],
-    diploma: [
-        {
-            id: "d0",
-            name: "Mr. Biswajit Mishra",
-            title: "Coordinator (Diploma)",
-            quote: "Leading with vision, inspiring with action.",
-            image: "/Mr-Biswajit-Mishra-coordinator-diploma.jpeg"
-        },
-        {
-            id: "d1",
-            name: "Mr. Krushna Chandra Rout",
-            title: "Co-coordinator (Diploma)",
-            quote: "Technical excellence meets creative spirit.",
-            image: "/Mr-Krushna-Chandra-Rout-Diploma-co-coordinator.jpeg"
-        },
-        {
-            id: "d2",
-            name: "Mr. Tapas Samal",
-            title: "Member (Diploma)",
-            quote: "Building foundations for future technology.",
-            image: "/Mr-Tapas-Samal-member-diploma.jpeg"
-        },
-        {
-            id: "d3",
-            name: "Mrs. Prajna Paramita Kabi",
-            title: "Member (Diploma)",
-            quote: "Empowering students to achieve their potential.",
-            image: "/Mrs-Prajna-paramita-Kabi-member-diploma.jpeg"
-        },
-        {
-            id: "d4",
-            name: "Ms. Amrita Aiswarya Nanda",
-            title: "Member (Diploma)",
-            quote: "Creativity is intelligence having fun.",
-            image: "/Ms-Amrita-Aiswarya-Nanda-member-diploma.jpeg"
-        },
-        {
-            id: "d5",
-            name: "Ms. Asmita Pranayini",
-            title: "Member (Diploma)",
-            quote: "Dedication invites excellence.",
-            image: "/Ms-Asmita-Pranayini-member-diploma.jpeg"
-        },
-        {
-            id: "d6",
-            name: "Ms. Supriya Singh",
-            title: "Member (Diploma)",
-            quote: "Striving for a brighter tomorrow.",
-            image: "/Ms-Supriya-Singh-member-diploma.jpeg"
-        },
-        {
-            id: "d7",
-            name: "Ms. Sushree Sangita Satpathy",
-            title: "Member (Diploma)",
-            quote: "Unity in diversity.",
-            image: "/Ms-Sushree-sangita-Satpathy-diploma-member.jpeg"
-        }
-    ],
-    bsc: [
-        {
-            id: "b1",
-            name: "Ms. Rutuparna Sahoo",
-            title: "Cultural Co-ordinator (B.Sc)",
-            quote: "Science and art are two sides of the same coin.",
-            image: "/Ms-Rutuparna-Sahoo-BSC-cultural-co-ordinator.jpeg"
-        }
-    ],
-    btech: [
-        {
-            id: "bt1",
-            name: "Mr. Pratyusabhanu Khuntia",
-            title: "Cultural Coordinator",
-            quote: "Building character through challenges.",
-            image: "/Mr-Pratyusabhanu-Khuntia-Asst-Professor-CSE-Cultural-member.jpeg"
-        }
-    ],
-    nursing: [
-        {
-            id: "n1",
-            name: "Mrs. Helen Behera",
-            title: "Coordinator (Nursing)",
-            quote: "Care, compassion, and commitment.",
-            image: "/Mrs-Helen-Behera-coordinator-nursing.jpeg"
-        },
-        {
-            id: "n2",
-            name: "Ms. Suchismita Pattanaik",
-            title: "Co-coordinator (Nursing)",
-            quote: "Healing hands, caring hearts.",
-            image: "/Ms-Suchismita-Pattanaik-co-coordinator-nursing.jpeg"
-        },
-        {
-            id: "n3",
-            name: "Faculty Member",
-            title: "Member (Nursing)",
-            quote: "Service to humanity is service to God.",
-            image: "/Spiderwoman.png"
-        },
-        {
-            id: "n4",
-            name: "Faculty Member",
-            title: "Member (Nursing)",
-            quote: "Excellence in healthcare education.",
-            image: "/Spiderwoman.png"
-        }
-    ]
 };
 
 export default function Leadership() {
