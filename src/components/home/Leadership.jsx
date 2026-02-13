@@ -196,25 +196,27 @@ export default function Leadership() {
                         {/* Admin/Chairman Section (Vertical Standardized) */}
                         {leadershipData.admin.map((person, index) => (
                             <div key={index} className="flex flex-col justify-center items-center shrink-0 relative mx-auto mb-6">
-                                <div className="relative group overflow-hidden rounded-2xl border border-white/10 bg-white/5 w-[85vw] aspect-[3/4] shadow-lg">
-                                    {/* Image */}
-                                    <img
-                                        src={person.image}
-                                        alt={person.name}
-                                        loading="eager"
-                                        decoding="async"
-                                        className="absolute inset-0 w-full h-full object-cover"
-                                    />
+                                <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg p-3 w-[85vw] aspect-[3/4] flex items-center justify-center">
+                                    <div className="relative group overflow-hidden rounded-xl border border-white/10 bg-white/5 w-full h-full shadow-2xl">
+                                        {/* Image */}
+                                        <img
+                                            src={person.image}
+                                            alt={person.name}
+                                            loading="eager"
+                                            decoding="async"
+                                            className="absolute inset-0 w-full h-full object-cover"
+                                        />
 
-                                    {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80"></div>
+                                        {/* Gradient Overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80"></div>
 
-                                    {/* Content */}
-                                    <div className="absolute bottom-0 left-0 w-full p-5 flex flex-col justify-end">
-                                        <h3 className="text-2xl font-bold text-white leading-tight mb-1">
-                                            {person.name}
-                                        </h3>
-                                        <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">{person.title}</p>
+                                        {/* Content */}
+                                        <div className="absolute bottom-0 left-0 w-full p-5 flex flex-col justify-end">
+                                            <h3 className="text-2xl font-bold text-white leading-tight mb-1">
+                                                {person.name}
+                                            </h3>
+                                            <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">{person.title}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

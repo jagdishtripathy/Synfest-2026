@@ -92,10 +92,10 @@ const Loader = ({ onComplete }) => {
 
             {/* Bottom Content: Disclaimer */}
             <div className="w-full text-center pb-8 md:pb-0">
-                <p className="text-[5px] md:text-[8px] text-gray-600 leading-relaxed uppercase tracking-wider font-bold max-w-2xl mx-auto">
+                <p className="text-[7px] md:text-[8px] text-gray-600 leading-relaxed uppercase tracking-wider font-bold max-w-2xl mx-auto">
                     | Synfest 2026 |
                     <br className="block" />
-                    By accessing this site, you acknowledge its creative nature and accept that all content is for representation purposes only. & most important, If order of positioning is a matter for you, then the website is not meant for you.
+                    By accessing this site, you acknowledge its creative nature and accept that all content is for representation purposes only. Please note that the positioning of elements is guided by design aesthetics and does not imply a specific hierarchy or precedence.
                 </p>
             </div>
         </div>
