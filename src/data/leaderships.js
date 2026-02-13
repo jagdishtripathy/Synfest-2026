@@ -93,13 +93,13 @@ export const leadershipData = {
   btech: [
     {
       name: "Mr. Smruti Ranjan Dash",
-      title: "Coordinator (B.tech)",
+      title: "Convenor",
       quote: "Leadership is the capacity to translate vision into reality.",
       image: "/BTech-Fac-Coordinator-Mr-Smruti-Ranjan-Dash.jpeg",
     },
     {
       name: "Mrs. Jeniffer Momin",
-      title: "Co-coordinator",
+      title: "Co-Convenor",
       quote: "Excellence is not a skill, it is an attitude.",
       image: "/BTech-Fac-CoCoordinator-Mrs-Jeniffer-Momin.jpeg",
     },

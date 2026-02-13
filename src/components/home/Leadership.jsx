@@ -95,21 +95,36 @@ export default function Leadership() {
                             style={{ width: 'max-content' }}
                         >
                             {/* Admin/Chairman Section (Special Styling) */}
+                            {/* Admin/Chairman Section (Standardized Vertical Style) */}
                             {leadershipData.admin.map((person, index) => (
-                                <div key={index} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-sm shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[700px] h-[380px] shrink-0 mr-12 relative">
-                                    {/* Glowing Effect */}
-                                    <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/20 rounded-full blur-[80px] pointer-events-none"></div>
+                                <div key={index} className="flex items-center h-[480px] shrink-0 mr-1 relative ">
+                                    <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg p-4 h-full flex items-center justify-center">
+                                        <div className="relative group overflow-hidden rounded-xl border border-white/10 bg-white/5 h-full aspect-[3/4] shadow-2xl">
+                                            {/* Image */}
+                                            <img
+                                                src={person.image}
+                                                alt={person.name}
+                                                loading="eager"
+                                                decoding="async"
+                                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                            />
 
-                                    <div className="w-2/5 h-full relative shrink-0">
-                                        <img src={person.image} alt={person.name} loading="eager" decoding="async" className="w-full h-full object-cover object-top" />
-                                        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-60"></div>
-                                    </div>
-                                    <div className="w-3/5 p-12 flex flex-col justify-center relative">
-                                        <h3 className="text-5xl font-black text-white mb-2 leading-tight">{person.name}</h3>
-                                        <p className="text-amber-400 font-bold tracking-[0.3em] uppercase text-sm mb-8">{person.title}</p>
-                                        <blockquote className="text-xl font-serif italic text-gray-200 leading-relaxed border-l-4 border-amber-500 pl-6 py-2">
-                                            "{person.quote}"
-                                        </blockquote>
+                                            {/* Gradient Overlay */}
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80"></div>
+
+                                            {/* Content */}
+                                            <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end">
+                                                <h3 className="text-3xl font-bold text-white leading-tight mb-2">
+                                                    {person.name}
+                                                </h3>
+                                                <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">
+                                                    {person.title}
+                                                </p>
+                                                <blockquote className="text-xs font-serif italic text-gray-300 leading-relaxed border-l-2 border-primary pl-3 py-1 opacity-90 line-clamp-3">
+                                                    "{person.quote}"
+                                                </blockquote>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
@@ -181,24 +196,32 @@ export default function Leadership() {
                     {/* Mobile Vertical Layout */}
                     <div className="md:hidden flex flex-col gap-2 pb-20 -mt-[90vh] relative z-20">
                         {/* Admin/Chairman Section */}
-                        {/* Admin/Chairman Section */}
+                        {/* Admin/Chairman Section (Vertical Standardized) */}
                         {leadershipData.admin.map((person, index) => (
-                            <div key={index} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-sm shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[90vw] h-48 shrink-0 relative mx-auto">
-                                {/* Glowing Effect */}
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/20 rounded-full blur-[40px] pointer-events-none"></div>
+                            <div key={index} className="flex flex-col justify-center items-center shrink-0 relative mx-auto mb-6">
+                                <div className="relative group overflow-hidden rounded-2xl border border-white/10 bg-white/5 w-[85vw] aspect-[3/4] shadow-lg">
+                                    {/* Image */}
+                                    <img
+                                        src={person.image}
+                                        alt={person.name}
+                                        loading="eager"
+                                        decoding="async"
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                    />
 
-                                <div className="w-2/5 h-full relative shrink-0">
-                                    <img src={person.image} alt={person.name} loading="eager" decoding="async" className="w-full h-full object-cover object-top" />
-                                    <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-60"></div>
-                                </div>
-                                <div className="w-3/5 p-4 flex flex-col justify-center relative">
-                                    <h3 className="text-xl font-black text-white mb-1 leading-tight">
-                                        {person.name}
-                                    </h3>
-                                    <p className="text-amber-400 font-bold tracking-[0.2em] uppercase text-[10px] mb-2">{person.title}</p>
-                                    <blockquote className="text-[10px] font-serif italic text-gray-300 leading-relaxed border-l-2 border-amber-500 pl-3 py-1 opacity-90 line-clamp-3">
-                                        "{person.quote}"
-                                    </blockquote>
+                                    {/* Gradient Overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80"></div>
+
+                                    {/* Content */}
+                                    <div className="absolute bottom-0 left-0 w-full p-5 flex flex-col justify-end">
+                                        <h3 className="text-2xl font-bold text-white leading-tight mb-1">
+                                            {person.name}
+                                        </h3>
+                                        <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">{person.title}</p>
+                                        <blockquote className="text-[10px] font-serif italic text-gray-300 leading-relaxed border-l-2 border-primary pl-3 py-1 opacity-90 line-clamp-3">
+                                            "{person.quote}"
+                                        </blockquote>
+                                    </div>
                                 </div>
                             </div>
                         ))}
