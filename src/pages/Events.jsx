@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
-import { Phone } from 'lucide-react';
+import { Phone, Search } from 'lucide-react';
 import { formalEvents, informalEvents, games } from '../data/events';
 import EventModal from '../components/events/EventModal';
 
 export default function Events() {
     const [activeTab, setActiveTab] = useState('formal');
     const [selectedEvent, setSelectedEvent] = useState(null);
+    const [searchQuery, setSearchQuery] = useState('');
     const containerRef = useRef(null);
 
     const categories = [
@@ -16,7 +17,14 @@ export default function Events() {
         { id: 'games', label: 'Games', data: games },
     ];
 
-    const currentEvents = categories.find(c => c.id === activeTab)?.data || [];
+    const allEvents = [...formalEvents, ...informalEvents, ...games];
+
+    const currentEvents = searchQuery
+        ? allEvents.filter(event =>
+            event.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            event.description.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+        : categories.find(c => c.id === activeTab)?.data || [];
 
     return (
         <div ref={containerRef} className="min-h-screen pt-10 pb-20 px-6 md:px-12 bg-[#0a0a0a] text-white relative">
@@ -30,25 +38,51 @@ export default function Events() {
                     </Link>
                 </div>
 
-                <h1 className="text-6xl md:text-8xl font-black mb-12 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-10">
+                <h1 className="text-6xl md:text-8xl font-black mb-8 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-10">
                     The Events
                 </h1>
 
-                {/* Categories Navigation */}
-                <div className="flex flex-wrap gap-4 mb-16 border-b border-white/10 pb-6">
-                    {categories.map((cat) => (
-                        <button
-                            key={cat.id}
-                            onClick={() => setActiveTab(cat.id)}
-                            className={`px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 border ${activeTab === cat.id
-                                ? 'bg-white text-black border-white'
-                                : 'bg-transparent text-gray-400 border-white/10 hover:border-white/30 hover:text-white'
-                                }`}
-                        >
-                            {cat.label}
-                        </button>
-                    ))}
+                {/* Global Search */}
+                <div className="max-w-xl mb-12 relative group">
+                    <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                        <Search className="text-gray-500 group-focus-within:text-primary transition-colors" size={20} />
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Search all events..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full bg-white/5 border border-white/10 rounded-full py-3 pl-12 pr-6 text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:bg-white/10 transition-all font-medium tracking-wide"
+                    />
                 </div>
+
+                {/* Categories Navigation (Hidden if searching) */}
+                {!searchQuery && (
+                    <div className="flex flex-wrap gap-4 mb-16 border-b border-white/10 pb-6">
+                        {categories.map((cat) => (
+                            <button
+                                key={cat.id}
+                                onClick={() => setActiveTab(cat.id)}
+                                className={`px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 border ${activeTab === cat.id
+                                    ? 'bg-white text-black border-white'
+                                    : 'bg-transparent text-gray-400 border-white/10 hover:border-white/30 hover:text-white'
+                                    }`}
+                            >
+                                {cat.label}
+                            </button>
+                        ))}
+                    </div>
+                )}
+
+                {/* Search Results Header */}
+                {searchQuery && (
+                    <div className="mb-8 flex items-center gap-2 text-gray-400">
+                        <Search size={16} />
+                        <span className="text-sm font-bold uppercase tracking-widest">
+                            Found {currentEvents.length} result{currentEvents.length !== 1 ? 's' : ''} for "{searchQuery}"
+                        </span>
+                    </div>
+                )}
 
                 {/* Event List */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-10">
