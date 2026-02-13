@@ -108,8 +108,7 @@ export default function HomeHero() {
             {/* <MuteToggle className="absolute bottom-10 right-10 z-30" /> */}
 
             <div className="absolute bottom-10 left-0 w-full flex justify-between px-10 text-xs font-bold tracking-widest opacity-50 uppercase z-20 pointer-events-none">
-                <span>Dhenkanal, OD</span>
-                <span>Est. 1999</span>
+                <span>Dhenkanal, OD | Est. 1999</span>
                 <span className="opacity-0 md:opacity-100">SCROLL</span>
             </div>
         </section>

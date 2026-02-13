@@ -42,7 +42,6 @@ export default function Events() {
                     The<br /> Events <span className="text-primary">.</span>
                 </h1>
 
-                {/* Sticky Header: Search & Filter (Fade Down Blur) */}
                 <div className="z-50 py-4 -mx-6 px-6 md:-mx-12 md:px-12 mb-4 transition-all bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent backdrop-blur-xl">
                     <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
                         {/* Search Bar */}
@@ -113,7 +112,7 @@ export default function Events() {
                             ></div>
 
                             {/* Content */}
-                            <div className="absolute inset-0 z-20 p-8 flex flex-col justify-center">
+                            <div className="cursor-default absolute inset-0 z-20 p-8 flex flex-col justify-center">
                                 {/* Decorative ID - Moved to Left & Increased Visibility */}
                                 <div className="absolute top-4 left-4 text-7xl font-black text-white/10 pointer-events-none select-none">
                                     {event.id.replace(/\D/g, '')}
@@ -127,7 +126,7 @@ export default function Events() {
                                         {event.description}
                                     </p>
 
-                                    <button className="mt-auto px-6 py-2 bg-primary text-black font-bold text-xs uppercase tracking-widest rounded-full hover:bg-white transition-colors self-start">
+                                    <button className="cursor-pointer mt-auto px-6 py-2 bg-primary text-black font-bold text-xs uppercase tracking-widest rounded-full hover:bg-white transition-colors self-start">
                                         Explore
                                     </button>
                                 </div>

@@ -105,7 +105,7 @@ export default function Leadership() {
                                         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-60"></div>
                                     </div>
                                     <div className="w-3/5 p-12 flex flex-col justify-center relative">
-                                        <h3 className="text-5xl font-black text-white mb-2 leading-tight">{person.name.split(' ')[1]} {person.name.split(' ')[2]}</h3>
+                                        <h3 className="text-5xl font-black text-white mb-2 leading-tight">{person.name}</h3>
                                         <p className="text-amber-400 font-bold tracking-[0.3em] uppercase text-sm mb-8">{person.title}</p>
                                         <blockquote className="text-xl font-serif italic text-gray-200 leading-relaxed border-l-4 border-amber-500 pl-6 py-2">
                                             "{person.quote}"
