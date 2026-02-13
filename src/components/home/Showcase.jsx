@@ -121,8 +121,8 @@ export default function Showcase() {
     }, []);
 
     return (
-        <section id="highlights" className="min-h-screen pb-20 overflow-hidden flex flex-col justify-center relative">
-            <div className="container mx-auto px-6 mb-12 text-center relative z-10">
+        <section id="highlights" className="py-20 overflow-hidden flex flex-col justify-center relative">
+            <div className=" mx-auto px-6 mb-12 text-center relative z-10">
                 <h2 className="text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-b from-white to-yellow-500 font-frakturi">
                     Highlights
                 </h2>
@@ -132,7 +132,7 @@ export default function Showcase() {
             </div>
 
             {/* Marquee Container */}
-            <div className="flex flex-col gap-6 rotate-[-2deg] scale-110">
+            <div className="flex flex-col gap-3 md:gap-6 rotate-[-2deg] scale-110">
                 {/* Row 1 - Fast Left */}
                 <MarqueeRow images={row1} speed="40s" />
 
@@ -147,7 +147,7 @@ export default function Showcase() {
             {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a] pointer-events-none z-10"></div> */}
             {/* <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent pointer-events-none z-10"></div> */}
             {/* <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent pointer-events-none z-10"></div> */}
-            
+
             <style jsx>{`
                 @keyframes scroll {
                     0% { transform: translateX(0); }
@@ -166,11 +166,11 @@ export default function Showcase() {
 
 function MarqueeRow({ images, speed, reverse }) {
     return (
-        <div className="flex gap-6 w-[200%] animate-scroll" style={{ animationDuration: speed, animationDirection: reverse ? 'reverse' : 'normal' }}>
+        <div className="flex gap-3 md:gap-6 w-[200%] animate-scroll" style={{ animationDuration: speed, animationDirection: reverse ? 'reverse' : 'normal' }}>
             {images.map((src, i) => (
                 <div key={i} className={`relative flex-shrink-0 rounded-2xl overflow-hidden border border-white/10 hover:border-primary/50 transition-colors duration-500
-                    ${i % 2 === 0 ? 'w-64 h-48' : 'w-80 h-48'} 
-                    ${i % 3 === 0 ? 'w-56 h-48' : ''}
+                    ${i % 2 === 0 ? 'w-40 md:w-64 h-28 md:h-48' : 'w-48 md:w-80 h-28 md:h-48'} 
+                    ${i % 3 === 0 ? 'w-32 md:w-56 h-28 md:h-48' : ''}
                 `}>
                     <img src={src} alt="Gallery" className="w-full h-full object-cover" />
                 </div>
