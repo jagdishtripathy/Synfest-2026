@@ -95,7 +95,7 @@ export default function Events() {
                         <div
                             key={event.id}
                             onClick={() => setSelectedEvent(event)}
-                            className="group relative h-64 border border-white/10 rounded-xl bg-[#0a0a0a] overflow-hidden cursor-pointer transition-transform duration-300 hover:-translate-y-1"
+                            className="group relative h-64 border border-white/10 rounded-xl bg-[#0a0a0a] overflow-hidden cursor-pointer transition-transform duration-300"
                         >
                             {/* Background Image */}
                             <div className="absolute inset-0">

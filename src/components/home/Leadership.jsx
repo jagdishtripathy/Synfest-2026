@@ -95,8 +95,8 @@ export default function Leadership() {
                             style={{ width: 'max-content' }}
                         >
                             {/* Admin/Chairman Section (Special Styling) */}
-                            {leadershipData.admin.map((person) => (
-                                <div key={person.id} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-sm shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[700px] h-[380px] shrink-0 mr-12 relative">
+                            {leadershipData.admin.map((person, index) => (
+                                <div key={index} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-sm shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[700px] h-[380px] shrink-0 mr-12 relative">
                                     {/* Glowing Effect */}
                                     <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/20 rounded-full blur-[80px] pointer-events-none"></div>
 
@@ -120,8 +120,10 @@ export default function Leadership() {
                                 { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
                                 { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" },
                                 { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
+                                { key: "student", color: "text-purple-400", border: "border-purple-500", bg: "bg-purple-500/10" },
                             ].map((wing) => {
                                 const members = leadershipData[wing.key];
+                                if (!members) return null; // Safety check
                                 const { template, largeIndices } = getGridConfig(members.length);
 
                                 return (
@@ -141,7 +143,7 @@ export default function Leadership() {
                                             // Special styling for Large Cards
                                             return (
                                                 <div
-                                                    key={person.id}
+                                                    key={index}
                                                     className={`relative group overflow-hidden rounded-xl border border-white/5 bg-white/5 ${isLarge ? 'row-span-2' : 'row-span-1'} ${isLarge ? wing.bg : ''}`}
                                                 >
                                                     {/* Image */}
@@ -178,8 +180,8 @@ export default function Leadership() {
                     <div className="md:hidden flex flex-col gap-2 pb-20 -mt-[90vh] relative z-20">
                         {/* Admin/Chairman Section */}
                         {/* Admin/Chairman Section */}
-                        {leadershipData.admin.map((person) => (
-                            <div key={person.id} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-sm shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[90vw] h-48 shrink-0 relative mx-auto">
+                        {leadershipData.admin.map((person, index) => (
+                            <div key={index} className="flex flex-row bg-amber-500/10 border border-amber-500/30 rounded-2xl overflow-hidden backdrop-blur-sm shadow-[0_8px_32px_0_rgba(245,158,11,0.2)] w-[90vw] h-48 shrink-0 relative mx-auto">
                                 {/* Glowing Effect */}
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/20 rounded-full blur-[40px] pointer-events-none"></div>
 
@@ -206,8 +208,10 @@ export default function Leadership() {
                             { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
                             { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" },
                             { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
+                            { key: "student", color: "text-purple-400", border: "border-purple-500", bg: "bg-purple-500/10" },
                         ].map((wing, i) => {
                             const members = leadershipData[wing.key];
+                            if (!members) return null; // Safety check
                             return (
                                 <div key={i} className="flex flex-col gap-2 mb-2">
 
@@ -226,7 +230,7 @@ export default function Leadership() {
                                         {members.map((person, index) => {
                                             return (
                                                 <div
-                                                    key={person.id}
+                                                    key={index}
                                                     className={`snap-center shrink-0 w-[35vw] aspect-[3/4] relative rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md z-10 first:ml-0`}
                                                 >
                                                     <img
