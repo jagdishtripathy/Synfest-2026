@@ -43,7 +43,7 @@ export default function Events() {
                 </h1>
 
                 {/* Sticky Header: Search & Filter (Fade Down Blur) */}
-                <div className="sticky top-0 z-50 py-4 pb-8 -mx-6 px-6 md:-mx-12 md:px-12 mb-4 transition-all bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent backdrop-blur-xl">
+                <div className="z-50 py-4 -mx-6 px-6 md:-mx-12 md:px-12 mb-4 transition-all bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent backdrop-blur-xl">
                     <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
                         {/* Search Bar */}
                         <div className="w-full md:max-w-md relative group">

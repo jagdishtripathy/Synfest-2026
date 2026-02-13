@@ -105,10 +105,10 @@ export const leadershipData = {
       image: "/Mr-debashis-Rout-Btech-member.jpeg",
     },
     {
-      name: "Mr. Malaya Kumar Debta",
+      name: "Dr. Malaya Kumar Debta",
       title: "Member",
       quote: "Technology is best when it brings people together.",
-      image: "/Mr-Malaya-Kumar-Debta-member-btech.jpeg",
+      image: "/Dr-Malaya-Kumar-Debta-member-btech.jpeg",
     },
     {
       name: "Ms. Gayatri Behera",
