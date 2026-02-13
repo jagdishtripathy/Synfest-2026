@@ -110,6 +110,12 @@ export const leadershipData = {
       image: "/BTech-Fac-CoCoordinator-Mr-Sanjya-Sathua-Mohapatra.jpeg",
     },
     {
+      name: "Dr. Malaya Kumar Debta",
+      title: "Member",
+      quote: "Technology is best when it brings people together.",
+      image: "/BTech-Fac-Member-Dr-Malaya-Kumar-Debta.jpeg",
+    },
+    {
       name: "Mr. Pratyusabhanu Khuntia",
       title: "Member",
       quote: "Building character through challenges.",
@@ -120,12 +126,6 @@ export const leadershipData = {
       title: "Member",
       quote: "Engineering is the art of organizing forces of change.",
       image: "/BTech-Fac-Member-Mr-Debashis-Rout.jpeg",
-    },
-    {
-      name: "Dr. Malaya Kumar Debta",
-      title: "Member",
-      quote: "Technology is best when it brings people together.",
-      image: "/BTech-Stu-Member-Dr-Malaya-Kumar-Debta.jpeg",
     },
     {
       name: "Ms. Gayatri Behera",

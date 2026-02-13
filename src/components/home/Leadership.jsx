@@ -101,7 +101,7 @@ export default function Leadership() {
                                     <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/20 rounded-full blur-[80px] pointer-events-none"></div>
 
                                     <div className="w-2/5 h-full relative shrink-0">
-                                        <img src={person.image} alt={person.name} loading="lazy" decoding="async" className="w-full h-full object-cover object-top" />
+                                        <img src={person.image} alt={person.name} loading="eager" decoding="async" className="w-full h-full object-cover object-top" />
                                         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-60"></div>
                                     </div>
                                     <div className="w-3/5 p-12 flex flex-col justify-center relative">
@@ -150,7 +150,7 @@ export default function Leadership() {
                                                     <img
                                                         src={person.image}
                                                         alt={person.name}
-                                                        loading="lazy"
+                                                        loading="eager"
                                                         decoding="async"
                                                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                                     />
@@ -188,7 +188,7 @@ export default function Leadership() {
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/20 rounded-full blur-[40px] pointer-events-none"></div>
 
                                 <div className="w-2/5 h-full relative shrink-0">
-                                    <img src={person.image} alt={person.name} loading="lazy" decoding="async" className="w-full h-full object-cover object-top" />
+                                    <img src={person.image} alt={person.name} loading="eager" decoding="async" className="w-full h-full object-cover object-top" />
                                     <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-60"></div>
                                 </div>
                                 <div className="w-3/5 p-4 flex flex-col justify-center relative">
@@ -238,7 +238,7 @@ export default function Leadership() {
                                                     <img
                                                         src={person.image}
                                                         alt={person.name}
-                                                        loading="lazy"
+                                                        loading="eager"
                                                         decoding="async"
                                                         className="absolute inset-0 w-full h-full object-cover"
                                                     />
