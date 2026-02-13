@@ -7,8 +7,32 @@ export const leadershipData = {
         "Innovation is the heartbeat of progress. Synfest is where we restart that heart every year.",
       image: "/Mr-Binod-Das.png",
     },
+    {
+      name: "Dr. Prashanta Kumar Nayak",
+      title: "Director",
+      quote: "Visionary leadership guiding us to new heights.",
+      image: "/Dr-Prashanta-Kumar-Nayak-Director-Btech.jpeg",
+    },
+    {
+      name: "Dr. Itishree Mohanty",
+      title: "Director (Admin)",
+      quote: "Efficiency and excellence in administration define our path.",
+      image: "/Dr-Itishree-Mohanty-director-admin.jpeg",
+    },
+    {
+      name: "Mr. A. K. Jena",
+      title: "Chief Security Officer",
+      quote: "Safety first, always.",
+      image: "/A-K-Jena-awardee-chief-security-officer.jpeg",
+    },
   ],
   diploma: [
+    {
+      name: "Mr. P. K. Nayak",
+      title: "Principal (Diploma)",
+      quote: "Discipline and dedication define us.",
+      image: "/Mr-PK-Nayak-principal-diploma.jpeg",
+    },
     {
       name: "Mr. Biswajit Mishra",
       title: "Coordinator",
@@ -67,12 +91,7 @@ export const leadershipData = {
     },
   ],
   btech: [
-    {
-      name: "Dr. Prashanta Kumar Nayak",
-      title: "Director (B.Tech)",
-      quote: "Visionary leadership guiding us to new heights.",
-      image: "/Dr-Prashanta-Kumar-Nayak-Director-Btech.jpeg",
-    },
+
     {
       name: "Mr. Smruti Ranjan Dash",
       title: "Coordinator (B.tech)",
@@ -133,10 +152,52 @@ export const leadershipData = {
   ],
   student: [
     {
+      name: "Mr. Prabodh Kumar Mohanty",
+      title: "Organising Secretary (B.Tech)",
+      quote: "Organization is the key to success.",
+      image: "/prabodh-Kumar-Mohanty-Organising-Secretary-Btech.jpeg",
+    },
+    {
       name: "Ms. Swarupa Laxmi Behera",
       title: "Cultural Secretary",
       quote: "Embracing culture, celebrating unity.",
       image: "/Ms-Swarupa-Laxmi-Behera-cultural-secretary.jpeg",
+    },
+    {
+      name: "Mr. Sandeep Sahoo",
+      title: "Cultural Secretary (B.Tech)",
+      quote: "Culture is the widening of the mind and of the spirit.",
+      image: "/Sandeep-sahoo-cultural-secretary-btech.jpeg",
+    },
+    {
+      name: "Mr. Ashish Prusty",
+      title: "Co-coordinator (B.Tech)",
+      quote: "Innovating for a better tomorrow.",
+      image: "/Ashish-prusty-Co-coordinator-Btech.webp",
+    },
+    {
+      name: "Mr. Ayush Mishra",
+      title: "Coordinator (Diploma)",
+      quote: "Leadership is action, not position.",
+      image: "/Ayush-Mishra-diploma-coordinator.jpg.jpeg",
+    },
+    {
+      name: "Mr. Mrutyunjay Parida",
+      title: "Coordinator (Diploma)",
+      quote: "Together we achieve more.",
+      image: "/Mr-Mrutyunjay-parida-coordinator-diploma.JPG.jpeg",
+    },
+    {
+      name: "Mr. Atal Bihari Gochhayat",
+      title: "Co-coordinator (Diploma)",
+      quote: "Coordination is the essence of management.",
+      image: "/Atal-Bihari-Gochhayat-Co-coordinator.jpeg",
+    },
+    {
+      name: "Ms. Pragyan Lenka",
+      title: "Coordinator (B.Sc)",
+      quote: "Science for a sustainable future.",
+      image: "/Bsc-coordinator-Ms-Pragyan-Lenka.jpeg",
     },
     {
       name: "Ashit Kumar Jena",

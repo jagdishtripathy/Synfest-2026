@@ -95,7 +95,7 @@ const Loader = ({ onComplete }) => {
                 <p className="text-[5px] md:text-[8px] text-gray-600 leading-relaxed uppercase tracking-wider font-bold max-w-2xl mx-auto">
                     | Synfest 2026 |
                     <br className="block" />
-                    By accessing this site, you acknowledge its creative nature and accept that all content is for representation purposes only.
+                    By accessing this site, you acknowledge its creative nature and accept that all content is for representation purposes only. & most important, If order of positioning is a matter for you, then the website is not meant for you.
                 </p>
             </div>
         </div>
