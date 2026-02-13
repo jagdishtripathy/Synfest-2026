@@ -97,8 +97,15 @@ export default function Leadership() {
                             {/* Admin/Chairman Section (Special Styling) */}
                             {/* Admin/Chairman Section (Standardized Vertical Style) */}
                             {leadershipData.admin.map((person, index) => (
-                                <div key={index} className="flex items-center h-[480px] shrink-0 mr-1 relative ">
-                                    <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg p-4 h-full flex items-center justify-center">
+                                <div key={index} className="h-[480px] shrink-0 mr-12 relative flex items-center justify-center group/glow">
+                                    {/* Moving Glow Border Container */}
+                                    <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                                        <div className="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_0deg,white_90deg,transparent_180deg)] animate-[spin_4s_linear_infinite] opacity-50"></div>
+                                    </div>
+
+                                    {/* Glass Frame (Content) with background to mask center of spin */}
+                                    {/* We use m-[1px] to show the spinning border behind */}
+                                    <div className="relative z-10 bg-[#0a0a0a]/80 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg p-4 h-[calc(100%-4px)] w-[calc(100%-4px)] flex items-center justify-center">
                                         <div className="relative group overflow-hidden rounded-xl border border-white/10 bg-white/5 h-full aspect-[3/4] shadow-2xl">
                                             {/* Image */}
                                             <img
@@ -195,8 +202,14 @@ export default function Leadership() {
                         {/* Admin/Chairman Section */}
                         {/* Admin/Chairman Section (Vertical Standardized) */}
                         {leadershipData.admin.map((person, index) => (
-                            <div key={index} className="flex flex-col justify-center items-center shrink-0 relative mx-auto mb-6">
-                                <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg p-3 w-[85vw] aspect-[3/4] flex items-center justify-center">
+                            <div key={index} className="flex flex-col justify-center items-center shrink-0 relative mx-auto mb-6 group/glow w-[85vw] aspect-[3/4]">
+                                {/* Moving Glow Border Container */}
+                                <div className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none">
+                                    <div className="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_0deg,white_90deg,transparent_180deg)] animate-[spin_4s_linear_infinite] opacity-50"></div>
+                                </div>
+
+                                {/* Glass Frame (Content) */}
+                                <div className="relative z-10 bg-[#0a0a0a]/80 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-xl shadow-lg p-3 w-[calc(100%-4px)] h-[calc(100%-4px)] flex items-center justify-center m-[2px]">
                                     <div className="relative group overflow-hidden rounded-xl border border-white/10 bg-white/5 w-full h-full shadow-2xl">
                                         {/* Image */}
                                         <img
