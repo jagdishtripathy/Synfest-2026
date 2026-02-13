@@ -12,8 +12,8 @@ export default function Events() {
     const containerRef = useRef(null);
 
     const categories = [
-        { id: 'formal', label: 'Formal Events', data: formalEvents },
-        { id: 'informal', label: 'Informal Events', data: informalEvents },
+        { id: 'formal', label: 'Formal', data: formalEvents },
+        { id: 'informal', label: 'Informal', data: informalEvents },
         { id: 'games', label: 'Games', data: games },
     ];
 
@@ -39,40 +39,45 @@ export default function Events() {
                 </div>
 
                 <h1 className="text-6xl md:text-8xl font-black mb-8 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-10">
-                    The Events
+                    The<br /> Events <span className="text-primary">.</span>
                 </h1>
 
-                {/* Global Search */}
-                <div className="max-w-xl mb-12 relative group">
-                    <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                        <Search className="text-gray-500 group-focus-within:text-primary transition-colors" size={20} />
-                    </div>
-                    <input
-                        type="text"
-                        placeholder="Search all events..."
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full bg-white/5 border border-white/10 rounded-full py-3 pl-12 pr-6 text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:bg-white/10 transition-all font-medium tracking-wide"
-                    />
-                </div>
+                {/* Sticky Header: Search & Filter (Fade Down Blur) */}
+                <div className="sticky top-0 z-50 py-4 pb-8 -mx-6 px-6 md:-mx-12 md:px-12 mb-4 transition-all bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent backdrop-blur-xl">
+                    <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
+                        {/* Search Bar */}
+                        <div className="w-full md:max-w-md relative group">
+                            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <Search className="text-gray-500 group-focus-within:text-primary transition-colors" size={20} />
+                            </div>
+                            <input
+                                type="text"
+                                placeholder="Search all events..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                className="w-full bg-white/5 border border-white/10 rounded-full py-3 pl-12 pr-6 text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:bg-white/10 transition-all font-medium tracking-wide"
+                            />
+                        </div>
 
-                {/* Categories Navigation (Hidden if searching) */}
-                {!searchQuery && (
-                    <div className="flex flex-wrap gap-4 mb-16 border-b border-white/10 pb-6">
-                        {categories.map((cat) => (
-                            <button
-                                key={cat.id}
-                                onClick={() => setActiveTab(cat.id)}
-                                className={`px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 border ${activeTab === cat.id
-                                    ? 'bg-white text-black border-white'
-                                    : 'bg-transparent text-gray-400 border-white/10 hover:border-white/30 hover:text-white'
-                                    }`}
-                            >
-                                {cat.label}
-                            </button>
-                        ))}
+                        {/* Categories Navigation (Grid on mobile, Flex on desktop) */}
+                        {!searchQuery && (
+                            <div className="grid grid-cols-3 gap-2 w-full md:w-auto md:flex md:gap-4">
+                                {categories.map((cat) => (
+                                    <button
+                                        key={cat.id}
+                                        onClick={() => setActiveTab(cat.id)}
+                                        className={`w-full md:w-auto px-2 py-3 md:px-6 rounded-full text-[12px] md:text-sm font-bold uppercase tracking-wider transition-all duration-300 border truncate flex items-center justify-center ${activeTab === cat.id
+                                            ? 'bg-white text-black border-white'
+                                            : 'bg-transparent text-gray-400 border-white/10 hover:border-white/30 hover:text-white'
+                                            }`}
+                                    >
+                                        {cat.label}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                     </div>
-                )}
+                </div>
 
                 {/* Search Results Header */}
                 {searchQuery && (

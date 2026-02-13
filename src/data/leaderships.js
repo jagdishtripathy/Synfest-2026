@@ -78,6 +78,13 @@ export const leadershipData = {
   ],
   btech: [
     {
+      id: "bt0",
+      name: "Dr. Prashanta Kumar Nayak",
+      title: "Director (B.Tech)",
+      quote: "Visionary leadership guiding us to new heights.",
+      image: "/Dr-Prashanta-Kumar-Nayak-Director-Btech.jpeg",
+    },
+    {
       id: "bt5",
       name: "Mr. Smruti Ranjan Dash",
       title: "Coordinator (B.tech)",
@@ -90,6 +97,13 @@ export const leadershipData = {
       title: "Co-coordinator",
       quote: "Excellence is not a skill, it is an attitude.",
       image: "/Mrs-Jeniffer-Momin-co-coordinator-betch.jpeg",
+    },
+    {
+      id: "bt6",
+      name: "Mr. Sanjya Sathua Mohapatra",
+      title: "Co-coordinator",
+      quote: "Collaborating for a better future.",
+      image: "/Mr-Sanjya-sathua-Mohapatra-co-coordinatior-Btech.jpeg",
     },
     {
       id: "bt1",
@@ -113,6 +127,13 @@ export const leadershipData = {
       quote: "Technology is best when it brings people together.",
       image: "/Mr-Malaya-Kumar-Debta-member-btech.jpeg",
     },
+    {
+      id: "bt7",
+      name: "Ms. Gayatri Behera",
+      title: "Member",
+      quote: "Contributing to the community with passion.",
+      image: "/Ms-Gayatri-Behera-member-btech.jpeg",
+    },
   ],
   nursing: [
     {
@@ -128,20 +149,6 @@ export const leadershipData = {
       title: "Co-coordinator",
       quote: "Healing hands, caring hearts.",
       image: "/Ms-Suchismita-Pattanaik-co-coordinator-nursing.jpeg",
-    },
-    {
-      id: "n3",
-      name: "Faculty Member",
-      title: "Member",
-      quote: "Service to humanity is service to God.",
-      image: "/Spiderwoman.png",
-    },
-    {
-      id: "n4",
-      name: "Faculty Member",
-      title: "Member",
-      quote: "Excellence in healthcare education.",
-      image: "/Spiderwoman.png",
     },
   ],
 };
