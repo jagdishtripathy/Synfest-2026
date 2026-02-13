@@ -80,7 +80,7 @@ export const leadershipData = {
     {
       id: "bt5",
       name: "Mr. Smruti Ranjan Dash",
-      title: "Coordinator",
+      title: "Coordinator (B.tech)",
       quote: "Leadership is the capacity to translate vision into reality.",
       image: "/Mr-Smruti-Ranjan-Dash-Btech-HOD.jpeg",
     },

@@ -88,10 +88,9 @@ export default function Events() {
                                         {event.description}
                                     </p>
 
-                                    <div className="flex items-center gap-3 text-xs font-bold tracking-widest uppercase text-primary group-hover:text-white transition-colors mt-auto">
-                                        <span>Explore</span>
-                                        <div className="h-0.5 w-12 bg-primary group-hover:bg-white transition-all"></div>
-                                    </div>
+                                    <button className="mt-auto px-6 py-2 bg-primary text-black font-bold text-xs uppercase tracking-widest rounded-full hover:bg-white transition-colors self-start">
+                                        Explore
+                                    </button>
                                 </div>
                             </div>
                         </div>
