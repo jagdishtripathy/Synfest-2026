@@ -120,9 +120,6 @@ export default function Leadership() {
                                                 <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">
                                                     {person.title}
                                                 </p>
-                                                <blockquote className="text-xs font-serif italic text-gray-300 leading-relaxed border-l-2 border-primary pl-3 py-1 opacity-90 line-clamp-3">
-                                                    "{person.quote}"
-                                                </blockquote>
                                             </div>
                                         </div>
                                     </div>
@@ -218,9 +215,6 @@ export default function Leadership() {
                                             {person.name}
                                         </h3>
                                         <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">{person.title}</p>
-                                        <blockquote className="text-[10px] font-serif italic text-gray-300 leading-relaxed border-l-2 border-primary pl-3 py-1 opacity-90 line-clamp-3">
-                                            "{person.quote}"
-                                        </blockquote>
                                     </div>
                                 </div>
                             </div>
