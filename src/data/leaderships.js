@@ -142,7 +142,7 @@ export const leadershipData = {
       name: "Ashit Kumar Jena",
       title: "Cultural Secretary",
       quote: "Embracing culture, celebrating unity.",
-      image: "/public/Ashit-Kumar-Jena-Cultural-Secretary.jpeg",
+      image: "/Ashit-Kumar-Jena-Cultural-Secretary-Student.jpeg",
     }
   ],
 };
