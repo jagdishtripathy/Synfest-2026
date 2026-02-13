@@ -153,7 +153,7 @@ export const leadershipData = {
     {
       name: "Mr. Ashish Prusty",
       title: "Co-coordinator (B.Tech)",
-      image: "/BTech-Stu-CoCoordinator-Mr-Ashish-Prusty.webp",
+      image: "/BTech-Stu-CoCoordinator-Mr-Ashish-Prusty.jpeg",
     },
     {
       name: "Mr. Ayush Mishra",
