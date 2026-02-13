@@ -172,7 +172,7 @@ function MarqueeRow({ images, speed, reverse }) {
                     ${i % 2 === 0 ? 'w-40 md:w-64 h-28 md:h-48' : 'w-48 md:w-80 h-28 md:h-48'} 
                     ${i % 3 === 0 ? 'w-32 md:w-56 h-28 md:h-48' : ''}
                 `}>
-                    <img src={src} alt="Gallery" className="w-full h-full object-cover" />
+                    <img src={src} alt="Gallery" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                 </div>
             ))}
         </div>

@@ -75,6 +75,7 @@ export default function HomeHero() {
                     loop
                     muted={isMuted}
                     playsInline
+                    preload="auto"
                     className="w-full h-full object-cover blur-sm scale-110" // blur-sm and scale to avoid edge blur issues
                 >
                     <source src="/hero-bg.mp4" type="video/mp4" />
