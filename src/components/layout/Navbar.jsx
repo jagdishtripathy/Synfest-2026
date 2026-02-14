@@ -5,82 +5,82 @@ import { gsap } from 'gsap';
 import MuteToggle from '../ui/MuteToggle';
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-    const menuRef = useRef(null);
-    const backdropRef = useRef(null);
-    const linksRef = useRef([]);
-    const location = useLocation();
+    // const [isOpen, setIsOpen] = useState(false);
+    // const menuRef = useRef(null);
+    // const backdropRef = useRef(null);
+    // const linksRef = useRef([]);
+    // const location = useLocation();
 
-    const toggleMenu = () => setIsOpen(!isOpen);
+    // const toggleMenu = () => setIsOpen(!isOpen);
 
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            if (isOpen) {
-                // Show Backdrop
-                gsap.to(backdropRef.current, {
-                    display: 'block',
-                    opacity: 1,
-                    duration: 0.3
-                });
+    // useEffect(() => {
+    //     const ctx = gsap.context(() => {
+    //         if (isOpen) {
+    //             // Show Backdrop
+    //             gsap.to(backdropRef.current, {
+    //                 display: 'block',
+    //                 opacity: 1,
+    //                 duration: 0.3
+    //             });
 
-                // Slide Menu Down
-                gsap.to(menuRef.current, {
-                    y: '0%',
-                    duration: 0.5,
-                    ease: 'power3.out',
-                });
+    //             // Slide Menu Down
+    //             gsap.to(menuRef.current, {
+    //                 y: '0%',
+    //                 duration: 0.5,
+    //                 ease: 'power3.out',
+    //             });
 
-                // Animate Links
-                gsap.fromTo(linksRef.current,
-                    { y: -20, opacity: 0 },
-                    { y: 0, opacity: 1, duration: 0.3, stagger: 0.1, delay: 0.2 }
-                );
-            } else {
-                // Slide Menu Up
-                gsap.to(menuRef.current, {
-                    y: '-100%',
-                    duration: 0.5,
-                    ease: 'power3.in',
-                });
+    //             // Animate Links
+    //             gsap.fromTo(linksRef.current,
+    //                 { y: -20, opacity: 0 },
+    //                 { y: 0, opacity: 1, duration: 0.3, stagger: 0.1, delay: 0.2 }
+    //             );
+    //         } else {
+    //             // Slide Menu Up
+    //             gsap.to(menuRef.current, {
+    //                 y: '-100%',
+    //                 duration: 0.5,
+    //                 ease: 'power3.in',
+    //             });
 
-                // Hide Backdrop
-                gsap.to(backdropRef.current, {
-                    opacity: 0,
-                    duration: 0.3,
-                    onComplete: () => gsap.set(backdropRef.current, { display: 'none' })
-                });
-            }
-        });
-        return () => ctx.revert();
-    }, [isOpen]);
+    //             // Hide Backdrop
+    //             gsap.to(backdropRef.current, {
+    //                 opacity: 0,
+    //                 duration: 0.3,
+    //                 onComplete: () => gsap.set(backdropRef.current, { display: 'none' })
+    //             });
+    //         }
+    //     });
+    //     return () => ctx.revert();
+    // }, [isOpen]);
 
     // Close menu on route change
-    useEffect(() => {
-        setIsOpen(false);
-    }, [location]);
+    // useEffect(() => {
+    //     setIsOpen(false);
+    // }, [location]);
 
-    const navLinks = [
-        { name: 'Home', path: '/#home' },
-        { name: 'About', path: '/#about' },
-        { name: 'Highlights', path: '/#highlights' },
-        // { name: 'Sponsors', path: '/#sponsors' },
-        { name: 'Contact', path: '/contact' },
-    ];
+    // const navLinks = [
+    //     { name: 'Home', path: '/#home' },
+    //     { name: 'About', path: '/#about' },
+    //     { name: 'Highlights', path: '/#highlights' },
+    //     // { name: 'Sponsors', path: '/#sponsors' },
+    //     { name: 'Contact', path: '/contact' },
+    // ];
 
-    const scrollToSection = (e, path) => {
-        if (path.startsWith('/#')) {
-            const id = path.split('#')[1];
-            const element = document.getElementById(id);
-            if (element) {
-                e.preventDefault();
-                element.scrollIntoView({ behavior: 'smooth' });
-                setIsOpen(false);
+    // const scrollToSection = (e, path) => {
+    //     if (path.startsWith('/#')) {
+    //         const id = path.split('#')[1];
+    //         const element = document.getElementById(id);
+    //         if (element) {
+    //             e.preventDefault();
+    //             element.scrollIntoView({ behavior: 'smooth' });
+    //             setIsOpen(false);
 
-                // Optional: Update URL without jump if needed, but smooth scroll is priority.
-                window.history.pushState(null, '', path);
-            }
-        }
-    };
+    //             // Optional: Update URL without jump if needed, but smooth scroll is priority.
+    //             window.history.pushState(null, '', path);
+    //         }
+    //     }
+    // };
 
     return (
         <>
@@ -91,7 +91,7 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Links */}
-                <div className="hidden md:flex gap-8 items-center bg-white/5 backdrop-blur-md px-8 py-3 rounded-full border border-white/10">
+                {/* <div className="hidden md:flex gap-8 items-center bg-white/5 backdrop-blur-md px-8 py-3 rounded-full border border-white/10">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
@@ -107,36 +107,31 @@ export default function Navbar() {
                         </Link>
                     ))}
                 </div>
-
+ */}
                 {/* Right side controls - flex container */}
                 <div className="flex items-center gap-4">
-                    {/* Mute Toggle - always visible */}
                     <MuteToggle />
-
-                    {/* Desktop CTA */}
-                    <Link
+                    {/* <Link
                         to="/events"
                         className="hidden md:block px-6 py-3 bg-primary text-white font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-300 transform hover:-translate-y-1"
                     >
                         Events
-                    </Link>
-
-                    {/* Mobile Menu Toggle */}
-                    <button onClick={toggleMenu} className="md:hidden z-50 relative w-8 h-8 flex items-center justify-center">
+                    </Link> */}
+                    {/* <button onClick={toggleMenu} className="md:hidden z-50 relative w-8 h-8 flex items-center justify-center">
                         {isOpen ? <X size={28} /> : <Menu size={28} />}
-                    </button>
+                    </button> */}
                 </div>
             </nav>
 
             {/* Backdrop for Outside Click */}
-            <div
+            {/* <div
                 ref={backdropRef}
                 onClick={() => setIsOpen(false)}
                 className="fixed inset-0 bg-black/50 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity"
-            ></div>
+            ></div> */}
 
             {/* Mobile Menu Panel (Slides from Top) */}
-            <div
+            {/* <div
                 ref={menuRef}
                 className="fixed top-0 left-0 w-full bg-black/95 border-b border-white/10 z-40 flex flex-col items-center pt-24 pb-12 -translate-y-full md:hidden shadow-2xl"
             >
@@ -161,7 +156,7 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }
