@@ -114,6 +114,11 @@ export const leadershipData = {
   ],
   nursing: [
     {
+      name: "Mrs. J. Shivkami",
+      title: "Principal (Nursing)",
+      image: "/Nursing-Fac-Principal-Mrs-J-ShivkamiMrs.jpeg",
+    },
+    {
       name: "Mrs. Helen Behera",
       title: "Coordinator",
       image: "/Nursing-Fac-Coordinator-Mrs-Helen-Behera.jpeg",
