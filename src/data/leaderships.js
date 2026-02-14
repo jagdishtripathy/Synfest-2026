@@ -15,11 +15,6 @@ export const leadershipData = {
       title: "Director (Admin)",
       image: "/Admin-Fac-Director-Dr-Itishree-Mohanty.jpeg",
     },
-    {
-      name: "Mr. A. K. Jena",
-      title: "Chief Security Officer",
-      image: "/Admin-Fac-CSO-Mr-AK-Jena.jpeg",
-    },
   ],
   diploma: [
     {
@@ -79,12 +74,12 @@ export const leadershipData = {
     {
       name: "Mr. Smruti Ranjan Dash",
       title: "Convenor",
-      image: "/BTech-Fac-Coordinator-Mr-Smruti-Ranjan-Dash.jpeg",
+      image: "/BTech-Fac-Convenor-Mr-Smruti-Ranjan-Dash.jpeg",
     },
     {
-      name: "Mrs. Jeniffer Momin",
+      name: "Mrs. Jennifer Momin",
       title: "Co-Convenor",
-      image: "/BTech-Fac-CoCoordinator-Mrs-Jeniffer-Momin.jpeg",
+      image: "/BTech-Fac-CoConvenor-Mrs-Jennifer-Momin.jpeg",
     },
     {
       name: "Mr. Sanjya Sathua Mohapatra",
@@ -102,14 +97,19 @@ export const leadershipData = {
       image: "/BTech-Fac-Member-Mr-Pratyusabhanu-Khuntia.jpeg",
     },
     {
-      name: "Mr. Debashis Rout",
+      name: "Mr. Bijanananda Mishra",
       title: "Member",
-      image: "/BTech-Fac-Member-Mr-Debashis-Rout.jpeg",
+      image: "/BTech-Fac-Member-Mr-Bijanananda-Mishra.jpeg",
     },
     {
       name: "Ms. Gayatri Behera",
       title: "Member",
       image: "/BTech-Fac-Member-Ms-Gayatri-Behera.jpeg",
+    },
+    {
+      name: "Mr. A. K. Jena",
+      title: "Chief Security Officer",
+      image: "/Admin-Fac-CSO-Mr-AK-Jena.jpeg",
     },
   ],
   nursing: [
@@ -169,6 +169,11 @@ export const leadershipData = {
       name: "Ms. Pragyan Lenka",
       title: "Coordinator (B.Sc)",
       image: "/BSc-Stu-Coordinator-Ms-Pragyan-Lenka.jpeg",
+    },
+    {
+      name: "Ms. Neelam Mallick",
+      title: "Coordinator",
+      image: "/Nursing-Stu-Coordinator-Ms-Neelam-Mallick.jpeg",
     },
   ],
 };
