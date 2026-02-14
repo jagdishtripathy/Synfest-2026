@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
 import { Phone, Search } from 'lucide-react';
-import { formalEvents, informalEvents, games } from '../data/events';
+import { formalEvents } from '../data/formalEvents';
+import { informalEvents } from '../data/informalEvents';
+import { games } from '../data/gamesEvents';
 import EventModal from '../components/events/EventModal';
 
 export default function Events() {
