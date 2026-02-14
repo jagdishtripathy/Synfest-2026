@@ -69,7 +69,7 @@ export default function About() {
             <div className="flex-1 flex justify-center items-center">
                 <div ref={imageRef} className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] relative hover:scale-105 transition-transform duration-500">
                     <img
-                        src="/logo.png"
+                        src="/media/logo.png"
                         alt="Synergy Institute Logo"
                         className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(220,38,38,0.4)]"
                     />

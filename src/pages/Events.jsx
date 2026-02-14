@@ -99,7 +99,7 @@ export default function Events() {
                             {/* Background Image */}
                             <div className="absolute inset-0">
                                 <img
-                                    src={event.image || '/logo.png'}
+                                    src={event.image || '/media/logo.png'}
                                     alt={event.title}
                                     loading="lazy"
                                     decoding="async"
