@@ -47,7 +47,7 @@ const Countdown = () => {
     });
 
     return (
-        <div className="flex justify-center flex-wrap mt-12 md:mt-16 select-none">
+        <div className="flex justify-center flex-wrap mt-8 md:mt-8 select-none">
             {timerComponents.length ? (
                 <div className="flex items-start">
                     {timerComponents.map((comp, i) => (

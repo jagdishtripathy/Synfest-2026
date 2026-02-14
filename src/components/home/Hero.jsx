@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Volume2, VolumeX } from 'lucide-react';
@@ -103,6 +104,29 @@ export default function HomeHero() {
 
                 {/* Countdown */}
                 <Countdown />
+
+                {/* Hero CTAs */}
+                <div className="mt-12 flex flex-col md:flex-row gap-6 justify-center items-center z-30 relative">
+                    {/* Primary Liquid Button */}
+                    <Link
+                        to="/events"
+                        className="relative group px-8 py-3 rounded-full overflow-hidden bg-gradient-to-br from-primary/90 to-red-600/90 backdrop-blur-xl border border-white/20 shadow-[0_4px_15px_rgba(220,38,38,0.4),inset_0_0_10px_rgba(255,255,255,0.2)] hover:shadow-[0_6px_25px_rgba(220,38,38,0.6),inset_0_0_20px_rgba(255,255,255,0.4)] transition-all duration-300 hover:-translate-y-1"
+                    >
+                        <span className="relative z-10 text-white text-sm font-bold tracking-widest uppercase">Explore Events</span>
+                        {/* Liquid Sheen */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
+                    </Link>
+
+                    {/* Glass Liquid Button */}
+                    <Link
+                        to="/contact"
+                        className="relative group px-8 py-3 rounded-full overflow-hidden bg-white/5 backdrop-blur-xl border border-white/20 shadow-[0_4px_15px_rgba(0,0,0,0.2),inset_0_0_10px_rgba(255,255,255,0.1)] hover:bg-white/10 hover:shadow-[0_6px_20px_rgba(255,255,255,0.2),inset_0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 hover:-translate-y-1"
+                    >
+                        <span className="relative z-10 text-white text-sm font-bold tracking-widest uppercase">Contact Us</span>
+                        {/* Liquid Sheen */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
+                    </Link>
+                </div>
             </div>
 
             {/* Mute Button - Bottom Right */}
