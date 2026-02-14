@@ -152,7 +152,7 @@ export default function Leadership() {
                                         style={{
                                             gridTemplateColumns: template,
                                             gridTemplateRows: "repeat(2, 1fr)",
-                                            gridAutoFlow: "column dense",
+                                            gridAutoFlow: "row",
                                             width: "max-content"
                                         }}
                                     >
