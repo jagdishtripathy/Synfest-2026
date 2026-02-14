@@ -1,6 +1,5 @@
 export const formalEvents = [
   {
-    id: "f1",
     title: "Code Chef",
     description:
       "Competitive programming contest to solve algorithmic challenges.",
@@ -19,7 +18,6 @@ export const formalEvents = [
     emoji: "👨‍💻",
   },
   {
-    id: "f2",
     title: "Mobile App Development",
     description: "Showcase your app development skills.",
     rules: [
@@ -36,7 +34,6 @@ export const formalEvents = [
     emoji: "📱",
   },
   {
-    id: "f3",
     title: "Robotics Competition",
     description: "Design and build robots to complete tasks.",
     rules: [
@@ -53,7 +50,6 @@ export const formalEvents = [
     emoji: "🤖",
   },
   {
-    id: "f4",
     title: "Drone Competition",
     description: "Navigate drones through obstacle courses.",
     rules: [
@@ -70,7 +66,6 @@ export const formalEvents = [
     emoji: "🚁",
   },
   {
-    id: "f5",
     title: "Math Olympiad",
     description: "Test your mathematical prowess.",
     rules: ["Individual event.", "No calculators."],
@@ -83,7 +78,6 @@ export const formalEvents = [
     emoji: "➗",
   },
   {
-    id: "f6",
     title: "Technical Quiz",
     description: "Quiz on various technical domains.",
     rules: ["Team of 2.", "3 Rounds: Prelims, Visual, Rapid Fire."],
@@ -96,7 +90,6 @@ export const formalEvents = [
     emoji: "🧠",
   },
   {
-    id: "f7",
     title: "Tech Innovation",
     description: "Present innovative technical solutions.",
     rules: ["Working prototype preferred.", "5 mins presentation."],
@@ -109,7 +102,6 @@ export const formalEvents = [
     emoji: "💡",
   },
   {
-    id: "f8",
     title: "Ideathon",
     description: "Brainstorm and pitch creative ideas.",
     rules: ["Problem statements given on spot.", "6 hours duration."],
@@ -122,7 +114,6 @@ export const formalEvents = [
     emoji: "🚀",
   },
   {
-    id: "f9",
     title: "Business Plan",
     description: "Pitch your business startup ideas.",
     rules: ["Submit B-Plan before event.", "Presentation: 10 mins."],
@@ -135,7 +126,6 @@ export const formalEvents = [
     emoji: "📊",
   },
   {
-    id: "f10",
     title: "Poster Presentation",
     description: "Present technical concepts via posters.",
     rules: ["Standard poster size.", "Original content only."],
@@ -148,7 +138,6 @@ export const formalEvents = [
     emoji: "📑",
   },
   // {
-  //   id: "f11",
   //   title: "Database Design",
   //   description: "Design efficient database schemas.",
   //   rules: ["ER Diagram required.", "Normalization up to 3NF."],
@@ -161,7 +150,6 @@ export const formalEvents = [
   //   emoji: "🗄️",
   // },
   {
-    id: "f12",
     title: "Fit & Fab",
     description: "Health and fitness challenge.",
     rules: ["Physical tasks.", "Sports wear mandatory."],
@@ -174,7 +162,6 @@ export const formalEvents = [
     emoji: "💪",
   },
   {
-    id: "i12",
     title: "Pick & Speak (Extempore Speech)",
     description: "Impromptu speaking challenge.",
     rules: ["Preparation time: 2 mins.", "Speaking time: 2 mins."],
@@ -187,7 +174,6 @@ export const formalEvents = [
     emoji: "🎙️",
   },
   {
-    id: "f13",
     title: "Digital Doodle",
     description: "Digital art competition.",
     rules: ["Bring your own tablet/laptop.", "Theme given on spot."],
@@ -200,7 +186,6 @@ export const formalEvents = [
     emoji: "🎨",
   },
   {
-    id: "f14",
     title: "Odia Essay",
     description: "Express your thoughts in Odia.",
     rules: [
@@ -217,7 +202,6 @@ export const formalEvents = [
     emoji: "✍️",
   },
   {
-    id: "f15",
     title: "English Essay",
     description: "Creative writing competition in English.",
     rules: [
@@ -234,7 +218,6 @@ export const formalEvents = [
     emoji: "📝",
   },
   {
-    id: "f16",
     title: "Odia Debate",
     description: "Verbal battle of perspectives in Odia.",
     rules: [
@@ -251,7 +234,6 @@ export const formalEvents = [
     emoji: "🗣️",
   },
   {
-    id: "f17",
     title: "English Debate",
     description: "War of words and logic in English.",
     rules: [
@@ -271,7 +253,6 @@ export const formalEvents = [
 
 export const informalEvents = [
   {
-    id: "i1",
     title: "Solo Song",
     description: "Showcase your vocal talent.",
     rules: ["Time limit: 3-4 mins.", "Karaoke allowed (submit prior)."],
@@ -284,7 +265,6 @@ export const informalEvents = [
     emoji: "🎤",
   },
   {
-    id: "i2",
     title: "Group Song",
     description: "Musical battle of songs.",
     rules: ["Time limit: 5 mins.", "Min 4 members."],
@@ -297,7 +277,6 @@ export const informalEvents = [
     emoji: "🎶",
   },
   {
-    id: "i3",
     title: "Solo Dance",
     description: "Express yourself through dance.",
     rules: ["Time limit: 3 mins.", "Props allowed."],
@@ -310,7 +289,6 @@ export const informalEvents = [
     emoji: "💃",
   },
   {
-    id: "i4",
     title: "Group Dance",
     description: "Synchronized group dance performance.",
     rules: ["Time limit: 5-7 mins.", "Min 6 members."],
@@ -323,7 +301,6 @@ export const informalEvents = [
     emoji: "👯",
   },
   {
-    id: "i5",
     title: "Rangoli",
     description: "Traditional art competition.",
     rules: ["Time limit: 2 hours.", "Materials provided."],
@@ -336,7 +313,6 @@ export const informalEvents = [
     emoji: "🎨",
   },
   {
-    id: "i6",
     title: "Jhoti",
     description: "Traditional Odia art form.",
     rules: ["Time limit: 1 hour.", "White liquid paste only."],
@@ -349,7 +325,6 @@ export const informalEvents = [
     emoji: "🖌️",
   },
   {
-    id: "i7",
     title: "Mono Acting",
     description: "Act out a character or scene solo.",
     rules: ["Time limit: 3 mins.", "Language: Odia, Hindi, English."],
@@ -362,7 +337,6 @@ export const informalEvents = [
     emoji: "🎭",
   },
   {
-    id: "i8",
     title: "Skit (Group Acting)",
     description: "Short plays and skits.",
     rules: ["Time limit: 10 mins.", "Theme: Social Awareness/Comedy."],
@@ -375,7 +349,6 @@ export const informalEvents = [
     emoji: "🎬",
   },
   {
-    id: "i9",
     title: "Painting",
     description: "Unleash your creativity on canvas.",
     rules: ["Topic given on spot.", "Bring your own colors."],
@@ -388,7 +361,6 @@ export const informalEvents = [
     emoji: "🖼️",
   },
   {
-    id: "i10",
     title: "Face Painting",
     description: "Artistic face painting.",
     rules: ["Time limit: 1 hour.", "Skin-friendly colors only."],
@@ -401,7 +373,6 @@ export const informalEvents = [
     emoji: "🤡",
   },
   {
-    id: "i11",
     title: "Photography",
     description: "Capture the campus vibe.",
     rules: ["DSLR/Mobile allowed.", "Submit raw files."],
@@ -414,7 +385,6 @@ export const informalEvents = [
     emoji: "📸",
   },
   {
-    id: "i13",
     title: "Documentary Movie",
     description: "Short film making contest.",
     rules: ["Max duration: 10 mins.", "Submit via drive link."],
@@ -427,7 +397,6 @@ export const informalEvents = [
     emoji: "📹",
   },
   {
-    id: "i14",
     title: "Bottle Painting",
     description: "Creative painting on bottles.",
     rules: ["Glass bottles only.", "Acrylics preferred."],
@@ -440,7 +409,6 @@ export const informalEvents = [
     emoji: "🍾",
   },
   {
-    id: "i15",
     title: "Bridal Make-up",
     description: "Make-up artistry competition.",
     rules: ["Time: 2 hours.", "Bring your own kit."],
@@ -453,7 +421,6 @@ export const informalEvents = [
     emoji: "💄",
   },
   {
-    id: "i16",
     title: "Mehendi",
     description: "Intricate henna designs.",
     rules: ["Time: 1 hour.", "Design type: Indian/Arabic."],
@@ -466,7 +433,6 @@ export const informalEvents = [
     emoji: "🤚",
   },
   {
-    id: "i17",
     title: "Dumb Charades",
     description: "Act out words without speaking.",
     rules: ["3 Rounds.", "No lip movement."],
@@ -479,7 +445,6 @@ export const informalEvents = [
     emoji: "🤔",
   },
   {
-    id: "i18",
     title: "Treasure Hunt",
     description: "Solve clues to find the treasure.",
     rules: ["Campus wide event.", "Don't disturb classes."],
@@ -492,7 +457,6 @@ export const informalEvents = [
     emoji: "💎",
   },
   {
-    id: "i19",
     title: "Be Brave Enough",
     description: "Courage and task-based challenge.",
     rules: ["Dare challenges.", "Elimination rounds."],
@@ -505,7 +469,6 @@ export const informalEvents = [
     emoji: "🦁",
   },
   {
-    id: "i20",
     title: "Food Fest",
     description: "Cook, serve, and conquer taste buds.",
     rules: ["Stall setup required.", "Hygiene is mandatory.", "2-4 members."],
@@ -521,7 +484,6 @@ export const informalEvents = [
 
 export const games = [
   {
-    id: "g1",
     title: "Chess",
     description: "Strategic board game.",
     rules: ["Blitz format.", "FIDE rules apply."],
@@ -534,7 +496,6 @@ export const games = [
     emoji: "♟️",
   },
   {
-    id: "g2",
     title: "Carrom",
     description: "Tabletop strike and pocket game.",
     rules: ["Doubles only.", "Standard rules."],
@@ -547,7 +508,6 @@ export const games = [
     emoji: "🎯",
   },
   {
-    id: "g3",
     title: "Badminton",
     description: "Racquet sport.",
     rules: ["Singles & Doubles.", "Knockout format."],
@@ -560,7 +520,6 @@ export const games = [
     emoji: "🏸",
   },
   {
-    id: "g4",
     title: "Volleyball",
     description: "Team sport on the court.",
     rules: ["6 players + 2 subs.", "Best of 3 sets."],
@@ -573,7 +532,6 @@ export const games = [
     emoji: "🏐",
   },
   {
-    id: "g5",
     title: "Basketball",
     description: "Hoops and dribbles.",
     rules: ["5 players + 2 subs.", "Quarter system."],
@@ -586,7 +544,6 @@ export const games = [
     emoji: "🏀",
   },
   {
-    id: "g6",
     title: "Cricket",
     description: "The gentleman's game.",
     rules: ["Tennis ball cricket.", "11 players + 2 subs.", "8 overs."],
@@ -599,7 +556,6 @@ export const games = [
     emoji: "🏏",
   },
   {
-    id: "g7",
     title: "Cyber Battle",
     description: "E-sports competition (BGMI/Valorant).",
     rules: ["Bring your own peripherals.", "Fair play mandatory."],
@@ -612,7 +568,6 @@ export const games = [
     emoji: "🎮",
   },
   {
-    id: "g8",
     title: "Yoga",
     description: "Demonstrate at least 10 movements in 3 min.",
     rules: ["Surya Namaskar mandatory.", "Judgment on flexibility."],

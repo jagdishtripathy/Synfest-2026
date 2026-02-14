@@ -90,9 +90,9 @@ export default function Events() {
 
                 {/* Event List */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-10">
-                    {currentEvents.map((event) => (
+                    {currentEvents.map((event, index) => (
                         <div
-                            key={event.id}
+                            key={index}
                             onClick={() => setSelectedEvent(event)}
                             className="group relative h-64 border border-white/10 rounded-xl bg-[#0a0a0a] overflow-hidden cursor-pointer transition-transform duration-300"
                         >
@@ -117,7 +117,7 @@ export default function Events() {
                             <div className="cursor-default absolute inset-0 z-20 p-8 flex flex-col justify-center">
                                 {/* Decorative ID - Moved to Left & Increased Visibility */}
                                 <div className="absolute top-4 left-4 text-7xl font-black text-white/10 pointer-events-none select-none">
-                                    {event.id.replace(/\D/g, '')}
+                                    {(index + 1).toString().padStart(2, '0')}
                                 </div>
 
                                 <div className="relative z-10 pl-4 md:pl-8">
