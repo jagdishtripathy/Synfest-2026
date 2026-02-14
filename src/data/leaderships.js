@@ -1,9 +1,9 @@
 export const leadershipData = {
   admin: [
     {
-      name: "Mr. Binod Dash",
+      name: "Shri Binod Dash",
       title: "Hon. Chairman",
-      image: "/Admin-Fac-Chairman-Mr-Binod-Dash.png",
+      image: "/Admin-Fac-Chairman-Shri-Binod-Dash.png",
     },
     {
       name: "Dr. Prashanta Kumar Nayak",
