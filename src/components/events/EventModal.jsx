@@ -7,6 +7,14 @@ export default function EventModal({ event, onClose }) {
     const contentRef = useRef(null);
 
     useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') {
+                handleClose();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
         // Lock body scroll
         const originalStyle = window.getComputedStyle(document.body).overflow;
         document.body.style.overflow = 'hidden';
@@ -26,6 +34,7 @@ export default function EventModal({ event, onClose }) {
         }, modalRef);
 
         return () => {
+            window.removeEventListener('keydown', handleKeyDown);
             ctx.revert();
             document.body.style.overflow = originalStyle;
         };
@@ -44,10 +53,15 @@ export default function EventModal({ event, onClose }) {
     if (!event) return null;
 
     return (
-        <div ref={modalRef} className="fixed inset-0 z-[100] overflow-y-auto bg-black/80 backdrop-blur-md">
+        <div
+            ref={modalRef}
+            onClick={handleClose}
+            className="fixed inset-0 z-[100] overflow-y-auto bg-black/80 backdrop-blur-md"
+        >
             <div className="flex min-h-full items-center justify-center p-4">
                 <div
                     ref={contentRef}
+                    onClick={(e) => e.stopPropagation()}
                     className="relative w-full max-w-2xl bg-[#111] border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
                 >
                     {/* Close Button */}
