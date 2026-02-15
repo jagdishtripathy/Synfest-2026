@@ -11,7 +11,7 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="lg:col-span-2">
                         <Link to="/" className="inline-block group">
-                            <h2 className="text-8xl leading-none tracking-tighter mb-6 font-black">
+                            <h2 className="text-6xl leading-none tracking-tighter mb-6 font-black">
                                 SYNFEST <span className="text-primary">.</span>
                             </h2>
                         </Link>
