@@ -20,6 +20,11 @@ export const coordinators = [
     phone: "+91 00000 00000",
   },
   {
+    name: "Priti Mohan Pratihari",
+    role: "Coordinator (B.Tech)",
+    phone: "+91 72054 13331"
+  },
+  {
     name: "Ashish Prusty",
     role: "Co-coordinator (B.Tech)",
     phone: "+91 96920 11029",
@@ -28,11 +33,6 @@ export const coordinators = [
     name: "Atal Bihari Gochhayat",
     role: "Co-coordinator (BTech)",
     phone: "+91 99388 42760"
-  },
-  {
-    name: "Priti Mohan Pratihari",
-    role: "Coordinator (B.Tech)",
-    phone: "+91 72054 13331"
   },
   {
     name: "Pragyan Lenka",

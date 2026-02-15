@@ -57,7 +57,6 @@ export const formalEvents = [
     description:
       "Design and build robots to perform specific tasks. Challenge your engineering skills!",
     rules: [
-      "Team size: 3 students.",
       "Build and program a robot to perform a specific task.",
       "Cost of components is borne by participants.",
       "Evaluation based on Speed (10pts), Accuracy (20pts), Line Detection (15pts), Obstacle Avoidance (15pts), Robustness (10pts), Start/Stop (10pts), Creativity (10pts), Documentation (5pts).",
@@ -84,7 +83,6 @@ export const formalEvents = [
     description:
       "Design drone systems for real-world challenges. Themes: Remote Healthcare, Telemedicine, Aerial Health Monitoring, Urban Construction Monitoring, Survey & Mapping, Renewable Energy Inspection, Security & Law Enforcement.",
     rules: [
-      "Team size: 3 students.",
       "Bring your own hardware and at least one laptop.",
       "Knowledge of Indian Drone Regulations required.",
       "Max drone size: 2ft x 2ft.",

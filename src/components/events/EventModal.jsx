@@ -89,14 +89,14 @@ export default function EventModal({ event, onClose }) {
                 </div>
 
                 {/* Chips Row */}
-                <div className="flex flex-wrap gap-2 px-6 md:px-8 mb-6">
+                <div className="flex flex-wrap gap-2 px-6 md:px-8 py-3">
                     <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full">
-                        <span className="text-sm">👥</span>
-                        <span className="text-xs md:text-sm text-gray-300">Team Size: <span className="text-white font-bold">{event.teamSize}</span></span>
+                        <span >👥</span>
+                        <span >Team Size: <span className="text-white font-bold">{event.teamSize}</span></span>
                     </div>
                     <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full">
-                        <span className="text-sm">💰</span>
-                        <span className="text-xs md:text-sm text-gray-300">Entry: <span className="text-white font-bold">{event.fee || "Free"}</span></span>
+                        <span >💰</span>
+                        <span >Entry: <span className="text-white font-bold">{event.fee || "Free"}</span></span>
                     </div>
                 </div>
 
@@ -196,55 +196,59 @@ export default function EventModal({ event, onClose }) {
                     </div>
                 </div>
 
-                {/* Logistics Section - Simple Icons & Text Below */}
-                <div className="px-4 py-3 md:px-6 md:pb-6">
-                    <div className="flex flex-row justify-between gap-2 md:grid md:grid-cols-3 md:gap-4 pt-3 border-t border-white/10">
-                        {/* Venue */}
-                        <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-1 md:gap-2 flex-1">
-                            <span className="text-sm md:text-xl">📍</span>
-                            <div>
-                                <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Venue</h4>
-                                <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.venue || "TBA"}</p>
-                            </div>
-                        </div>
+                {/* fixed CTA */}
+                <div className="sticky bottom-0 left-0 right-0 backdrop-blur-sm">
 
-                        {/* Date */}
-                        <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-1 md:gap-2 flex-1 border-white/10 md:border-none pl-2 md:pl-0">
-                            <span className="text-sm md:text-xl">📅</span>
-                            <div>
-                                <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Date</h4>
-                                <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.date || "TBA"}</p>
+                    {/* Logistics Section - Simple Icons & Text Below */}
+                    <div className=" py-4 border-t border-white/10">
+                        <div className="flex flex-row">
+                            {/* Venue */}
+                            <div className="flex flex-col md:flex-row text-center flex-1 justify-center">
+                                <span className="text-sm md:text-xl">📍</span>
+                                <div>
+                                    <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Venue</h4>
+                                    <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.venue || "TBA"}</p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* Time */}
-                        <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-1 md:gap-2 flex-1  border-white/10 md:border-none pl-2 md:pl-0">
-                            <span className="text-sm md:text-xl">⏰</span>
-                            <div>
-                                <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Time</h4>
-                                <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.time || "TBA"}</p>
+                            {/* Date */}
+                            <div className="flex flex-col md:flex-row text-center flex-1 justify-center">
+                                <span className="text-sm md:text-xl">📅</span>
+                                <div>
+                                    <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Date</h4>
+                                    <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.date || "TBA"}</p>
+                                </div>
+                            </div>
+
+                            {/* Time */}
+                            <div className="flex flex-col md:flex-row text-center flex-1 justify-center">
+                                <span className="text-sm md:text-xl">⏰</span>
+                                <div>
+                                    <h4 className="text-gray-500 font-bold uppercase text-[10px] md:text-[10px] tracking-wider">Time</h4>
+                                    <p className="text-white font-medium text-xs md:text-sm leading-tight">{event.time || "TBA"}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                {/* Footer / CTA */}
-                {/* Whatsapp Link button */}
-                <div className="p-2 pt-0 flex justify-between gap-2">
-                    <a
-                        href={event.whatsappLink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-[10px] md:text-sm flex-1 flex items-center justify-center px-4 py-3 md:px-6 md:py-4 bg-green-500 text-black font-bold uppercase tracking-widest hover:bg-green-400 transition-colors duration-300 text-center rounded-lg">
-                        <MessageCircle className="mr-1 md:mr-2 w-4 h-4 md:w-5 md:h-5" />Whatsapp Group
-                    </a>
-                    <a
-                        href={event.regLink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-[10px] md:text-sm flex-1 flex items-center justify-center px-4 py-3 md:px-8 md:py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors duration-300 text-center rounded-lg">
-                        <ExternalLink className="mr-1 md:mr-2 w-4 h-4 md:w-5 md:h-5" />Register Now
-                    </a>
+                    {/* Footer / CTA */}
+                    {/* Whatsapp Link button */}
+                    <div className="p-2 pt-0 flex justify-between gap-2">
+                        <a
+                            href={event.whatsappLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[10px] md:text-sm flex-1 flex items-center justify-center px-4 py-3 md:px-6 md:py-4 bg-green-500 text-black font-bold uppercase tracking-widest hover:bg-green-400 transition-colors duration-300 text-center rounded-lg">
+                            <MessageCircle className="mr-1 md:mr-2 w-4 h-4 md:w-5 md:h-5" />Whatsapp Group
+                        </a>
+                        <a
+                            href={event.regLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[10px] md:text-sm flex-1 flex items-center justify-center px-4 py-3 md:px-8 md:py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors duration-300 text-center rounded-lg">
+                            <ExternalLink className="mr-1 md:mr-2 w-4 h-4 md:w-5 md:h-5" />Register Now
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

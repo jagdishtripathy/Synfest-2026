@@ -221,7 +221,6 @@ export const informalEvents = [
     title: "Group Acting (Skit)",
     description: "Perform a skit on a theme.",
     rules: [
-      "Team Size: 5-10 members. One team per student.",
       "Duration: 5-12 minutes.",
       "Theme based. No offensive/vulgar content.",
       "Bring your own props/costumes.",
