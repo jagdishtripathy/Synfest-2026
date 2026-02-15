@@ -137,12 +137,12 @@ export const leadershipData = {
     },
     {
       name: "Ms. Swarupa Laxmi Behera",
-      title: "Cultural Secretary",
+      title: "Cultural Secretary (B.Tech)",
       image: "/media/BTech-Stu-CulSecretary-Ms-Swarupa-Laxmi-Behera.webp",
     },
     {
       name: "Ashit Kumar Jena",
-      title: "Cultural Secretary",
+      title: "Cultural Secretary (B.Tech)",
       image: "/media/BTech-Stu-CulSecretary-Mr-Ashit-Kumar-Jena.webp",
     },
     {
@@ -172,7 +172,7 @@ export const leadershipData = {
     },
     {
       name: "Ms. Neelam Mallick",
-      title: "Coordinator",
+      title: "Coordinator (Nursing)",
       image: "/media/Nursing-Stu-Coordinator-Ms-Neelam-Mallick.webp",
     },
     {

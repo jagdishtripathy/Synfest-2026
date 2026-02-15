@@ -41,7 +41,7 @@ export default function Events() {
                 </div>
 
                 <h1 className="text-6xl md:text-8xl font-black mb-8 tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-10">
-                    The<br /> Events <span className="text-primary">.</span>
+                    The<br /> Events<span className="text-primary">.</span>
                 </h1>
 
                 <div className="z-50 py-4 -mx-6 px-6 md:-mx-12 md:px-12 mb-4 transition-all bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent backdrop-blur-xl">
