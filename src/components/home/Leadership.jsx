@@ -78,7 +78,17 @@ export default function Leadership() {
     return (
         // WRAPPER DIV - Critical for React + GSAP pin compatibility
         <div ref={wrapperRef}>
-            <section ref={sectionRef} className="bg-black text-white relative overflow-hidden pt-15">
+            {/* <section ref={sectionRef} className="bg-black text-white relative overflow-hidden pt-15"> */}
+            <section
+                ref={sectionRef}
+                className="bg-black text-white relative overflow-hidden pt-15"
+                style={{
+                    backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)',
+                    backgroundSize: '40px 40px',
+                    backgroundAttachment: 'fixed',
+                    backgroundColor: '#0a0a0a'
+                }}
+            >
                 <div className="">
                     {/* Sticky Title */}
                     <div className="h-screen flex flex-col justify-start z-0 pointer-events-none">
@@ -208,7 +218,10 @@ export default function Leadership() {
                             <div key={index} className="flex flex-col justify-center items-center shrink-0 relative mx-auto mb-6 group/glow w-[85vw] aspect-[3/4]">
                                 {/* Moving Glow Border Container */}
                                 <div className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none">
-                                    <div className="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_0deg,white_90deg,transparent_180deg)] animate-[spin_4s_linear_infinite] opacity-50"></div>
+                                    <div className={`absolute inset-[-100%] animate-[spin_4s_linear_infinite] opacity-50 ${index === 0
+                                        ? 'bg-green-200 bg-[conic-gradient(from_0deg,transparent_0deg,#a3e635_90deg,transparent_180deg)]'
+                                        : 'bg-[conic-gradient(from_0deg,transparent_0deg,white_90deg,transparent_180deg)]'
+                                        }`}></div>
                                 </div>
 
                                 {/* Glass Frame (Content) */}
