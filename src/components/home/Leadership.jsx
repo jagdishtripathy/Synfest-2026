@@ -97,10 +97,13 @@ export default function Leadership() {
                             {/* Admin/Chairman Section (Special Styling) */}
                             {/* Admin/Chairman Section (Standardized Vertical Style) */}
                             {leadershipData.admin.map((person, index) => (
-                                <div key={index} className="h-[480px] shrink-0 mr-12 relative flex items-center justify-center group/glow">
+                                <div key={index} className="h-[480px] shrink-0 mr-4 relative flex items-center justify-center group/glow">
                                     {/* Moving Glow Border Container */}
                                     <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                                        <div className="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_0deg,white_90deg,transparent_180deg)] animate-[spin_4s_linear_infinite] opacity-50"></div>
+                                        <div className={`absolute inset-[-100%] animate-[spin_4s_linear_infinite] opacity-50 ${index === 0
+                                            ? 'bg-green-200 bg-[conic-gradient(from_0deg,transparent_0deg,#a3e635_90deg,transparent_180deg)]'
+                                            : 'bg-[conic-gradient(from_0deg,transparent_0deg,white_90deg,transparent_180deg)]'
+                                            }`}></div>
                                     </div>
 
                                     {/* Glass Frame (Content) with background to mask center of spin */}
