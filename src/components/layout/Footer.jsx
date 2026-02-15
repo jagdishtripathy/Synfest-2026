@@ -28,6 +28,7 @@ export default function Footer() {
                             <li><a href="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
                             {/* <li><a href="/#sponsors" className="text-gray-400 hover:text-white transition-colors">Sponsors</a></li> */}
                             <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Team</Link></li>
+                            <li><Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Use</Link></li>
                         </ul>
                     </div>
 
@@ -41,11 +42,11 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-4 text-gray-400">
                                 <Mail size={20} className="shrink-0" />
-                                <a href="mailto:hodcse@synergyinstitute.net" className="hover:text-white">hodcse@synergyinstitute.net</a>
+                                <a href="mailto:sietdkl@synergyinstitute.net" className="hover:text-white">sietdkl@synergyinstitute.net</a>
                             </li>
                             <li className="flex items-center gap-4 text-gray-400">
                                 <Phone size={20} className="shrink-0" />
-                                <span>+91 98765 43210</span>
+                                <span>+91 67622 25905</span>
                             </li>
                         </ul>
                     </div>
@@ -57,9 +58,9 @@ export default function Footer() {
                         <p className="text-gray-500 text-sm">
                             &copy; {currentYear} Synfest. All rights reserved.
                         </p>
-                        <a 
-                            href="https://www.linkedin.com/in/srsoumyax11" 
-                            target="_blank" 
+                        <a
+                            href="https://www.linkedin.com/in/srsoumyax11"
+                            target="_blank"
                             rel="noreferrer"
                             className="text-sm font-medium text-gray-400 hover:text-white transition-colors flex items-center gap-1.5"
                         >

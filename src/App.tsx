@@ -11,6 +11,7 @@ import Showcase from './components/home/Showcase';
 import EventsLink from './components/home/EventsLink';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
+import Terms from './pages/Terms';
 import Loader from './components/common/Loader';
 
 function Home() {
@@ -42,6 +43,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/events" element={<Events />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/terms" element={<Terms />} />
             </Routes>
             <Footer />
           </div>

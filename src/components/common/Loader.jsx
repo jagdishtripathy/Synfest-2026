@@ -91,13 +91,19 @@ const Loader = ({ onComplete }) => {
             </div>
 
             {/* Bottom Content: Disclaimer */}
-            <div className="w-full text-center pb-8 md:pb-0">
-                <p className="text-[7px] md:text-[8px] text-gray-600 leading-relaxed uppercase tracking-wider font-bold max-w-2xl mx-auto">
-                    | Synfest 2026 |
-                    <br className="block" />
-                    By accessing this site, you acknowledge its creative nature and accept that all content is for representation purposes only. Please note that the positioning of elements is guided by design aesthetics and does not imply a specific hierarchy or precedence.
-                </p>
-            </div>
+<div className="w-full text-center pb-8 md:pb-0">
+  <p className="text-[6px] md:text-[8px] text-gray-600 leading-relaxed uppercase tracking-wider font-bold max-w-2xl mx-auto">
+    | Synfest 2026 |
+    <br className="block" />
+    By proceeding, you acknowledge that this site is a creative experiment. All content is for representation purposes only, and the positioning of elements is guided by design aesthetics. Visual hierarchy does not imply official endorsement, priority, or factual ordering.
+    <br />
+    <br />
+    Maintained by{" "}
+    <a href="https://www.linkedin.com/in/srsoumyax11" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-900">Soham</a>{" "}
+    |{" "}
+    <a href="https://github.com/srsoumyax11" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-900">GitHub</a>
+  </p>
+</div>
         </div>
     );
 };
