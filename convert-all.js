@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const directoryPath = path.join(process.cwd(), "public/media");
-const outputPath = path.join(process.cwd(), "public/media/webp");
+const outputPath = path.join(process.cwd(), "public/media");
 
 async function convertAll() {
   console.log(`📂 Scanning: ${directoryPath}`);

@@ -16,6 +16,13 @@ export const leadershipData = {
       image: "/media/Admin-Fac-Director-Dr-Itishree-Mohanty.webp",
     },
   ],
+  bsc: [
+    {
+      name: "Ms. Rutuparna Sahoo",
+      title: "Cultural Co-ordinator",
+      image: "/media/BSc-Fac-Coordinator-Ms-Rutuparna-Sahoo.webp",
+    },
+  ],
   diploma: [
     {
       name: "Mr. P. K. Nayak",
@@ -61,13 +68,6 @@ export const leadershipData = {
       name: "Ms. Sushree Sangita Satpathy",
       title: "Member",
       image: "/media/Diploma-Fac-Member-Ms-Sushree-Sangita-Satpathy.webp",
-    },
-  ],
-  bsc: [
-    {
-      name: "Ms. Rutuparna Sahoo",
-      title: "Cultural Co-ordinator",
-      image: "/media/BSc-Fac-Coordinator-Ms-Rutuparna-Sahoo.webp",
     },
   ],
   btech: [
@@ -151,6 +151,11 @@ export const leadershipData = {
       image: "/media/BTech-Stu-CulSecretary-Mr-Sandeep-Sahoo.webp",
     },
     {
+      name: "Mr. Priti Mohan Pratihari",
+      title: "Coordinator (B.Tech)",
+      image: "/media/BTech-Stu-Coordinator-Priti-Mohan-Pratihari.webp",
+    },
+    {
       name: "Mr. Atal Bihari Gochhayat",
       title: "Co-coordinator (BTech)",
       image: "/media/BTech-Stu-CoCoordinator-Mr-Atal-Bihari-Gochhayat.webp",
@@ -161,16 +166,6 @@ export const leadershipData = {
       image: "/media/BTech-Stu-CoCoordinator-Mr-Ashish-Prusty.webp",
     },
     {
-      name: "Mr. Ayush Mishra",
-      title: "Coordinator (Diploma)",
-      image: "/media/Diploma-Stu-Coordinator-Mr-Ayush-Mishra.webp",
-    },
-    {
-      name: "Mr. Mrutyunjay Parida",
-      title: "Coordinator (Diploma)",
-      image: "/media/Diploma-Stu-Coordinator-Mr-Mrutyunjay-Parida.webp",
-    },
-    {
       name: "Ms. Pragyan Lenka",
       title: "Coordinator (B.Sc)",
       image: "/media/BSc-Stu-Coordinator-Ms-Pragyan-Lenka.webp",
@@ -179,6 +174,16 @@ export const leadershipData = {
       name: "Ms. Neelam Mallick",
       title: "Coordinator",
       image: "/media/Nursing-Stu-Coordinator-Ms-Neelam-Mallick.webp",
+    },
+    {
+      name: "Mr. Ayush Mishra",
+      title: "Coordinator (Diploma)",
+      image: "/media/Diploma-Stu-Coordinator-Mr-Ayush-Mishra.webp",
+    },
+    {
+      name: "Mr. Mrutyunjay Parida",
+      title: "Coordinator (Diploma)",
+      image: "/media/Diploma-Stu-Coordinator-Mr-Mrutyunjay-Parida.webp",
     },
   ],
 };
