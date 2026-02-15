@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Linkedin, Mail, MapPin, Phone, Facebook } from 'lucide-react';
+import { Instagram, Linkedin, Mail, MapPin, Phone, Facebook, Youtube } from 'lucide-react';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -11,8 +11,8 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="lg:col-span-2">
                         <Link to="/" className="inline-block group">
-                            <h2 className="text-[15vw] md:text-8xl font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800 mb-6 font-frakturi transition-all duration-500 group-hover:drop-shadow-[0_0_40px_rgba(255,255,255,0.6)] group-hover:to-red">
-                                SYNFEST.
+                            <h2 className="text-8xl leading-none tracking-tighter mb-6 font-black">
+                                SYNFEST <span className="text-primary">.</span>
                             </h2>
                         </Link>
                         <p className="text-gray-400 max-w-md text-lg leading-relaxed">
@@ -71,6 +71,7 @@ export default function Footer() {
                         <a href="https://www.instagram.com/synergygroupofinstitutions/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Instagram size={24} /></a>
                         <a href="https://www.linkedin.com/school/synergy-institute-of-engineering-and-technology-siet-dhenkanal/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Linkedin size={24} /></a>
                         <a href="https://www.facebook.com/synergygroupofinstitutions" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Facebook size={24} /></a>
+                        <a href="https://www.youtube.com/youtube.com/synergydhenkanal" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Youtube size={24} /></a>
                     </div>
                 </div>
             </div>

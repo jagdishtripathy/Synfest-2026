@@ -90,8 +90,8 @@ export default function HomeHero() {
                 </h2> */}
                 <h1
                     ref={textRef}
-                    className="leading-[0.85] font-frakturi uppercase tracking-tighter"
-                    style={{ fontSize: 'clamp(8rem, 15vw, 12rem)' }} // Keep size
+                    className="leading-[0.85] font-frakturi mt-17"
+                    style={{ fontSize: 'clamp(8rem, 12vw, 12rem)' }} // Keep size
                 >
                     <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500">
                         SYNFEST
@@ -133,8 +133,8 @@ export default function HomeHero() {
             <MuteToggle className="absolute bottom-2 right-2 z-30" />
 
             <div className="absolute bottom-10 left-0 w-full flex justify-between px-10 text-xs font-bold tracking-widest opacity-50 uppercase z-20 pointer-events-none">
-                <span>Dhenkanal, OD | Est. 1999</span>
-                <span className="opacity-0 md:opacity-100">SCROLL</span>
+                <span>SIET Dhenkanal, OD | Est. 1999</span>
+                {/* <span className="opacity-0 md:opacity-100">SCROLL</span> */}
             </div>
         </section>
     );
