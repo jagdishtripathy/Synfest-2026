@@ -8,12 +8,13 @@ import { games } from '../data/gamesEvents';
 import EventModal from '../components/events/EventModal';
 
 export default function Events() {
-    const [activeTab, setActiveTab] = useState('formal');
+    const [activeTab, setActiveTab] = useState('all');
     const [selectedEvent, setSelectedEvent] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
     const containerRef = useRef(null);
 
     const categories = [
+        { id: 'all', label: 'All', data: [...formalEvents, ...informalEvents, ...games] },
         { id: 'formal', label: 'Formal', data: formalEvents },
         { id: 'informal', label: 'Informal', data: informalEvents },
         { id: 'games', label: 'Games', data: games },
@@ -62,7 +63,8 @@ export default function Events() {
 
                         {/* Categories Navigation (Grid on mobile, Flex on desktop) */}
                         {!searchQuery && (
-                            <div className="grid grid-cols-3 gap-2 w-full md:w-auto md:flex md:gap-4">
+                            // <div className="grid grid-cols-4 gap-2 w-full md:w-auto md:flex md:gap-4">
+                            <div className="grid grid-cols-4 gap-1">
                                 {categories.map((cat) => (
                                     <button
                                         key={cat.id}
