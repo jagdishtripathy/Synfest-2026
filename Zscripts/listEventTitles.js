@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Import the formal events data
-const formalEventsPath = path.join(__dirname, "src", "data", "formalEvents.js");
+const formalEventsPath = path.join(__dirname, "../src/data/gamesEvents.js");
 const fileContent = fs.readFileSync(formalEventsPath, "utf-8");
 
 // Extract the export statement and parse it
@@ -22,8 +22,8 @@ for (const match of eventMatches) {
 const outputContent = titles.join("\n");
 
 // Write to file in root
-const outputPath = path.join(__dirname, "event-titles.txt");
-fs.writeFileSync(outputPath, outputContent, "utf-8");
+// const outputPath = path.join(__dirname, "event-titles.txt");
+// fs.writeFileSync(outputPath, outputContent, "utf-8");
 
 console.log(
   `✅ Successfully extracted ${titles.length} event titles to event-titles.txt`,
