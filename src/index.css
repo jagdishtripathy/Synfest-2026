@@ -23,11 +23,23 @@
     font-style: normal;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'Spicy Rice';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+  }
 }
 
 @layer utilities {
   .font-frakturi {
     font-family: 'Frakturi', serif;
+  }
+
+  .font-spicy-rice {
+    font-family: 'Spicy Rice', serif;
   }
   
   .scrollbar-hide::-webkit-scrollbar {
