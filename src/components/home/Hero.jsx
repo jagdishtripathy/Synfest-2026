@@ -90,7 +90,7 @@ export default function HomeHero() {
                 </h2> */}
                 <h1
                     ref={textRef}
-                    className="leading-[0.85] font-frakturi mt-17"
+                    className="leading-[0.85] font-frakturika mt-17"
                     style={{ fontSize: 'clamp(8rem, 12vw, 12rem)' }} // Keep size
                 >
                     <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500">

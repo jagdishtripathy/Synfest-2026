@@ -92,7 +92,7 @@ export default function Leadership() {
                 <div className="">
                     {/* Sticky Title */}
                     <div className="h-screen flex flex-col justify-start z-0 pointer-events-none">
-                        <h2 className="text-center text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white leading-[0.8] opacity-90 font-frakturi max-w-[100%]">
+                        <h2 className="text-center text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white leading-[0.8] opacity-90 font-frakturika max-w-[100%]">
                             Visionaries
                         </h2>
                     </div>
@@ -270,7 +270,7 @@ export default function Leadership() {
 
                                         {/* STICKY WING TITLE CARD */}
                                         <div className={`sticky left-0 shrink-0 w-screen rounded-2xl overflow-hidden border border-white/5 ${wing.bg} backdrop-blur-sm flex flex-col justify-center  z-0`}>
-                                            <h3 className={`text-4xl pl-9 font-black uppercase tracking-wider ${wing.color} drop-shadow-lg px-4 font-frakturi`}>
+                                            <h3 className={`text-4xl pl-9 font-black uppercase tracking-wider ${wing.color} drop-shadow-lg px-4 font-frakturika`}>
                                                 {wing.key} <br /> <span className="text-white text-2xl">WING</span>
                                             </h3>
                                             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>

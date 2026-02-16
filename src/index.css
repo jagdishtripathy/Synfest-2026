@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #DC2626;
+  --color-primary: #dc2626;
   /* Red-600 */
   --color-primary-content: #ffffff;
 }
@@ -9,39 +9,27 @@
 /* Custom base styles */
 @layer base {
   @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    src: url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
   }
 
   @font-face {
-    font-family: 'Frakturi';
-    src: url('/media/FRAKTURI.ttf') format('truetype');
+    font-family: "Frakturika";
+    src: url("/media/Frakturika.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
-
-  @font-face {
-    font-family: 'Spicy Rice';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-  }
 }
 
 @layer utilities {
-  .font-frakturi {
-    font-family: 'Frakturi', serif;
+  .font-frakturika {
+    font-family: "Frakturika", serif;
   }
 
-  .font-spicy-rice {
-    font-family: 'Spicy Rice', serif;
-  }
-  
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
@@ -63,7 +51,11 @@
   }
 
   body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #0a0a0a;

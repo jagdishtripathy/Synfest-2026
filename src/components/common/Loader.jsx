@@ -73,7 +73,7 @@ const Loader = ({ onComplete }) => {
         >
             {/* Center Content: Progress */}
             <div className="flex-1 flex flex-col justify-center items-center w-full max-w-md">
-                <div className="text-6xl md:text-8xl font-black mb-4 font-frakturi tracking-wider text-primary">
+                <div className="text-6xl md:text-8xl font-black mb-4 font-frakturika tracking-wider text-primary">
                     <span ref={progressTextRef}>0%</span>
                 </div>
 

@@ -123,7 +123,7 @@ export default function Showcase() {
     return (
         <section id="highlights" className="py-20 overflow-hidden flex flex-col justify-center relative">
             <div className=" mx-auto px-6 mb-12 text-center relative z-10">
-                <h2 className="text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-b from-white to-yellow-500 font-frakturi">
+                <h2 className="text-[18vw] tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-b from-white to-yellow-500 font-frakturika">
                     Highlights
                 </h2>
                 <p className="text-gray-400 mt-4 max-w-lg mx-auto">
