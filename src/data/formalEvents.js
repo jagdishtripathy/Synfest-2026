@@ -4,7 +4,6 @@ export const formalEvents = [
     description:
       "Competitive programming contest to solve algorithmic challenges.",
     rules: [
-      "Participant: Individual (Per College maximum 4 students).",
       "The event is of 1 hour duration.",
       "The competition consists of a series of problems that must be solved.",
       "Problems are of varying difficulty; students have to solve and submit solutions.",
@@ -22,19 +21,18 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Mr. Aurobinda Gochhayat"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/FmEecEKU9BbCR9rP8",
     emoji: "👨‍💻",
   },
   {
     title: "Mobile App Development",
     description: "Showcase your app development skills.",
     rules: [
-      "Only individual participation allowed.",
       "Bring your own laptop, software, and accessories.",
       "Problem Statement provided in advance.",
       "Apps must have a clear purpose and functionality.",
       "Judges assess usability, innovation, performance, and features.",
-      "Results evaluated by a panel of judges.",
+      "Any framework is allowed."
     ],
     teamSize: "1",
     venue: "Computer Lab 2",
@@ -49,7 +47,7 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Ms. Aparna Priyadarshini"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/fwu3JfFTarjDY2fb9",
     emoji: "📱",
   },
   {
@@ -75,13 +73,13 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Mr. Girish Ch. Swain"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/jcEK8uEfhy68JZoG9",
     emoji: "🤖",
   },
   {
     title: "Drone Competition",
     description:
-      "Design drone systems for real-world challenges. Themes: Remote Healthcare, Telemedicine, Aerial Health Monitoring, Urban Construction Monitoring, Survey & Mapping, Renewable Energy Inspection, Security & Law Enforcement.",
+      "Design drone systems for real-world challenges.",
     rules: [
       "Bring your own hardware and at least one laptop.",
       "Knowledge of Indian Drone Regulations required.",
@@ -101,7 +99,7 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Mr Somnath Sethy"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/zeTWS18TxUQddXDQ7",
     emoji: "🚁",
   },
   {
@@ -109,8 +107,6 @@ export const formalEvents = [
     description:
       "Test your mathematical prowess. Algebra, Geometry, Number Theory.",
     rules: [
-      "Participant: Individual.",
-      "Intended for university students interested in mathematics (English).",
       "Duration: 2 hours. Total Marks: 100.",
       "Exam Pattern: Multiple Choice or Short Answer Questions.",
       "Syllabus: Algebra, Geometry, and Number Theory.",
@@ -131,7 +127,7 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Ms. Kuhudi Biswal"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/Zr3dZVoR8JjkXgcB9",
     emoji: "➗",
   },
   {
@@ -139,12 +135,11 @@ export const formalEvents = [
     description:
       "Quiz on various technical domains. 3 Rounds: Prelims, Visual, Rapid Fire.",
     rules: [
-      "Team (Per College max 4 teams). 2 students per team.",
+      "2 students per team.",
       "Round 1 (Prelims): 50 objective qs, 50 mins. (+2 correct, -1 wrong).",
       "Only selected teams qualify for On-Stage Round.",
       "Tie-breaker: 5 extra questions.",
       "Round 2 (Stage): Technical Awareness (5 qs, 30s time).",
-      "Judges' decision is final & binding.",
     ],
     teamSize: "2",
     venue: "Room 205",
@@ -165,7 +160,7 @@ export const formalEvents = [
       "Ms. Pinky Biswal",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/g6cHuQw3Uf47WX37A",
     emoji: "🧠",
   },
   {
@@ -173,11 +168,10 @@ export const formalEvents = [
     description:
       "Present innovative technical solutions. Bring working prototype and pitch deck.",
     rules: [
-      "Participant: Team (Per College max 4 teams, 2-5 members).",
       "Must bring working prototype and pitch deck.",
       "Pitch Deck: Problem, Solution, Schematics, Target Users, Impact.",
-      "All submissions must be original. Plagiarism = Disqualification.",
-      "Judges' decision is final.",
+      "All submissions must be original.",
+      "Plagiarism = Disqualification.",
     ],
     teamSize: "2-5",
     venue: "Seminar Hall",
@@ -196,7 +190,7 @@ export const formalEvents = [
       "Dr. Ananta Ku. Sahoo",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/SiHog9zSfzmhK6VCA",
     emoji: "💡",
   },
   {
@@ -222,7 +216,7 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Mr. Manmohan Panda"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/JnHrVTkfp8VReom88",
     emoji: "🚀",
   },
   {
@@ -230,7 +224,6 @@ export const formalEvents = [
     description:
       "Pitch your business startup ideas. Include problem, solution, market, revenue, financial overview.",
     rules: [
-      "Participant: Team (Per College max 4 teams, 1-5 members).",
       "Submit structured Business Plan and Presentation.",
       "Pitch your startup idea (Problem, Solution, Market, Revenue).",
       "Evaluation: Innovation, Feasibility, Market Potential, Financial Viability.",
@@ -252,7 +245,7 @@ export const formalEvents = [
       "Mr. Amarendra Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/bUSoq62hVnhZPhJ26",
     emoji: "📊",
   },
   {
@@ -260,7 +253,6 @@ export const formalEvents = [
     description:
       "Present technical concepts via posters (3ft x 4ft). Visuals, data, and explanation required.",
     rules: [
-      "Participant: Team (Per College max 4 teams, 2 students).",
       "Create informative poster (3ft x 4ft) on technical topic.",
       "Include visuals, data, and explanation.",
       "Presentation: Max 2 mins, 5 slides (abstract 1 page A4).",
@@ -285,7 +277,7 @@ export const formalEvents = [
       "Ms. Pinky Biswal",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/859gGs2KqhJQzwv89",
     emoji: "📑",
   },
   {
@@ -303,7 +295,7 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Ms. Asmita Pranayani"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/WfjZLYMoNoAuiSZs7",
     emoji: "🗄️",
   },
   {
@@ -334,7 +326,7 @@ export const formalEvents = [
       "Mr. Abinash Jena",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/7Zs4CYfVTgayd3UB7",
     emoji: "⚙️",
   },
   {
@@ -360,7 +352,7 @@ export const formalEvents = [
       "Ms. Vikirani Mohanta",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/AL9rubCgxhFnR4kNA",
     emoji: "🎙️",
   },
   {
@@ -368,7 +360,6 @@ export const formalEvents = [
     description:
       "Showcase artistic skills using digital tools. Create a unique doodle based on a theme.",
     rules: [
-      "Participant: Individual.",
       "Create unique digital doodle on given theme (announced on spot).",
       "Bring own digital drawing tablets/laptops with software.",
       "Evaluation: Creativity, Theme Integration, Technical Proficiency.",
@@ -386,14 +377,13 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Mrs Helen Behera", "Mr. Aurobinda Gochhayat"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/FiwY7d3B7TrXQSnA6",
     emoji: "🎨",
   },
   {
     title: "Odia Essay",
     description: "Express your thoughts in Odia.",
     rules: [
-      "Individual participation.",
       "Essay must be written in Odia language only.",
       "Time limit: 1 hour. Handwritten essays only.",
       "Word limit: 800–1000 words.",
@@ -418,14 +408,13 @@ export const formalEvents = [
       "Mrs. Helen Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/JfkCXQZfunG76F7n8",
     emoji: "✍️",
   },
   {
     title: "English Essay",
     description: "Creative writing competition in English.",
     rules: [
-      "Individual participation.",
       "Word limit: 800–1000 words.",
       "Topic will be given on the spot (1 hour prior).",
       "Plagiarism will lead to disqualification.",
@@ -448,14 +437,13 @@ export const formalEvents = [
       "Mrs. Helen Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/tBawsbhR44uQG1Ko6",
     emoji: "📝",
   },
   {
     title: "Odia Debate",
     description: "Verbal battle of perspectives in Odia.",
     rules: [
-      "Individual participation.",
       "Time limit: 3–4 minutes per speaker.",
       "Language must be formal and respectful.",
       "Judges’ decision will be final.",
@@ -480,14 +468,13 @@ export const formalEvents = [
       "Ms. Laxmipriya Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/azA5SpQpVUr3KZqp7",
     emoji: "🗣️",
   },
   {
     title: "English Debate",
     description: "War of words and logic in English.",
     rules: [
-      "Individual participation.",
       "Time limit: 3–4 minutes per speaker.",
       "Language must be formal and respectful.",
       "Judges’ decision will be final.",
@@ -511,7 +498,7 @@ export const formalEvents = [
       "Ms. Suchismita Pattanaik",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/xGuEefAXdTZs51E7A",
     emoji: "🎙️",
   },
   {
@@ -531,7 +518,7 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Dr. S. Abinash", "Mr. Siddharth Dash"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/xQyrNKpxPsQYprmo9",
     emoji: "🚩",
   },
 ];
