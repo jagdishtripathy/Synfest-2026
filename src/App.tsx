@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SmoothScroll from './components/layout/SmoothScroll';
 import Navbar from './components/layout/Navbar';
@@ -31,6 +31,19 @@ import { VideoProvider } from './context/VideoContext';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+
+  // CTF Challenge Implementation
+  useEffect(() => {
+    // Part 2: Console Log
+    console.log(
+      "%cHooreeyyyy! 👋 You found Part 2/3: mast3r_",
+      "background: #222; color: #bada55; font-size: 16px; padding: 10px; border-radius: 5px;"
+    );
+
+    // Part 3: Local Storage
+    localStorage.setItem("ctf_part_3", "2026}");
+    console.info("🔧 App initialized. Local Storage Session cache loaded successfully.");
+  }, []);
 
   return (
     <VideoProvider>
