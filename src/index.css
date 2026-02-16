@@ -17,6 +17,14 @@
   }
 
   @font-face {
+    font-family: 'Dirtyline';
+    src: url('/media/Dirtyline 36daysoftype 2022.otf');
+    /* font-weight: normal; */
+    /* font-style: normal; */
+    /* font-display: swap; */
+  }
+
+  @font-face {
     font-family: 'Frakturi';
     src: url('/media/FRAKTURI.ttf') format('truetype');
     font-weight: normal;
