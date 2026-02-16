@@ -18,6 +18,11 @@ export const leadershipData = {
   ],
   bsc: [
     {
+      name: "Ms. Matru Prasad Dash",
+      title: "Principal (B.Sc)",
+      image: "/media/Bsc-Fac-Principal-Matru-Prasad-Dash.webp",
+    },
+    {
       name: "Ms. Rutuparna Sahoo",
       title: "Cultural Co-ordinator",
       image: "/media/BSc-Fac-Coordinator-Ms-Rutuparna-Sahoo.webp",
