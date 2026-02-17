@@ -53,7 +53,7 @@ export const coordinators = [
     role: "Coordinator",
     branch: "B.Sc",
     year: "3rd",
-    phone: "+91 00000 00000",
+    phone: "+91 7848021286",
   },
   {
     name: "Neelam Mallick",
