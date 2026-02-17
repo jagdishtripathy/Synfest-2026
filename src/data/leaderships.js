@@ -15,6 +15,11 @@ export const leadershipData = {
       title: "Director (Admin)",
       image: "/media/Admin-Fac-Director-Dr-Itishree-Mohanty.webp",
     },
+    {
+      name: "Mr Chandrakanta Mishra",
+      title: "Administrative Officer",
+      image: "/media/Admin-Fac-AO-Mr-Chandrakanta-Mishra.jpeg",
+    }
   ],
   bsc: [
     {
