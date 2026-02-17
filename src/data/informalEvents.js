@@ -28,7 +28,7 @@ export const informalEvents = [
       "Ms. Pinky Biswal",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/qQoMQDKoGdjiQEf56",
     emoji: "🎤",
   },
   {
@@ -59,7 +59,7 @@ export const informalEvents = [
       "Ms. Laxmipriya Panda",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/UJmYHSeQHHruV1XB6",
     emoji: "🎵",
   },
   {
@@ -89,7 +89,7 @@ export const informalEvents = [
       "Ms. Suchismita Pattanaik",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/RgNgJgg6mdZFxRkQ8",
     emoji: "💃",
   },
   {
@@ -119,7 +119,7 @@ export const informalEvents = [
       "Ms. Vikirani Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/CbXoG7yyFokZvNnR6",
     emoji: "👯",
   },
   {
@@ -151,7 +151,7 @@ export const informalEvents = [
       "Ms. Vikirani Mohanta",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/MmaCqVtruwHNqsJf9",
     emoji: "🎨",
   },
   {
@@ -183,7 +183,7 @@ export const informalEvents = [
       "Ms. Laxmipriya Panda",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/nWRrH1CCbgextd8R7",
     emoji: "🖌️",
   },
   {
@@ -214,7 +214,7 @@ export const informalEvents = [
       "Mrs. Helen Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/V1o3jQSHShHgkZcHA",
     emoji: "🎭",
   },
   {
@@ -246,7 +246,7 @@ export const informalEvents = [
       "Ms. Pinky Biswal",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/6wHAEsNg8vKQAdzb8",
     emoji: "🎬",
   },
   {
@@ -277,7 +277,7 @@ export const informalEvents = [
       "Ms. Vikirani Mohanta",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/FNBy2dEY2NSkwSkN6",
     emoji: "🖼️",
   },
   {
@@ -302,7 +302,7 @@ export const informalEvents = [
       "Ms. Laxmipriya Panda",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/C1a2w8WbVBXPVHgB8",
     emoji: "🤡",
   },
   {
@@ -333,7 +333,7 @@ export const informalEvents = [
       "Mr. Mithun Palei",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/iAhUtzbrNWmavwpM8",
     emoji: "📸",
   },
   {
@@ -352,7 +352,7 @@ export const informalEvents = [
     studentCoordinators: [],
     facultyCoordinators: [],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/5ogZqy7TH7N5hWwDA",
     emoji: "🎬",
   },
   {
@@ -385,7 +385,7 @@ export const informalEvents = [
       "Mr. Biswajit Mishra",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/1Z5MTqeV4oQar5jd9",
     emoji: "📹",
   },
   {
@@ -417,7 +417,7 @@ export const informalEvents = [
       "Ms. Suchismita Pattnaik",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/aQjM1vZ4iytFQ9r5A",
     emoji: "🍾",
   },
   {
@@ -450,7 +450,7 @@ export const informalEvents = [
       "Ms. Jyotirmayee Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/fGiyyqmAMz8YKNUMA",
     emoji: "💄",
   },
   {
@@ -480,7 +480,7 @@ export const informalEvents = [
       "Ms. Suchismita Pattanaik",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/EjVMCahcs7AyZdQ4A",
     emoji: "🤚",
   },
   {
@@ -511,7 +511,7 @@ export const informalEvents = [
       "Ms. Pinky Biswal",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/7u2weGx4guC7PrRB7",
     emoji: "🤔",
   },
   {
@@ -542,7 +542,7 @@ export const informalEvents = [
       "Mrs. Helen Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/obEtTop6cWGaMaFGA",
     emoji: "💎",
   },
   {
@@ -574,7 +574,7 @@ export const informalEvents = [
       "Mr. Krushna Ch. Rout",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/TuPVhwBLARhoTXmd9",
     emoji: "🦁",
   },
   {
@@ -605,7 +605,7 @@ export const informalEvents = [
     ],
     facultyCoordinators: [],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/ZPBGNh8DVXgGL6Fs8",
     emoji: "🍔",
   },
 ];
