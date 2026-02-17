@@ -313,6 +313,7 @@ export const informalEvents = [
       "Photos must be taken within campus on theme.",
       "Basic editing allowed; no plagiarism.",
       "Judging: Creativity, clarity, relevance, originality.",
+      "must submit the images to synergy.meet24@gmail.com. along with details",
     ],
     teamSize: "1",
     venue: "Campus Wide",
