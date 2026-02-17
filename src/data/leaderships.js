@@ -1,4 +1,4 @@
-student const leadershipData = {
+export const leadershipData = {
   admin: [
     {
       name: "Shri Binod Dash",
