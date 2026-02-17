@@ -18,7 +18,7 @@ export const leadershipData = {
     {
       name: "Mr Chandrakanta Mishra",
       title: "Administrative Officer",
-      image: "/media/Admin-Fac-AO-Mr-Chandrakanta-Mishra.jpeg",
+      image: "/media/Admin-Fac-AO-Mr-Chandrakanta-Mishra.webp",
     }
   ],
   bsc: [
