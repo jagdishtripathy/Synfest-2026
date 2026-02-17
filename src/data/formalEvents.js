@@ -34,7 +34,7 @@ export const formalEvents = [
       "Judges assess usability, innovation, performance, and features.",
       "Any framework is allowed."
     ],
-    teamSize: "1",
+    teamSize: "2",
     venue: "Computer Lab 2",
     time: "11:00 AM",
     date: "02.03.2026",
@@ -107,11 +107,11 @@ export const formalEvents = [
     description:
       "Test your mathematical prowess. Algebra, Geometry, Number Theory.",
     rules: [
-      "Duration: 2 hours. Total Marks: 100.",
+      "Duration: 1 hours. Total Marks: 50.",
       "Exam Pattern: Multiple Choice or Short Answer Questions.",
-      "Syllabus: Algebra, Geometry, and Number Theory.",
-      "Q1-10 (2 marks), Q11-20 (3 marks), Q21-30 (5 marks).",
-      "All questions compulsory. No negative marking.",
+      "Syllabus: Algebra, Reasoning(verbal and nonverbal), profit & loss , time and work.",
+      "For each correct answer 2 marks and for wrong answer 0.25 marks deducted.",
+      "Negative marking there.",
       "Rough work space provided.",
     ],
     teamSize: "1",
@@ -185,6 +185,7 @@ export const formalEvents = [
       "SATYASUNDAR MOHAPATRA (3RD, BTECH)",
     ],
     facultyCoordinators: [
+      "DR. R. A. K. DASH",
       "Mrs. Kalpana Sahu",
       "Mr. Ashish Ku. Acharya",
       "Dr. Ananta Ku. Sahoo",
