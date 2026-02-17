@@ -338,8 +338,9 @@ export const informalEvents = [
     emoji: "📸",
   },
   {
-    title: "Video Editing",
-    description: "Create original videos based on theme.",
+    title: "Documentary Movie",
+    description:
+      "Encourage research-based storytelling on real-life/college campous.",
     rules: [
       "Only original or copyright-free content allowed.",
       "Bring your own laptop/mobile and software.",
@@ -347,27 +348,6 @@ export const informalEvents = [
       "Judges evaluate creativity, editing, storyline, relevance.",
     ],
     teamSize: "1",
-    venue: "Design Lab",
-    time: "10:00 AM",
-    date: "09.03.2026",
-    studentCoordinators: [],
-    facultyCoordinators: [],
-    whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/5ogZqy7TH7N5hWwDA",
-    emoji: "🎬",
-  },
-  {
-    title: "Documentary Movie",
-    description:
-      "Encourage research-based storytelling on real-life/social themes.",
-    rules: [
-      "Open to all students (Individual/Team up to 5). One entry per team.",
-      "Duration: 5-15 minutes. Format: MP4 (1080p).",
-      "Content must be original and theme-based. Synopsis required.",
-      "Judging: Relevance, research depth, creativity, technical quality.",
-      "No plagiarism/inappropriate content.",
-    ],
-    teamSize: "1-5",
     venue: "Online Submission",
     time: "10:00 AM",
     date: "09.03.2026",
