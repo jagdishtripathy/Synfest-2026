@@ -22,7 +22,7 @@ export const games = [
     ],
     facultyCoordinators: ["Mr. Rajesh Naik", "Ms. Pinky Biswal"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/zYNwfF7CemzUEqQX9",
     emoji: "♟️",
   },
   {
@@ -46,7 +46,7 @@ export const games = [
     ],
     facultyCoordinators: ["Mr. Aswini Parida", "Ms. Helen Behera"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/DX6UTJtgeTWg1ZaU8",
     emoji: "🎯",
   },
   {
@@ -71,7 +71,7 @@ export const games = [
     ],
     facultyCoordinators: ["Mr. Biswajit Mishra"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/nuidwV9BAZz3C11L9",
     emoji: "🏸",
   },
   {
@@ -95,7 +95,7 @@ export const games = [
     ],
     facultyCoordinators: [],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/WW6RS4gJa95ZYz466",
     emoji: "🏸",
   },
   {
@@ -119,7 +119,7 @@ export const games = [
     ],
     facultyCoordinators: ["Mr. Biswamber Majhi"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/tiZwMjb2DXdsNpzA7",
     emoji: "🏐",
   },
   {
@@ -137,7 +137,7 @@ export const games = [
     studentCoordinators: [],
     facultyCoordinators: [],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/TC5D7sGFWNhCv1C59",
     emoji: "🏀",
   },
   {
@@ -159,7 +159,7 @@ export const games = [
     ],
     facultyCoordinators: ["Mr. Somanath Sethy"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/dtt7tz2TaYR53ZT59",
     emoji: "🏏",
   },
   {
@@ -204,7 +204,7 @@ export const games = [
     ],
     facultyCoordinators: ["Ms. Kiranbala Behera", "Ms. Laxmipriya Panda"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/t4P1SKwopG1KKqG76",
     emoji: "🧘",
   },
 ];
