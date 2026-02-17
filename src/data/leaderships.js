@@ -1,4 +1,4 @@
-export const leadershipData = {
+student const leadershipData = {
   admin: [
     {
       name: "Shri Binod Dash",
@@ -139,7 +139,7 @@ export const leadershipData = {
       image: "/media/Nursing-Fac-CoCoordinator-Ms-Suchismita-Pattanaik.webp",
     },
   ],
-  student: [
+  coordinator: [
     {
       name: "Mr. Prabodh Kumar Mohanty",
       title: "Organising Secretary (B.Tech)",
