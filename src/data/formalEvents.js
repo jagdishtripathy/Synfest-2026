@@ -475,7 +475,7 @@ export const formalEvents = [
     ],
     facultyCoordinators: ["Dr. S. Abinash", "Mr. Siddharth Dash"],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/xQyrNKpxPsQYprmo9",
+    regLink: "https://forms.gle/S1PS3gpc6UeQVcwHA",
     emoji: "🚩",
   },
 ];
