@@ -133,15 +133,10 @@ export const informalEvents = [
       "Draw mostly within specified area.",
       "Judges assess color combination, creativity, design clarity.",
     ],
-<<<<<<< HEAD
-    teamSize: "2-3",
-    venue: "College LOBBY",
-    time: "03:00 PM",
-=======
+
     teamSize: "1",
     venue: "College Entrance",
     time: "02:00 PM",
->>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "11.03.2026",
     studentCoordinators: [
       "SUCHISMITA ROUL (4TH, BTECH)",
@@ -233,15 +228,9 @@ export const informalEvents = [
       "Judges evaluate creativity, theme relevance, acting, teamwork.",
       "No hazardous materials (fire, sharp objects).",
     ],
-<<<<<<< HEAD
-    teamSize: "5-10",
-    venue: "ROMM NO ..",
-    time: "03:30 AM",
-=======
     teamSize: "2-10",
     venue: "Open Air Theatre",
     time: "10:00 AM",
->>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "06.03.2026",
     studentCoordinators: [
       "PRIYANKA DASH (4TH, BTECH)",
@@ -296,15 +285,10 @@ export const informalEvents = [
     title: "Face Painting",
     description: "Artistic face painting.",
     rules: ["Time limit: 1 hour.", "Skin-friendly colors only."],
-<<<<<<< HEAD
-    teamSize: "2",
-    venue: "Garden Area",
-    time: "02:30 PM",
-=======
+
     teamSize: "1",
     venue: "Student Centre",
     time: "02:00 PM",
->>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "06.03.2026",
     studentCoordinators: [
       "PRITIMOHAN PRATIHARI (4TH, BTECH)",
@@ -451,15 +435,10 @@ export const informalEvents = [
       "Judges evaluate blending, creativity, final appearance.",
       "MAKE YOUR HAIR STYLE AND CUSTOM BEFORE THE EVENT.",
     ],
-<<<<<<< HEAD
-    teamSize: "2",
-    venue: "Garden Area",
-    time: "02:00 PM",
-=======
+
     teamSize: "1",
     venue: "Girls Common Room",
     time: "10:00 AM",
->>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "11.03.2026",
     studentCoordinators: [
       "JAGMOHAN PAL (4TH, BTECH)",
