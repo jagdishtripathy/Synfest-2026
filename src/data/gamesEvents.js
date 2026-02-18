@@ -11,7 +11,7 @@ export const games = [
     ],
     teamSize: "1",
     venue: "Sports Complex",
-    time: "09:00 AM",
+    time: "02:30 PM",
     date: "19.02.2026",
     studentCoordinators: [
       "Suchismita Roul (4th, B.Tech)",
@@ -35,7 +35,7 @@ export const games = [
     ],
     teamSize: "1-2",
     venue: "Sports Complex",
-    time: "10:00 AM",
+    time: "02:30 PM",
     date: "20.02.2026",
     studentCoordinators: [
       "Swarupa Laxmi Behera (4th, B.Tech)",
@@ -108,7 +108,7 @@ export const games = [
     ],
     teamSize: "6-12",
     venue: "Volleyball Court",
-    time: "04:00 PM",
+    time: "03:00 PM",
     date: "24.02.2026",
     studentCoordinators: [
       "Rakesh Roshan Behera (4th, B.Tech)",
@@ -132,7 +132,7 @@ export const games = [
     ],
     teamSize: "5-10",
     venue: "Basketball Court",
-    time: "05:00 PM",
+    time: "03:00 PM",
     date: "25.02.2026",
     studentCoordinators: [],
     facultyCoordinators: [],
@@ -176,7 +176,7 @@ export const games = [
     teamSize: "4",
     venue: "Computer Centre / Seminar Hall",
     time: "10:00 AM",
-    date: "27.02.2026-28.02.2026",
+    date: "20.02.2026-28.02.2026",
     studentCoordinators: [],
     facultyCoordinators: [],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
@@ -193,7 +193,7 @@ export const games = [
     ],
     teamSize: "1",
     venue: "Yoga Hall",
-    time: "07:00 AM",
+    time: "10:00 AM",
     date: "02.03.2026",
     studentCoordinators: [
       "Priti Mohan Pratihari (4th, B.Tech)",
