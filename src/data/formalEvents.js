@@ -11,7 +11,7 @@ export const formalEvents = [
     teamSize: "1",
     venue: "Computer Lab 1",
     time: "10:00 AM",
-    date: "01.03.2026",
+    date: "20.02.2026",
     studentCoordinators: [
       "ASHIT KUMAR JENA (4TH, BTECH)",
       "SHREYA NAYAK (3RD, BTECH)",
@@ -61,8 +61,8 @@ export const formalEvents = [
       "Judges' decision is final.",
     ],
     teamSize: "2-4",
-    venue: "Main Auditorium",
-    time: "02:00 PM",
+    venue: "MECHANICAL DEPARTMENT",
+    time: "02:30 PM",
     date: "02.03.2026",
     studentCoordinators: [
       "DEBI PRASAD PARIDA (4TH, BTECH)",
@@ -88,7 +88,7 @@ export const formalEvents = [
     ],
     teamSize: "2-4",
     venue: "College Ground",
-    time: "04:00 PM",
+    time: "10:00 AM",
     date: "03.03.2026",
     studentCoordinators: [
       "SOUMYA RANJAN ROUT (4TH, BTECH)",
@@ -116,7 +116,7 @@ export const formalEvents = [
     ],
     teamSize: "1",
     venue: "Room 101",
-    time: "09:30 AM",
+    time: "10:30 AM",
     date: "27.02.2026",
     studentCoordinators: [
       "SWARUPA LAXMI BEHERA (4TH, BTECH)",
@@ -163,7 +163,7 @@ export const formalEvents = [
     emoji: "🧠",
   },
   {
-    title: "Tech Innovation Challenge",
+    title: "Tech Innovation Challenge/IDEATHON",
     description:
       "Present innovative technical solutions. Bring working prototype and pitch deck.",
     rules: [
@@ -174,7 +174,7 @@ export const formalEvents = [
     ],
     teamSize: "2-4",
     venue: "Seminar Hall",
-    time: "01:00 PM",
+    time: "02:30 PM",
     date: "05.03.2026",
     studentCoordinators: [
       "TEJASWINI NATH (4TH, BTECH)",
@@ -192,32 +192,6 @@ export const formalEvents = [
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/SiHog9zSfzmhK6VCA",
     emoji: "💡",
-  },
-  {
-    title: "Ideathon",
-    description: "Brainstorm and pitch creative ideas.",
-    rules: [
-      "Themes: Sustainability, Health, EdTech, Tech for Good, Food/Agri, Clean Energy.",
-      "Clear, concise submissions with supporting materials required.",
-      "Evaluation by jury (may involve multiple rounds).",
-      "Guidelines for submission shared prior.",
-    ],
-    teamSize: "2-4",
-    venue: "Innovation Hub",
-    time: "10:00 AM",
-    date: "",
-    studentCoordinators: [
-      "GYANA RANJAN BEHERA (4TH, BTECH)",
-      "SUJIT DEHURY (3RD, BTECH)",
-      "SURYAKANT PATI (3RD, BTECH)",
-      "SAKTIPRASAD SAHOO (DIPLOMA)",
-      "ARPITA SAHU (3RD, BSC)",
-      "SHREYASHREE SAMAL (3RD, NUS)",
-    ],
-    facultyCoordinators: ["Mr. Manmohan Panda"],
-    whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/JnHrVTkfp8VReom88",
-    emoji: "🚀",
   },
   {
     title: "Business Plan",
@@ -262,7 +236,7 @@ export const formalEvents = [
     teamSize: "1",
     venue: "Corridor A",
     time: "11:00 AM",
-    date: "01.03.2026",
+    date: "21.02.2026",
     studentCoordinators: [
       "ARJYAN ASHUTOSH (4TH, BTECH)",
       "NEELAM MALLICK (4TH, NUS)",
@@ -281,24 +255,6 @@ export const formalEvents = [
     emoji: "📑",
   },
   {
-    title: "Database Design",
-    description: "Design efficient database schemas.",
-    rules: ["ER Diagram required.", "Normalization up to 3NF."],
-    teamSize: "1-2",
-    venue: "Computer Lab 3",
-    time: "12:00 PM",
-    date: "",
-    studentCoordinators: [
-      "GYANA RANJAN BEHERA (4TH, BTECH)",
-      "TEJASWINI NATH (4TH, BTECH)",
-      "BIKRAM MOHARANA (DIPLOMA)",
-    ],
-    facultyCoordinators: ["Ms. Asmita Pranayani"],
-    whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/WfjZLYMoNoAuiSZs7",
-    emoji: "🗄️",
-  },
-  {
     title: "Fit & Fab",
     description: "Fabricate a fitted joint in mechanical workshop.",
     rules: [
@@ -311,7 +267,7 @@ export const formalEvents = [
     ],
     teamSize: "1",
     venue: "Workshop",
-    time: "06:00 AM",
+    time: "10:30 AM",
     date: "05.03.2026",
     studentCoordinators: [
       "DEBI PRASAD PARIDA (4TH, BTECH)",
@@ -336,7 +292,7 @@ export const formalEvents = [
     teamSize: "1",
     venue: "Room 105",
     time: "11:00 AM",
-    date: "01.03.2026",
+    date: "23.02.2026",
     studentCoordinators: [
       "TEJASWINI NATH (4TH, BTECH)",
       "DIPTISH RANJAN SAHANI (4TH, NUS)",
@@ -366,7 +322,7 @@ export const formalEvents = [
     ],
     teamSize: "1",
     venue: "Room 302",
-    time: "01:30 PM",
+    time: "11:30 AM",
     date: "05.03.2026",
     studentCoordinators: [
       "PRIYANKA DASH (4TH, BTECH)",
@@ -392,8 +348,8 @@ export const formalEvents = [
     ],
     teamSize: "1",
     venue: "Room 304",
-    time: "03:00 PM",
-    date: "01.03.2026",
+    time: "02:30 PM",
+    date: "23.02.2026",
     studentCoordinators: [
       "ARJYAN ASHUTOSH (4TH, BTECH)",
       "JIBAN JYOTI ROUT (4TH, NUS)",
@@ -451,7 +407,7 @@ export const formalEvents = [
     ],
     teamSize: "1",
     venue: "Conference Hall 1",
-    time: "10:00 AM",
+    time: "10:30 AM",
     date: "02.03.2024",
     studentCoordinators: [
       "SOUMYA RANJAN ROUT (4TH, BTECH)",
@@ -481,9 +437,9 @@ export const formalEvents = [
       "Topic will be given 1 hour prior.",
     ],
     teamSize: "1",
-    venue: "Conference Hall 2",
-    time: "10:00 AM",
-    date: "01.03.2026",
+    venue: "ENGLISH LAB",
+    time: "11:30 AM",
+    date: "19.02.2026",
     studentCoordinators: [
       "TEJASWINI NATH (4TH, BTECH)",
       "DIPTISH RANJAN SAHANI (4TH, NUS)",
@@ -507,13 +463,14 @@ export const formalEvents = [
     rules: ["Team participation.", "Laptop required."],
     teamSize: "1-3",
     venue: "TBD",
-    time: "TBD",
-    date: "",
+    time: "09:00",
+    date: "06.02.2026",
     studentCoordinators: [
       "ASHIT KUMAR JENA (4TH, BTECH)",
       "JAGDISH TRIPATHY (3RD, BTECH)",
       "SOUMYA RANJAN SAHOO (3RD, BTECH)",
       "SRIKRISHNA MOHARANA (3RD, BTECH)",
+      "SANTOSH SAHOO (3RD, BTECH)",
       "AYUSH ANSUMAN MISHRA (3RD, BTECH)",
     ],
     facultyCoordinators: ["Dr. S. Abinash", "Mr. Siddharth Dash"],

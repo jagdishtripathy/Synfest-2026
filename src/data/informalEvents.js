@@ -10,7 +10,7 @@ export const informalEvents = [
       "Judges evaluate voice quality, melody, stage presence.",
     ],
     teamSize: "1",
-    venue: "Main Stage",
+    venue: "CONFRENCE HALL",
     time: "10:00 AM",
     date: "07.03.2026",
     studentCoordinators: [
@@ -42,8 +42,8 @@ export const informalEvents = [
       "Last standing team / highest points wins.",
     ],
     teamSize: "4-5",
-    venue: "Main Stage",
-    time: "02:00 PM",
+    venue: "CLASS ROOM",
+    time: "02:30 PM",
     date: "07.03.2026",
     studentCoordinators: [
       "SWARUPA LAXMI BEHERA (4TH, BTECH)",
@@ -72,8 +72,8 @@ export const informalEvents = [
       "Judges assess coordination, expressions, choreography.",
     ],
     teamSize: "1",
-    venue: "Main Stage",
-    time: "02:00 PM",
+    venue: "COLLEGE CAMPOUS",
+    time: "02:30 PM",
     date: "10.03.2026",
     studentCoordinators: [
       "ASHISH PRUSTY (4TH, BTECH)",
@@ -103,7 +103,7 @@ export const informalEvents = [
     ],
     teamSize: "2-6",
     venue: "Main Stage",
-    time: "02:00 PM",
+    time: "02:30 PM",
     date: "10.03.2026",
     studentCoordinators: [
       "ATAL BIHARI GOCHHAYAT (4TH, BTECH)",
@@ -133,9 +133,15 @@ export const informalEvents = [
       "Draw mostly within specified area.",
       "Judges assess color combination, creativity, design clarity.",
     ],
+<<<<<<< HEAD
+    teamSize: "2-3",
+    venue: "College LOBBY",
+    time: "03:00 PM",
+=======
     teamSize: "1",
     venue: "College Entrance",
     time: "02:00 PM",
+>>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "11.03.2026",
     studentCoordinators: [
       "SUCHISMITA ROUL (4TH, BTECH)",
@@ -165,7 +171,7 @@ export const informalEvents = [
       "Judges evaluate cultural accuracy, creativity, detailing.",
     ],
     teamSize: "1",
-    venue: "Temple Corridor",
+    venue: "COLLEGE LOBBY",
     time: "07:30 AM",
     date: "12.03.2026",
     studentCoordinators: [
@@ -196,8 +202,8 @@ export const informalEvents = [
       "Judges assess expressions, dialogue delivery, impact.",
     ],
     teamSize: "1",
-    venue: "Open Air Theatre",
-    time: "02:00 PM",
+    venue: "ROMM NO ..",
+    time: "02:30 PM",
     date: "06.03.2026",
     studentCoordinators: [
       "MEHEREEN B. TASAWOOR (4TH, BTECH)",
@@ -227,9 +233,15 @@ export const informalEvents = [
       "Judges evaluate creativity, theme relevance, acting, teamwork.",
       "No hazardous materials (fire, sharp objects).",
     ],
+<<<<<<< HEAD
+    teamSize: "5-10",
+    venue: "ROMM NO ..",
+    time: "03:30 AM",
+=======
     teamSize: "2-10",
     venue: "Open Air Theatre",
     time: "10:00 AM",
+>>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "06.03.2026",
     studentCoordinators: [
       "PRIYANKA DASH (4TH, BTECH)",
@@ -260,7 +272,7 @@ export const informalEvents = [
     ],
     teamSize: "1",
     venue: "Garden Area",
-    time: "10:00 AM",
+    time: "11:00 AM",
     date: "06.03.2026",
     studentCoordinators: [
       "SHILPIKA THATOI (4TH, BTECH)",
@@ -284,9 +296,15 @@ export const informalEvents = [
     title: "Face Painting",
     description: "Artistic face painting.",
     rules: ["Time limit: 1 hour.", "Skin-friendly colors only."],
+<<<<<<< HEAD
+    teamSize: "2",
+    venue: "Garden Area",
+    time: "02:30 PM",
+=======
     teamSize: "1",
     venue: "Student Centre",
     time: "02:00 PM",
+>>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "06.03.2026",
     studentCoordinators: [
       "PRITIMOHAN PRATIHARI (4TH, BTECH)",
@@ -338,12 +356,13 @@ export const informalEvents = [
     emoji: "📸",
   },
   {
-    title: "Video Editing",
-    description: "Create original videos based on theme.",
+    title: "Documentary Movie",
+    description:
+      "Encourage research-based storytelling on real-life/college campous.",
     rules: [
       "Only original or copyright-free content allowed.",
       "Bring your own laptop/mobile and software.",
-      "Submit final video in MP4 format.",
+      "Submit final video in MP4 format SUBMIT BEFORE 11AM OF 09.03.2026.",
       "Judges evaluate creativity, editing, storyline, relevance.",
     ],
     teamSize: "1",
@@ -400,8 +419,8 @@ export const informalEvents = [
       "Judges evaluate creativity and neatness.",
     ],
     teamSize: "1",
-    venue: "Art Room",
-    time: "10:00 AM",
+    venue: "ROMM NO ..",
+    time: "11:00 AM",
     date: "09.03.2026",
     studentCoordinators: [
       "ANANYA SAHU (4TH, BTECH)",
@@ -430,10 +449,17 @@ export const informalEvents = [
       "Bring your own brushes, sponges, essentials.",
       "Model arranged by participant.",
       "Judges evaluate blending, creativity, final appearance.",
+      "MAKE YOUR HAIR STYLE AND CUSTOM BEFORE THE EVENT.",
     ],
+<<<<<<< HEAD
+    teamSize: "2",
+    venue: "Garden Area",
+    time: "02:00 PM",
+=======
     teamSize: "1",
     venue: "Girls Common Room",
     time: "10:00 AM",
+>>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "11.03.2026",
     studentCoordinators: [
       "JAGMOHAN PAL (4TH, BTECH)",
@@ -464,8 +490,8 @@ export const informalEvents = [
       "Judges evaluate neatness, intricacy, theme relevance.",
     ],
     teamSize: "1",
-    venue: "Corridor B",
-    time: "10:00 AM",
+    venue: "ROOM NO ..",
+    time: "11:00 AM",
     date: "10.03.2026",
     studentCoordinators: [
       "SUCHISMITA ROUL (4TH, BTECH)",
@@ -496,7 +522,7 @@ export const informalEvents = [
     ],
     teamSize: "5-6",
     venue: "Classroom Block",
-    time: "02:00 PM",
+    time: "11:30 AM",
     date: "07.03.2026",
     studentCoordinators: [
       "SWARUPA LAXMI BEHERA (4TH, BTECH)",
@@ -557,7 +583,7 @@ export const informalEvents = [
       "Unsafe behavior = disqualification.",
     ],
     teamSize: "1",
-    venue: "Amphitheatre",
+    venue: "GROUND",
     time: "02:00 PM",
     date: "09.03.2026",
     studentCoordinators: [
