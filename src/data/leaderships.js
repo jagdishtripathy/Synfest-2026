@@ -139,7 +139,7 @@ export const leadershipData = {
       image: "/media/Nursing-Fac-CoCoordinator-Ms-Suchismita-Pattanaik.webp",
     },
   ],
-  student: [
+  coordinator: [
     {
       name: "Mr. Prabodh Kumar Mohanty",
       title: "Organising Secretary (B.Tech)",

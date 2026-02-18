@@ -133,9 +133,15 @@ export const informalEvents = [
       "Draw mostly within specified area.",
       "Judges assess color combination, creativity, design clarity.",
     ],
+<<<<<<< HEAD
     teamSize: "2-3",
     venue: "College LOBBY",
     time: "03:00 PM",
+=======
+    teamSize: "1",
+    venue: "College Entrance",
+    time: "02:00 PM",
+>>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "11.03.2026",
     studentCoordinators: [
       "SUCHISMITA ROUL (4TH, BTECH)",
@@ -227,9 +233,15 @@ export const informalEvents = [
       "Judges evaluate creativity, theme relevance, acting, teamwork.",
       "No hazardous materials (fire, sharp objects).",
     ],
+<<<<<<< HEAD
     teamSize: "5-10",
     venue: "ROMM NO ..",
     time: "03:30 AM",
+=======
+    teamSize: "2-10",
+    venue: "Open Air Theatre",
+    time: "10:00 AM",
+>>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "06.03.2026",
     studentCoordinators: [
       "PRIYANKA DASH (4TH, BTECH)",
@@ -284,9 +296,15 @@ export const informalEvents = [
     title: "Face Painting",
     description: "Artistic face painting.",
     rules: ["Time limit: 1 hour.", "Skin-friendly colors only."],
+<<<<<<< HEAD
     teamSize: "2",
     venue: "Garden Area",
     time: "02:30 PM",
+=======
+    teamSize: "1",
+    venue: "Student Centre",
+    time: "02:00 PM",
+>>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "06.03.2026",
     studentCoordinators: [
       "PRITIMOHAN PRATIHARI (4TH, BTECH)",
@@ -346,6 +364,27 @@ export const informalEvents = [
       "Bring your own laptop/mobile and software.",
       "Submit final video in MP4 format SUBMIT BEFORE 11AM OF 09.03.2026.",
       "Judges evaluate creativity, editing, storyline, relevance.",
+    ],
+    teamSize: "1",
+    venue: "Design Lab",
+    time: "10:00 AM",
+    date: "09.03.2026",
+    studentCoordinators: [],
+    facultyCoordinators: [],
+    whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
+    regLink: "https://forms.gle/5ogZqy7TH7N5hWwDA",
+    emoji: "🎬",
+  },
+  {
+    title: "Documentary Movie",
+    description:
+      "Encourage research-based storytelling on real-life/social themes.",
+    rules: [
+      "Open to all students (Individual/Team up to 5). One entry per team.",
+      "Duration: 5-15 minutes. Format: MP4 (1080p).",
+      "Content must be original and theme-based. Synopsis required.",
+      "Judging: Relevance, research depth, creativity, technical quality.",
+      "No plagiarism/inappropriate content.",
     ],
     teamSize: "1",
     venue: "Online Submission",
@@ -412,9 +451,15 @@ export const informalEvents = [
       "Judges evaluate blending, creativity, final appearance.",
       "MAKE YOUR HAIR STYLE AND CUSTOM BEFORE THE EVENT.",
     ],
+<<<<<<< HEAD
     teamSize: "2",
     venue: "Garden Area",
     time: "02:00 PM",
+=======
+    teamSize: "1",
+    venue: "Girls Common Room",
+    time: "10:00 AM",
+>>>>>>> 43a93cc6fa57be0442f816588bcdf258160ba4f7
     date: "11.03.2026",
     studentCoordinators: [
       "JAGMOHAN PAL (4TH, BTECH)",
@@ -475,7 +520,7 @@ export const informalEvents = [
       "Maintain fair play and sportsmanship.",
       "Team with most correct guesses wins.",
     ],
-    teamSize: "3",
+    teamSize: "5-6",
     venue: "Classroom Block",
     time: "11:30 AM",
     date: "07.03.2026",
@@ -506,7 +551,7 @@ export const informalEvents = [
       "Hunt within campus premises. Follow safety guidelines.",
       "First team to complete all clues wins.",
     ],
-    teamSize: "3-5",
+    teamSize: "5-10",
     venue: "Starting Point: Fountain",
     time: "02:00 PM",
     date: "05.03.2026",
