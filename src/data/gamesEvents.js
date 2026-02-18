@@ -61,7 +61,7 @@ export const games = [
     teamSize: "2",
     venue: "Badminton Court",
     time: "2nd Half",
-    date: "21.02.2026 to 23.02.2026",
+    date: "21.02.2026 to 28.02.2026",
     studentCoordinators: [
       "Jagmohan Pal (4th, B.Tech)",
       "Biswaranjan Mantry (4th, B.Tech)",
@@ -86,7 +86,7 @@ export const games = [
     teamSize: "2",
     venue: "Badminton Court",
     time: "2nd Half",
-    date: "21.02.2026 to 23.02.2026",
+    date: "21.02.2026 to 28.02.2026",
     studentCoordinators: [
       "Priyanka Dash (4th, B.Tech)",
       "Ditishita Behera (4th, B.Tech)",

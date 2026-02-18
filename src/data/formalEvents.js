@@ -10,8 +10,8 @@ export const formalEvents = [
     ],
     teamSize: "1",
     venue: "Computer Lab 1",
-    time: "10:00 AM",
-    date: "20.02.2026",
+    time: "03:30 PM",
+    date: "02.03.2026",
     studentCoordinators: [
       "ASHIT KUMAR JENA (4TH, BTECH)",
       "SHREYA NAYAK (3RD, BTECH)",
@@ -116,7 +116,7 @@ export const formalEvents = [
     ],
     teamSize: "1",
     venue: "Room 101",
-    time: "10:30 AM",
+    time: "2:00 PM",
     date: "27.02.2026",
     studentCoordinators: [
       "SWARUPA LAXMI BEHERA (4TH, BTECH)",
@@ -225,9 +225,9 @@ export const formalEvents = [
   {
     title: "Technical Poster Competition",
     description:
-      "Present technical concepts via posters (3ft x 4ft). Visuals, data, and explanation required.",
+      "Present technical concepts via posters (297 × 420 mm). Visuals, data, and explanation required.",
     rules: [
-      "Create informative poster (3ft x 4ft) on technical topic.",
+      "Posters must be prepared in A3 size (297 × 420 mm) in portrait orientation",
       "Include visuals, data, and explanation.",
       "Presentation: Max 2 mins, 5 slides (abstract 1 page A4).",
       "Plagiarism prohibited.",
@@ -292,7 +292,7 @@ export const formalEvents = [
     teamSize: "1",
     venue: "Room 105",
     time: "11:00 AM",
-    date: "23.02.2026",
+    date: "28.02.2026",
     studentCoordinators: [
       "TEJASWINI NATH (4TH, BTECH)",
       "DIPTISH RANJAN SAHANI (4TH, NUS)",
@@ -349,7 +349,7 @@ export const formalEvents = [
     teamSize: "1",
     venue: "Room 304",
     time: "02:30 PM",
-    date: "23.02.2026",
+    date: "28.02.2026",
     studentCoordinators: [
       "ARJYAN ASHUTOSH (4TH, BTECH)",
       "JIBAN JYOTI ROUT (4TH, NUS)",
@@ -439,7 +439,7 @@ export const formalEvents = [
     teamSize: "1",
     venue: "ENGLISH LAB",
     time: "11:30 AM",
-    date: "19.02.2026",
+    date: "21.02.2026",
     studentCoordinators: [
       "TEJASWINI NATH (4TH, BTECH)",
       "DIPTISH RANJAN SAHANI (4TH, NUS)",
