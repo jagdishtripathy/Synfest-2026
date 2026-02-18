@@ -152,7 +152,7 @@ export default function Leadership() {
                                 { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
                                 { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" },
                                 { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
-                                { key: "student", color: "text-purple-400", border: "border-purple-500", bg: "bg-purple-500/10" },
+                                { key: "coordinator", color: "text-purple-400", border: "border-purple-500", bg: "bg-purple-500/10" },
                             ].map((wing) => {
                                 const members = leadershipData[wing.key];
                                 if (!members) return null; // Safety check
@@ -258,7 +258,7 @@ export default function Leadership() {
                             { key: "diploma", color: "text-orange-400", border: "border-orange-500", bg: "bg-orange-500/10" },
                             { key: "nursing", color: "text-pink-400", border: "border-pink-500", bg: "bg-pink-500/10" },
                             { key: "bsc", color: "text-green-400", border: "border-green-500", bg: "bg-green-500/10" },
-                            { key: "student", color: "text-purple-400", border: "border-purple-500", bg: "bg-purple-500/10" },
+                            { key: "coordinator", color: "text-purple-400", border: "border-purple-500", bg: "bg-purple-500/10" },
                         ].map((wing, i) => {
                             const members = leadershipData[wing.key];
                             if (!members) return null; // Safety check

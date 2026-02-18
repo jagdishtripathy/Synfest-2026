@@ -135,7 +135,6 @@ export const formalEvents = [
     description:
       "Quiz on various technical domains. 3 Rounds: Prelims, Visual, Rapid Fire.",
     rules: [
-      "2 students per team.",
       "Round 1 (Prelims): 50 objective qs, 50 mins. (+2 correct, -1 wrong).",
       "Only selected teams qualify for On-Stage Round.",
       "Tie-breaker: 5 extra questions.",
