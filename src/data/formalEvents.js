@@ -4,14 +4,16 @@ export const formalEvents = [
     description:
       "Competitive programming contest to solve algorithmic challenges.",
     rules: [
+      "Participant: Individual (Per College maximum 04 students)",
       "The event is of 1 hour duration.",
       "The competition consists of a series of problems that must be solved.",
-      "Problems are of varying difficulty; students have to solve and submit solutions.",
+      "The problems are of varying difficulty; students have to solve the problem and submit the solutions."
+
     ],
     teamSize: "1",
     venue: "Computer Lab 1",
     time: "03:30 PM",
-    date: "02.03.2026",
+    date: "01.03.2026",
     studentCoordinators: [
       "ASHIT KUMAR JENA (4TH, BTECH)",
       "SHREYA NAYAK (3RD, BTECH)",
@@ -32,13 +34,16 @@ export const formalEvents = [
     title: "Mobile App Development",
     description: "Showcase your app development skills.",
     rules: [
-      "Bring your own laptop, software, and accessories.",
-      "Problem Statement provided in advance.",
+      "Only 2-3 members can participate.",
+      "Laptop, software and other accessories will be arranged by the students. Problem Statement shall be provided in advance.",
       "Apps must have a clear purpose and functionality.",
-      "Judges assess usability, innovation, performance, and features.",
-      "Any framework is allowed."
+      "Judges assess usability and innovation.",
+      "The results will be evaluated by a panel of judges.",
+      "The judges will evaluate the Apps based on their performance and features."
+
+
     ],
-    teamSize: "2-4",
+    teamSize: "2-3",
     venue: "Computer Lab 2",
     time: "11:00 AM",
     date: "02.03.2026",
@@ -64,21 +69,23 @@ export const formalEvents = [
     description:
       "Design and build robots to perform specific tasks. Challenge your engineering skills!",
     rules: [
-      "Build and program a robot to perform a specific task.",
-      "Cost of components is borne by participants.",
-      "Evaluation based on Speed (10pts), Accuracy (20pts), Line Detection (15pts), Obstacle Avoidance (15pts), Robustness (10pts), Start/Stop (10pts), Creativity (10pts), Documentation (5pts).",
-      "Judges' decision is final.",
+      "The competition is open to inter-college team size of 3 students.",
+      "This competition challenges students to build and program robots to perform a task (Line following).",
+      "All the cost of components will be completely borne by the participants.",
+      "The judges will evaluate the robots based on their performance, design, and programming. The judgment of the panel will be final and no appeal at any other authority is allowed.",
+      "Any unique features, technologies, or strategies used in the roboť's design and performance, originality and creativity in solving challenges may be attract bonus mark."
+
     ],
-    teamSize: "2-4",
+    teamSize: "3",
     venue: "MECHANICAL DEPARTMENT",
-    time: "02:30 PM",
-    date: "02.03.2026",
+    time: "10AM - 1PM",
+    date: "13.03.2026",
     studentCoordinators: [
       "DEBI PRASAD PARIDA (4TH, BTECH)",
       "ABHISHEK SWAIN (3RD, BTECH)",
       "PANKTI PRAJWOLIKA (3RD, BTECH)",
       "NAFISHA KHATUN (3RD, BTECH)",
-      "SIMRAN BEHERA (3RD, BTECH)",
+      "SUBHAM SENAPATI (3RD, DIPLOMA)",
     ],
     facultyCoordinators: ["Dr. Malaya Kumar Debta",
       "Mrs. Chandana subudhi",
@@ -94,12 +101,16 @@ export const formalEvents = [
     description:
       "Design drone systems for real-world challenges.",
     rules: [
-      "Bring your own hardware and at least one laptop.",
-      "Knowledge of Indian Drone Regulations required.",
-      "Max drone size: 2ft x 2ft.",
-      "Test flight area provided under supervision.",
+      "The competition is open to teams of three students, and each team must bring all required drone hardware and at least one laptop.",
+      "Projects should focus on real-world applications such as remote healthcare delivery, telemedicine support, aerial health monitoring, infrastructure inspection, surveying & mapping, renewable energy inspection, or security and emergency response.",
+      "Drone systems may integrate GPS, IoT, sensors, imaging, AI analytics, or real-time communication to demonstrate innovation, safety, and practical usefulness.",
+      "All teams must have basic knowledge of Indian drone regulations and follow safety and compliance guidelines during operation.",
+      "A designated and supervised test-flight area will be provided, and teams must operate drones only within this permitted zone.",
+      "The maximum drone size allowed is 2 ft × 2 ft, and all flights will be monitored by an experienced pilot to ensure safety."
+
+
     ],
-    teamSize: "2-4",
+    teamSize: "3",
     venue: "College Ground",
     time: "10:00 AM",
     date: "03.03.2026",
@@ -124,16 +135,18 @@ export const formalEvents = [
     description:
       "Test your mathematical prowess. Algebra, Geometry, Number Theory.",
     rules: [
-      "Duration: 1 hours. Total Marks: 50.",
+      "The Olympiad is intended for university students who are interested in mathematics. The official language of the Olympiad is English.",
+      "The Olympiad conducted in the form of individual participant.",
       "Exam Pattern: Multiple Choice or Short Answer Questions.",
-      "Syllabus: Algebra, Reasoning(verbal and nonverbal), profit & loss , time and work.",
-      "For each correct answer 2 marks and for wrong answer 0.25 marks deducted.",
-      "Negative marking there.",
-      "Rough work space provided.",
+      "Syllabus: The questions are typically on a variety of mathematical topics such as Algebra, Geometry and Number Theory.",
+      "Duration: 2hours, Total marks: 100; Questions 1 to 10 carry 2 marks each; questions 11 to 20 carry 3 marks each; questions 21 and 30 carry 5 marks each.",
+      "All questions are compulsory and there are no negative marks.",
+      "Do all rough work in the space provided."
+
     ],
     teamSize: "1",
     venue: "Room 101",
-    time: "2:00 PM",
+    time: "2:30 PM",
     date: "27.02.2026",
     studentCoordinators: [
       "AMRITAYAN PRADHAN (4TH, BTECH)",
@@ -158,10 +171,13 @@ export const formalEvents = [
     description:
       "Quiz on various technical domains. 3 Rounds: Prelims, Visual, Rapid Fire.",
     rules: [
-      "Round 1 (Prelims): 50 objective qs, 50 mins. (+2 correct, -1 wrong).",
-      "Only selected teams qualify for On-Stage Round.",
-      "Tie-breaker: 5 extra questions.",
-      "Round 2 (Stage): Technical Awareness (5 qs, 30s time).",
+      "Participant: Team (Per College maximum 04 teams)",
+      "The participation for this quiz would be a team of 2 students of the college.",
+      "[Only shortlisted candidates will be eligible for the On-Stage Round (Grand Final Round).",
+      "The decision taken by the judges shall be final & binding.",
+      "Quiz Procedures:  \n\n Round-1: Preliminary/Screening Round (On paper).\nRound-2: On-Stage Round (Grand Finale)."
+
+
     ],
     teamSize: "2",
     venue: "Room 205",
@@ -190,10 +206,12 @@ export const formalEvents = [
     description:
       "Present innovative technical solutions. Bring working prototype and pitch deck.",
     rules: [
-      "Must bring working prototype and pitch deck.",
-      "Pitch Deck: Problem, Solution, Schematics, Target Users, Impact.",
-      "All submissions must be original.",
-      "Plagiarism = Disqualification.",
+      "Participation is open to all students of our institution with maximum four members per team, and each team must consist of 2–5 student members.",
+      "Every team must bring a working prototype along with a pitch deck covering the problem statement, innovative solution, design schematics or flow, target users, and expected impact.",
+      "The project presented must be fully original work of the participants; any form of plagiarism will lead to immediate disqualification.",
+      "Teams should be prepared to demonstrate functionality and explain technical feasibility and real-world usefulness during evaluation.",
+      "Judges’ decisions will be final and binding for all participants."
+
     ],
     teamSize: "2-4",
     venue: "Seminar Hall",
@@ -225,9 +243,12 @@ export const formalEvents = [
     description:
       "Pitch your business startup ideas. Include problem, solution, market, revenue, financial overview.",
     rules: [
-      "Submit structured Business Plan and Presentation.",
-      "Pitch your startup idea (Problem, Solution, Market, Revenue).",
-      "Evaluation: Innovation, Feasibility, Market Potential, Financial Viability.",
+      "Participation is open to all students of our institution, with a m maximum four members per team.",
+      "Each team must present an original business idea supported by a clear business plan including problem statement, solution, target market, revenue model, and implementation strategy.",
+      "Teams should submit or present a concise pitch deck and be ready to explain feasibility, innovation, and potential social or economic impact.",
+      "All ideas and materials must be the participants’ own work; plagiarism or copied concepts will lead to disqualification.",
+      "The evaluation will be based on innovation, practicality, presentation, and overall business potential, and the judges’ decision will be final and binding."
+
     ],
     teamSize: "2-4",
     venue: "MBA Block",
@@ -257,24 +278,26 @@ export const formalEvents = [
     description:
       "Present technical concepts via posters (297 × 420 mm). Visuals, data, and explanation required.",
     rules: [
-      "1.	Posters must be prepared in A3 size (297 × 420 mm) in portrait orientation.",
-      "2.	The poster should be digitally designed using tools such as Canva, PowerPoint, Photoshop, etc.; handmade posters will be disqualified.",
-      "3.	The content must clearly include Title, Authors, Abstract, Methodology/ Descriptions, Results& Discussion, Advantages/Disadvantages, Applications, and Conclusions in a neat and readable layout.",
-      "4.	Participants must submit one printed hard copy (A3 sheet) to the jury, and present the soft copy (Image/PDF format) during the presentation.",
-      "5.	Posters should present original technical work, review-based analysis, or any relevant topic from the given themes; plagiarized content will not be accepted.",
-      "6.	Evaluation will be based on technical quality, innovation, clarity of presentation, visual design, and response to questions.",
-      "7.	Each participant/team will have 3 minutes for presentation followed by 1 minute for a Q&A session with the judges.",
-      "8.	The topics for the poster are: Choose any one from this and make your poster",
-      "•	Renewable Energy for Sustainable Future",
-"•	AI and Automation in Engineering & Healthcare",
-"•	Smart and Green Infrastructure",
-"•	Pollution Control and Waste Management",
-"•	Advances in Science and Healthcare",
+      "1. Posters must be prepared in A3 size (297 × 420 mm) in portrait orientation.",
+      "2. The poster should be digitally designed using tools such as Canva, PowerPoint, Photoshop, etc.; handmade posters will be disqualified.",
+      "3. The content must clearly include Title, Authors, Abstract, Methodology/ Descriptions, Results & Discussion, Advantages/Disadvantages, Applications, and Conclusions in a neat and readable layout.",
+      "4. Participants must submit one printed hard copy (A3 sheet) to the jury, and present the soft copy (Image/PDF format) during the presentation.",
+      "5. Posters should present original technical work, review-based analysis, or any relevant topic from the given themes; plagiarized content will not be accepted.",
+      "6. Evaluation will be based on technical quality, innovation, clarity of presentation, visual design, and response to questions.",
+      "7. Each participant/team will have 3 minutes for presentation followed by 1 minute for a Q&A session with the judges.",
+      "8. The topics for the poster are: (Choose any one from this and make your poster)",
+      "   • Renewable Energy for Sustainable Future.",
+      "   • AI and Automation in Engineering & Healthcare.",
+      "   • Smart and Green Infrastructure.",
+      "   • Pollution Control and Waste Management.",
+      "   • Advances in Science and Healthcare."
     ],
+
+
     teamSize: "1",
     venue: "Corridor A",
-    time: "11:00 AM",
-    date: "21.02.2026",
+    time: "03:30 PM",
+    date: "02.03.2026",
     studentCoordinators: [
       "ARJYAN ASHUTOSH (4TH, BTECH)",
       "NEELAM MALLICK (4TH, NUS)",
@@ -308,8 +331,8 @@ export const formalEvents = [
     ],
     teamSize: "1",
     venue: "Workshop",
-    time: "10:30 AM",
-    date: "05.03.2026",
+    time: "10:00 AM - 01:00 PM",
+    date: "13.03.2026",
     studentCoordinators: [
       "DEBI PRASAD PARIDA (4TH, BTECH)",
       "PRIYA RANJAN BEHERA (4TH, BTECH)",
@@ -334,7 +357,7 @@ export const formalEvents = [
     rules: ["Preparation time: 2 mins.", "Speaking time: 2 mins."],
     teamSize: "1",
     venue: "Room 105",
-    time: "11:00 AM",
+    time: "11:30 AM",
     date: "28.02.2026",
     studentCoordinators: [
       "TEJASWINI NATH (4TH, BTECH)",
@@ -359,9 +382,14 @@ export const formalEvents = [
     description:
       "Showcase artistic skills using digital tools. Create a unique doodle based on a theme.",
     rules: [
-      "Create unique digital doodle on given theme (announced on spot).",
-      "Bring own digital drawing tablets/laptops with software.",
-      "Evaluation: Creativity, Theme Integration, Technical Proficiency.",
+      "Entries must be created digitally using drawing or design software/apps; hand-drawn or scanned artwork will not be accepted.",
+      "The artwork should follow the theme “Nature vs Technology” or “Life Through My Eyes” and be submitted in high-resolution image or PDF format within the specified deadline.",
+      "Each participant may submit only one original doodle; copied, AI-generated without disclosure, or plagiarized content will lead to disqualification.",
+      "Participants must provide a short title and brief description explaining the concept, message, or inspiration behind the doodle.",
+      "Judging will be based on creativity, originality, relevance to theme, visual appeal, composition, and clarity of concept.",
+      "Shortlisted participants may be asked to briefly explain their artwork within a fixed time followed by a quick interaction with the judges.",
+      "All submissions will be documented for display, reporting, and promotional use by the organizing committee.",
+
     ],
     teamSize: "1",
     venue: "Room 302",
@@ -383,11 +411,11 @@ export const formalEvents = [
     title: "Odia Essay",
     description: "Express your thoughts in Odia.",
     rules: [
+      "Individual participation.",
       "Essay must be written in Odia language only.",
-      "Time limit: 1 hour. Handwritten essays only.",
-      "Word limit: 800–1000 words.",
-      "Plagiarism will lead to disqualification.",
-      "Topic will be given 1 hour prior.",
+      "Time limit: 1 hour.",
+      "Handwritten essays only",
+
     ],
     teamSize: "1",
     venue: "Room 304",
@@ -415,9 +443,12 @@ export const formalEvents = [
     title: "English Essay",
     description: "Creative writing competition in English.",
     rules: [
+      "Individual participation.",
       "Word limit: 800–1000 words.",
-      "Topic will be given on the spot (1 hour prior).",
+      "Topic will be given on the spot.",
       "Plagiarism will lead to disqualification.",
+      "The topic will be given before 1 hour.",
+
     ],
     teamSize: "1",
     venue: "Room 305",
@@ -445,15 +476,17 @@ export const formalEvents = [
     title: "Odia Debate",
     description: "Verbal battle of perspectives in Odia.",
     rules: [
+      "Individual participation.",
       "Time limit: 3–4 minutes per speaker.",
       "Language must be formal and respectful.",
       "Judges’ decision will be final.",
-      "Topic will be given 1 hour prior.",
+      "The topic will be given before 1 hour.",
+
     ],
     teamSize: "1",
     venue: "Conference Hall 1",
     time: "10:30 AM",
-    date: "02.03.2024",
+    date: "02.03.2026",
     studentCoordinators: [
       "SOUMYA RANJAN ROUT (4TH, BTECH)",
       "DITISHITA BEHERA (4TH, BTECH)",
@@ -476,10 +509,12 @@ export const formalEvents = [
     title: "English Debate",
     description: "War of words and logic in English.",
     rules: [
+      "Individual participation.",
       "Time limit: 3–4 minutes per speaker.",
       "Language must be formal and respectful.",
       "Judges’ decision will be final.",
-      "Topic will be given 1 hour prior.",
+      "The topic will be given before 1 hour."
+
     ],
     teamSize: "1",
     venue: "ENGLISH LAB",
@@ -509,8 +544,8 @@ export const formalEvents = [
     rules: ["Team participation.", "Laptop required."],
     teamSize: "1-3",
     venue: "TBD",
-    time: "09:00",
-    date: "06.02.2026",
+    time: "09:00 AM - 05:00 PM",
+    date: "06.03.2026",
     studentCoordinators: [
       "ASHIT KUMAR JENA (4TH, BTECH)",
       "JAGDISH TRIPATHY (3RD, BTECH)",
