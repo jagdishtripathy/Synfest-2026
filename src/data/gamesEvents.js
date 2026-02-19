@@ -180,7 +180,7 @@ export const games = [
     studentCoordinators: [],
     facultyCoordinators: [],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/VGPFGUGzJYeLqyhF6",
+    regLink: "https://forms.gle/YjqaJoRMKQsQVe1B8",
     emoji: "🔥",
   },
   {
