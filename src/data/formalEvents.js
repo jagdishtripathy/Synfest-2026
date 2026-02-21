@@ -7,8 +7,7 @@ export const formalEvents = [
       "Participant: Individual (Per College maximum 04 students)",
       "The event is of 1 hour duration.",
       "The competition consists of a series of problems that must be solved.",
-      "The problems are of varying difficulty; students have to solve the problem and submit the solutions."
-
+      "The problems are of varying difficulty; students have to solve the problem and submit the solutions.",
     ],
     teamSize: "1",
     venue: "Computer Lab 1",
@@ -21,29 +20,44 @@ export const formalEvents = [
       "JASMIN ROUT (2ND, BTECH)",
       "PRABIN BISWAL (2ND, BTECH)",
     ],
-    facultyCoordinators: ["Dr. Rayaguru Akhaya",
+    facultyCoordinators: [
+      "Dr. Rayaguru Akhaya",
       "Mr. Sidhharth Dash",
       "Mrs. Sunita Panda",
       "Mr. Aurobinda Gochhayat",
-      "Ms. Asmita Pranayani"],
+      "Ms. Asmita Pranayani",
+    ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/FmEecEKU9BbCR9rP8",
     emoji: "👨‍💻",
   },
   {
     title: "Mobile App Development",
-    description: "Showcase your app development skills.",
+    description:
+      "Showcase your app development skills. Build a functional mobile app around a given problem statement.",
     rules: [
-      "Only 2-3 members can participate.",
-      "Laptop, software and other accessories will be arranged by the students. Problem Statement shall be provided in advance.",
-      "Apps must have a clear purpose and functionality.",
-      "Judges assess usability and innovation.",
-      "The results will be evaluated by a panel of judges.",
-      "The judges will evaluate the Apps based on their performance and features."
-
-
+      "Team event – Minimum 1 and Maximum 4 members per team.",
+      "Laptop, software, and other accessories must be arranged by the students.",
+      "Problem Statement will be provided in advance (see below).",
+      "Apps must have a clear purpose and proper functionality.",
+      "Judging Criteria: Judges will assess usability, innovation, performance, and features.",
+      "Results will be evaluated by a panel of judges. Decision of judges will be final.",
+      "— B.Tech Problem Statements —",
+      "1. AI Chatbot for College Website.",
+      "2. Smart Expense Tracker for Students.",
+      "3. Women Safety Alert App.",
+      "4. Web Security App.",
+      "— Nursing Problem Statements —",
+      "1. Digital Patient Care & Monitoring System.",
+      "2. Mobile App for Mental Health Awareness.",
+      "— Diploma Problem Statements —",
+      "1. Skill-Based E-Learning Mobile Application.",
+      "2. Smart Attendance & Record Management App.",
+      "— B.Sc Problem Statements —",
+      "1. Environmental Sustainability Tracking App.",
+      "2. Nutrition & Health Awareness Application.",
     ],
-    teamSize: "2-3",
+    teamSize: "1-4",
     venue: "Computer Lab 2",
     time: "11:00 AM",
     date: "02.03.2026",
@@ -54,11 +68,13 @@ export const formalEvents = [
       "SHRIKRISHNA MOHARANA (3RD, BTECH)",
       "KISHAN SAHOO (2ND, BTECH)",
     ],
-    facultyCoordinators: ["Dr. Laxman Sahoo",
+    facultyCoordinators: [
+      "Dr. Laxman Sahoo",
       "Dr. L. Dhall Samanta",
       "Mrs. Ipsita Panda",
       "Mrs. Smrutimayee Mishra",
-      "Ms. Aparna Priyadarshini"],
+      "Ms. Aparna Priyadarshini",
+    ],
 
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/fwu3JfFTarjDY2fb9",
@@ -73,8 +89,7 @@ export const formalEvents = [
       "This competition challenges students to build and program robots to perform a task (Line following).",
       "All the cost of components will be completely borne by the participants.",
       "The judges will evaluate the robots based on their performance, design, and programming. The judgment of the panel will be final and no appeal at any other authority is allowed.",
-      "Any unique features, technologies, or strategies used in the roboť's design and performance, originality and creativity in solving challenges may be attract bonus mark."
-
+      "Any unique features, technologies, or strategies used in the roboť's design and performance, originality and creativity in solving challenges may be attract bonus mark.",
     ],
     teamSize: "3",
     venue: "MECHANICAL DEPARTMENT",
@@ -87,28 +102,27 @@ export const formalEvents = [
       "NAFISHA KHATUN (3RD, BTECH)",
       "SUBHAM SENAPATI (3RD, DIPLOMA)",
     ],
-    facultyCoordinators: ["Dr. Malaya Kumar Debta",
+    facultyCoordinators: [
+      "Dr. Malaya Kumar Debta",
       "Mrs. Chandana subudhi",
       "Mr. Girish Ch. Swain",
       "Mr. Biswajit Mishra",
-      "Mr. S. K. Tripathy"],
+      "Mr. S. K. Tripathy",
+    ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/jcEK8uEfhy68JZoG9",
     emoji: "🤖",
   },
   {
     title: "Drone Competition",
-    description:
-      "Design drone systems for real-world challenges.",
+    description: "Design drone systems for real-world challenges.",
     rules: [
       "The competition is open to teams of three students, and each team must bring all required drone hardware and at least one laptop.",
       "Projects should focus on real-world applications such as remote healthcare delivery, telemedicine support, aerial health monitoring, infrastructure inspection, surveying & mapping, renewable energy inspection, or security and emergency response.",
       "Drone systems may integrate GPS, IoT, sensors, imaging, AI analytics, or real-time communication to demonstrate innovation, safety, and practical usefulness.",
       "All teams must have basic knowledge of Indian drone regulations and follow safety and compliance guidelines during operation.",
       "A designated and supervised test-flight area will be provided, and teams must operate drones only within this permitted zone.",
-      "The maximum drone size allowed is 2 ft × 2 ft, and all flights will be monitored by an experienced pilot to ensure safety."
-
-
+      "The maximum drone size allowed is 2 ft × 2 ft, and all flights will be monitored by an experienced pilot to ensure safety.",
     ],
     teamSize: "3",
     venue: "College Ground",
@@ -121,11 +135,13 @@ export const formalEvents = [
       "RAJAT RANJAN NAYAK (3RD, BTECH)",
       "TEJAS KUMAR SAHOO (2ND, BTECH)",
     ],
-    facultyCoordinators: ["Dr. Priyabrata Pradhan",
+    facultyCoordinators: [
+      "Dr. Priyabrata Pradhan",
       "Mrs. S. S. Mohapatra",
       "Mr. Mihir Ku. Swain",
       "Mr. Ramakanta Mahanta",
-      "Mr. Somnath Sethy"],
+      "Mr. Somnath Sethy",
+    ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/zeTWS18TxUQddXDQ7",
     emoji: "🚁",
@@ -141,8 +157,7 @@ export const formalEvents = [
       "Syllabus: The questions are typically on a variety of mathematical topics such as Algebra, Geometry and Number Theory.",
       "Duration: 2hours, Total marks: 100; Questions 1 to 10 carry 2 marks each; questions 11 to 20 carry 3 marks each; questions 21 and 30 carry 5 marks each.",
       "All questions are compulsory and there are no negative marks.",
-      "Do all rough work in the space provided."
-
+      "Do all rough work in the space provided.",
     ],
     teamSize: "1",
     venue: "Room 101",
@@ -160,7 +175,8 @@ export const formalEvents = [
       "Ms. Gayatri Behera",
       "Dr. L. D. Samnata",
       "Mr. Manmohan Murmu",
-      "Ms. Kuhudi Biswa"],
+      "Ms. Kuhudi Biswa",
+    ],
 
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/Zr3dZVoR8JjkXgcB9",
@@ -175,9 +191,7 @@ export const formalEvents = [
       "The participation for this quiz would be a team of 2 students of the college.",
       "[Only shortlisted candidates will be eligible for the On-Stage Round (Grand Final Round).",
       "The decision taken by the judges shall be final & binding.",
-      "Quiz Procedures:  \n\n Round-1: Preliminary/Screening Round (On paper).\nRound-2: On-Stage Round (Grand Finale)."
-
-
+      "Quiz Procedures:  \n\n Round-1: Preliminary/Screening Round (On paper).\nRound-2: On-Stage Round (Grand Finale).",
     ],
     teamSize: "2",
     venue: "Room 205",
@@ -210,8 +224,7 @@ export const formalEvents = [
       "Every team must bring a working prototype along with a pitch deck covering the problem statement, innovative solution, design schematics or flow, target users, and expected impact.",
       "The project presented must be fully original work of the participants; any form of plagiarism will lead to immediate disqualification.",
       "Teams should be prepared to demonstrate functionality and explain technical feasibility and real-world usefulness during evaluation.",
-      "Judges’ decisions will be final and binding for all participants."
-
+      "Judges’ decisions will be final and binding for all participants.",
     ],
     teamSize: "2-4",
     venue: "Seminar Hall",
@@ -247,8 +260,7 @@ export const formalEvents = [
       "Each team must present an original business idea supported by a clear business plan including problem statement, solution, target market, revenue model, and implementation strategy.",
       "Teams should submit or present a concise pitch deck and be ready to explain feasibility, innovation, and potential social or economic impact.",
       "All ideas and materials must be the participants’ own work; plagiarism or copied concepts will lead to disqualification.",
-      "The evaluation will be based on innovation, practicality, presentation, and overall business potential, and the judges’ decision will be final and binding."
-
+      "The evaluation will be based on innovation, practicality, presentation, and overall business potential, and the judges’ decision will be final and binding.",
     ],
     teamSize: "2-4",
     venue: "MBA Block",
@@ -266,8 +278,7 @@ export const formalEvents = [
       "Dr. Priyabrat Sahoo",
       "Dr. Brahmananda Sahoo",
       "Mr. Amarendra Behera",
-      "Dr. M.R. Biswal"
-
+      "Dr. M.R. Biswal",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/bUSoq62hVnhZPhJ26",
@@ -290,9 +301,8 @@ export const formalEvents = [
       "   • AI and Automation in Engineering & Healthcare.",
       "   • Smart and Green Infrastructure.",
       "   • Pollution Control and Waste Management.",
-      "   • Advances in Science and Healthcare."
+      "   • Advances in Science and Healthcare.",
     ],
-
 
     teamSize: "1",
     venue: "Corridor A",
@@ -327,7 +337,6 @@ export const formalEvents = [
       "Time limit: 2 hours.",
       "Judges will evaluate accuracy, precision, surface finish, and adherence to specifications.",
       "Any violation of safety rules may lead to disqualification.",
-
     ],
     teamSize: "1",
     venue: "Workshop",
@@ -345,7 +354,7 @@ export const formalEvents = [
       "Mr. S. Diwana",
       "Mrs. Ellora Das",
       "Mr. Abinash Jena",
-      "Mr Sruti Ranjan Samantray"
+      "Mr Sruti Ranjan Samantray",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/7Zs4CYfVTgayd3UB7",
@@ -389,7 +398,6 @@ export const formalEvents = [
       "Judging will be based on creativity, originality, relevance to theme, visual appeal, composition, and clarity of concept.",
       "Shortlisted participants may be asked to briefly explain their artwork within a fixed time followed by a quick interaction with the judges.",
       "All submissions will be documented for display, reporting, and promotional use by the organizing committee.",
-
     ],
     teamSize: "1",
     venue: "Room 302",
@@ -402,7 +410,13 @@ export const formalEvents = [
       "SANTOSH SAHOO (3RD, BTECH)",
       "ASHUTOSH SAHOO (2ND, BTECH)",
     ],
-    facultyCoordinators: ["Dr. Malaya kumar Debta", " Ms. Ellora Das ", " Mr. Biswajit Samal ", " Mr. Laxmipriya Sahoo", "Mr. Aurobinda Gochhayat",],
+    facultyCoordinators: [
+      "Dr. Malaya kumar Debta",
+      " Ms. Ellora Das ",
+      " Mr. Biswajit Samal ",
+      " Mr. Laxmipriya Sahoo",
+      "Mr. Aurobinda Gochhayat",
+    ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
     regLink: "https://forms.gle/FiwY7d3B7TrXQSnA6",
     emoji: "🎨",
@@ -415,7 +429,6 @@ export const formalEvents = [
       "Essay must be written in Odia language only.",
       "Time limit: 1 hour.",
       "Handwritten essays only",
-
     ],
     teamSize: "1",
     venue: "Room 304",
@@ -426,7 +439,7 @@ export const formalEvents = [
       "JIBAN JYOTI ROUT (4TH, NUS)",
       "CHINMAYEE NANDA (3RD, BTECH)",
       "PRAGYAN LENKA (3RD, BSC)",
-      "SASMITA SAHOO (3RD, DIPLOMA)"
+      "SASMITA SAHOO (3RD, DIPLOMA)",
     ],
     facultyCoordinators: [
       "Dr. Jayashree Singh",
@@ -448,7 +461,6 @@ export const formalEvents = [
       "Topic will be given on the spot.",
       "Plagiarism will lead to disqualification.",
       "The topic will be given before 1 hour.",
-
     ],
     teamSize: "1",
     venue: "Room 305",
@@ -481,7 +493,6 @@ export const formalEvents = [
       "Language must be formal and respectful.",
       "Judges’ decision will be final.",
       "The topic will be given before 1 hour.",
-
     ],
     teamSize: "1",
     venue: "Conference Hall 1",
@@ -513,8 +524,7 @@ export const formalEvents = [
       "Time limit: 3–4 minutes per speaker.",
       "Language must be formal and respectful.",
       "Judges’ decision will be final.",
-      "The topic will be given before 1 hour."
-
+      "The topic will be given before 1 hour.",
     ],
     teamSize: "1",
     venue: "ENGLISH LAB",
