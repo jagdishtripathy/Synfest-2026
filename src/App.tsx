@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import SmoothScroll from './components/layout/SmoothScroll';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -62,6 +63,7 @@ function App() {
           </div>
         </SmoothScroll>
       </Router>
+      <Analytics />
     </VideoProvider>
   );
 }
