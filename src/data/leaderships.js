@@ -19,7 +19,12 @@ export const leadershipData = {
       name: "Mr Chandrakanta Mishra",
       title: "Administrative Officer",
       image: "/media/Admin-Fac-AO-Mr-Chandrakanta-Mishra.webp",
-    }
+    },
+    {
+      name: "Mr. A. K. Jena",
+      title: "Asst. Commissioner ST John Ambulance Odisha/Prakruthi Bandhu, CSO Synergy",
+      image: "/media/Admin-Fac-CSO-Mr-AK-Jena.webp",
+    },
   ],
   bsc: [
     {
@@ -115,11 +120,6 @@ export const leadershipData = {
       name: "Ms. Gayatri Behera",
       title: "Member",
       image: "/media/BTech-Fac-Member-Ms-Gayatri-Behera.webp",
-    },
-    {
-      name: "Mr. A. K. Jena",
-      title: "Chief Security Officer",
-      image: "/media/Admin-Fac-CSO-Mr-AK-Jena.webp",
     },
   ],
   nursing: [
