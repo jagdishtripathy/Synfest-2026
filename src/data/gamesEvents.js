@@ -239,14 +239,21 @@ export const games = [
   },
   {
     title: "Yoga",
-    description: "Demonstrate specified asanas (10 movements in 3 minutes).",
+    description:
+      "Yoga competition consisting of two rounds: Warm-up & Strength Round and Yoga Performance Round (10 movements in 3 minutes).",
     rules: [
-      "SOP (Body Weight Exercises): Situp/Crunches, Push-up/Dips, Squat, Hanuman Danda, 50kg Weight Lifting.",
-      "SOP (Asanas): Padmasan, Bajrasan, Pabanamuktasan, Paschimautasan, Akapadasan, Brukhyasan, Ustrasan, Chakrasan, Setubandhasan, Kukutasan/Mayurasana, Naukasn, Halasana, Sarvang asan, Shirsasan.",
-      "Judgment: Posture accuracy, flexibility, balance, presentation.",
-      "Highest scoring participant wins.",
-      "Atleast 10 Asanas must be performed in 3 minutes.",
-    ], 
+      "The competition will consist of two rounds: Round 1 (Warm-up & Strength) and Round 2 (Yoga Performance).",
+      "Round 1 - For Boys: Sit-ups/Crunches, Push-ups/Dips, Squats, Hanuman Danda, and 50 kg Weight Lifting.",
+      "Round 1 - For Girls: Sit-ups/Crunches and Squats.",
+      "Round 2 is compulsory for both boys and girls.",
+      "Participants must perform 6 compulsory asanas and any 10 yogic asanas within 3 minutes.",
+      "Each asana must be held for a minimum of 3 seconds.",
+      "Compulsory Asanas: Vrikshasana (with 12 chants of Om), Surya Namaskar (with mantra), Paschimottanasana or Padahastasana, Dhanurasana or Ustrasana, Halasana, and Sarvangasana.",
+      "All exercises must be performed with proper form and technique. Incorrect posture may lead to deduction of marks.",
+      "Participants will be judged based on posture accuracy, balance and stability, duration of hold, breathing/mantra coordination, and overall presentation and discipline.",
+      "Participants must report on time and wear proper attire suitable for yoga practice.",
+    ],
+
     teamSize: "1",
     venue: "Yoga Hall",
     time: "10:00 AM",
