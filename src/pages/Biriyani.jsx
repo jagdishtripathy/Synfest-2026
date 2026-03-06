@@ -149,7 +149,7 @@ export default function Biriyani() {
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
                         <div className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary/20 to-primary/10 border border-primary/30 rounded-xl">
                             <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
-                            <span className="text-primary font-bold text-lg">📅 13 February 2026 (Friday) 🎓</span>
+                            <span className="text-primary font-bold text-lg">📅 13 March 2026 (Friday) 🎓</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
