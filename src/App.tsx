@@ -13,6 +13,7 @@ import EventsLink from './components/home/EventsLink';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Terms from './pages/Terms';
+import Biriyani from './pages/Biriyani';
 import Loader from './components/common/Loader';
 
 function Home() {
@@ -58,6 +59,7 @@ function App() {
               <Route path="/events" element={<Events />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/terms" element={<Terms />} />
+              <Route path="/biriyani" element={<Biriyani />} />
             </Routes>
             <Footer />
           </div>
