@@ -553,9 +553,9 @@ export const formalEvents = [
     description: "Capture the Flag cybersecurity competition.",
     rules: ["Team participation.", "Laptop required."],
     teamSize: "1-3",
-    venue: "TBD",
+    venue: "Project Lab",
     time: "09:00 AM - 05:00 PM",
-    date: "06.03.2026",
+    date: "13.03.2026",
     studentCoordinators: [
       "ASHIT KUMAR JENA (4TH, BTECH)",
       "JAGDISH TRIPATHY (3RD, BTECH)",
