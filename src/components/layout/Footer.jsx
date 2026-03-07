@@ -66,7 +66,7 @@ export default function Footer() {
                             rel="noreferrer"
                             className="text-sm font-medium text-gray-400 hover:text-white transition-colors flex items-center gap-1.5"
                         >
-                            Made with <span className="text-red-500 animate-pulse">❤️</span> by Soham
+                            Made with <span className="text-red-500 animate-pulse">☕</span> by Soham
                         </a>
                     </div>
 
