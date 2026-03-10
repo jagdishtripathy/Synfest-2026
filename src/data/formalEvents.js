@@ -572,7 +572,7 @@ export const formalEvents = [
       "Mr. Jayant Kumar Behera",
     ],
     whatsappLink: "https://chat.whatsapp.com/H6iynzYMDYKBRKFxu7r7bj",
-    regLink: "https://forms.gle/S1PS3gpc6UeQVcwHA",
+    regLink: "https://forms.gle/7pB5x9gJbmz9yk328",
     emoji: "🚩",
   },
 ];
